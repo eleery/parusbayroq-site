@@ -986,3 +986,22 @@ a.lang-btn { text-decoration: none; display: inline-block; line-height: 1.4; }
 .article-order__alt { margin-top: 16px; }
 .article-order__alt a { color: #7cc7ff; font-weight: 600; text-decoration: none; }
 @media (max-width: 560px) { .article-order { padding: 24px; } .article-order__form { grid-template-columns: 1fr; } .article-order__form .btn { width: 100%; } }
+
+/* ===== Price cards in articles ===== */
+.price-cards { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; margin: 20px 0 8px; }
+.price-card { background: #fff; border: 1px solid #ececec; border-radius: 20px; padding: 22px 22px 14px; box-shadow: 0 6px 24px rgba(17,25,32,.05); }
+.price-card__head h3 { font-size: 19px; margin: 0; }
+.price-card__head p { color: #888; font-size: 14px; margin: 4px 0 12px; }
+.price-card__rows { list-style: none; margin: 0 !important; padding: 0; }
+.price-card__rows li { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 11px 12px; margin: 0 -12px !important; border-top: 1px solid #f2f2f2; border-radius: 12px; }
+.price-card__rows li:first-child { border-top: none; }
+.price-card__size { color: #444; font-size: 15px; }
+.price-card__size b { display: inline-block; min-width: 30px; color: #111920; }
+.price-card__size em { font-style: normal; font-size: 11.5px; font-weight: 700; color: #fff; background: #F97316; border-radius: 50px; padding: 2px 8px; margin-left: 6px; vertical-align: 1px; text-transform: uppercase; letter-spacing: .03em; }
+.price-card__price { font-weight: 700; color: #F97316; white-space: nowrap; font-size: 16px; }
+.price-card__rows li.is-standard { background: #fff4ec; border-top-color: transparent; }
+.price-card__rows li.is-standard + li { border-top-color: transparent; }
+.price-cards__note { color: #777; font-size: 14px !important; margin-top: 6px !important; }
+@media (max-width: 640px) { .price-cards { grid-template-columns: 1fr; } .price-card { padding: 18px 18px 10px; } .price-card__rows li { margin: 0 -10px !important; padding: 10px; } }
+.price-card__rows li { border-radius: 0; }
+.price-card__rows li.is-standard { border-radius: 12px; }

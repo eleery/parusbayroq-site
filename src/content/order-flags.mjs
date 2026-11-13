@@ -19,7 +19,7 @@ export const orderFlags = {
     sizeCol: 'Размер, см', priceCol: 'Цена, сум', priceNote: 'Скидка 20% уже учтена в ценах.',
     printTitle: 'Печать',
     print: [
-      ['Односторонняя', 'Флажная сетка или полиэфирный шёлк. Изображение видно с двух сторон, с обратной — зеркально и с насыщенностью до 85%.'],
+      ['Односторонняя', 'Флажная сетка или полиэфирный шёлк. Изображение видно с двух сторон, с обратной — зеркально, около 90% рисунка.'],
       ['Двусторонний флаг', 'Три слоя: две отдельно напечатанные стороны и прослойка между ними. Логотип и текст читаются правильно с обеих сторон. Цена полотна — вдвое выше.'],
     ],
     stepsTitle: 'Как заказать',
@@ -53,7 +53,7 @@ export const orderFlags = {
     sizeCol: "O'lcham, sm", priceCol: "Narx, so'm", priceNote: "20% chegirma narxlarga kiritilgan.",
     printTitle: 'Bosma turi',
     print: [
-      ['Bir tomonlama', "Bayroq to'ri yoki poliefir ipak. Tasvir ikki tomondan ko'rinadi, teskari tomonda — ko'zgu aksida va 85% gacha yorqinlikda."],
+      ['Bir tomonlama', "Bayroq to'ri yoki poliefir ipak. Tasvir ikki tomondan ko'rinadi, teskari tomonda — ko'zgu aksida, rasmning taxminan 90% i."],
       ['Ikki tomonlama bayroq', "Uch qatlam: alohida bosilgan ikki tomon va ular orasidagi qatlam. Logotip va matn ikki tomondan to'g'ri o'qiladi. Mato narxi — ikki baravar."],
     ],
     stepsTitle: 'Qanday buyurtma qilish mumkin',

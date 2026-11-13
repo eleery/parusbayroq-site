@@ -1,6 +1,6 @@
 ---
 title: "Toshkentda reklama bayrog'i qancha turadi: 2026-yil"
-description: "Toshkentda parus, pero, rastyajka va klassik bayroq narxlari. Nega arzon bayroq ko'pincha qimmatga tushadi, narxga nima kiradi va dizaynni qanday bepul qilamiz."
+description: "Toshkentda parus va klassik bayroq qancha turadi, nega arzon bayroq ko'pincha qimmatga tushadi, bayroqlarni qanday matodan tikamiz va dizaynni qanday bepul qilamiz."
 date: 2026-11-13
 lang: uz
 pair: price
@@ -8,14 +8,16 @@ cover: parus_vinder.png
 draft: true
 faq:
   - q: "Parus bayroq qancha turadi?"
-    a: "200×60 sm mato uchun ustun va bochka-asos bilan birga 350 000 so'mdan. Ustuningiz bo'lsa, mato 250 000 so'm arzonga tushadi."
+    a: "Standart parus M (280×70 sm) — ustun va bochka-asos bilan birga 450 000 so'm. Ustuningiz bo'lsa, mato 250 000 so'm arzonga tushadi."
+  - q: "Bayroq quyoshda rangini yo'qotmaydimi?"
+    a: "Yo'q. Bosma sublimatsion: bo'yoq mato tolalari ichiga kiradi, shuning uchun quyoshda o'chmaydi, yomg'irda yuvilmaydi va ko'chmaydi. Mato 2–4 yil xizmat qiladi."
   - q: "Tayyor maket kerakmi?"
     a: "Yo'q. Logotip yoki hatto peshlavha rasmini yuboring — dizayner bepul maket tayyorlab, kelishish uchun yuboradi. Faqat sizning roziligingizdan keyin bosamiz."
   - q: "Chegirmalar bormi?"
     a: "Ha, katta buyurtmalarga. Doimiy mijozlarimizni esa sovg'alar bilan xursand qilamiz."
 ---
 
-Qisqasi: klassik bayroq yoki rastyajka bizda 75 000 so'mdan, konstruksiyali parus bayroq esa 350 000 so'mdan turadi. Quyida narx nimalardan iboratligi, bayroqlarda odatda nimada tejashlari va birinchi shamolda yiqiladigan bayroqni qanday sotib olmaslik haqida ochiq gaplashamiz.
+Qisqasi: do'kon va kafelar oldida ko'pincha ko'radigan parus bayroq — bu M o'lcham, 280×70 sm. Bizda u ustun va bochka-asos bilan birga 450 000 so'm turadi. Logotipli klassik bayroq arzonroq. Quyida narx nimalardan iboratligi, bayroqlarda odatda nimada tejashlari va birinchi shamolda yiqiladigan yoki yozda rangini yo'qotadigan bayroqni qanday sotib olmaslik haqida ochiq gaplashamiz.
 
 ## Nega aynan bayroq
 
@@ -25,27 +27,34 @@ Bir marta sotib oldingiz — yillar davomida ishlaydi. Mato 2–4 yil xizmat qil
 
 ## Narxlarimiz
 
-<div data-price-table></div>
+<div data-price-table="parus,flag"></div>
 
-Parus va pero — darhol konstruksiya bilan: ustun va bochka-asos. Ustuningiz bo'lsa, mato 250 000 so'm arzonga tushadi.
+Eng kichik parus — XS — 350 000 so'm, eng ko'zga tashlanadigani — balandligi 3 metrli L — 500 000 so'm. Pero parus bilan bir xil turadi. Klassik bayroqlarni istalgan o'lchamda tikamiz — kerak bo'lsa, bir yarim metrga yuz metr ham: jadvalda ommabop o'lchamlar, cheklov emas.
 
-Klassik bayroqlarni istalgan o'lchamda tikamiz — kerak bo'lsa, bir yarim metrga yuz metr ham. Jadvalda ommabop o'lchamlar, cheklov emas: har bir buyurtmaga alohida yondashamiz.
+Logotip ikki tomondan to'g'ri o'qilishi kerakmi? Ikki tomonlama bayroq tayyorlaymiz: alohida bosilgan ikki tomon va ular orasidagi qatlam.
 
-Logotip ikki tomondan to'g'ri o'qilishi kerakmi? Ikki tomonlama bayroq tayyorlaymiz: alohida bosilgan ikki tomon va ular orasidagi qatlam. Bunday bayroqning matosi ikki baravar qimmat.
+## Mato va bosma: bayrog'imiz nega rangini yo'qotmaydi
+
+Bayroqlarni mahalliy emas, turk bayroq to'ridan tikamiz. Bu ko'cha uchun maxsus mato: yomg'ir va qor unga qo'rqinchli emas, bo'yoq oqmaydi, yomg'irdan keyin mato tez quriydi.
+
+Sublimatsiya usulida bosamiz. Qizdirilganda bo'yoq gazga aylanadi va poliefir tolalari ichiga kiradi, mato sovigach tolalar uni «qulflab» qo'yadi. Bo'yoq matoning bir qismiga aylanadi, ustida plyonka bo'lib yotmaydi — shuning uchun yuvilmaydi, yorilmaydi, ko'chmaydi va quyoshda o'chmaydi.
+
+Bir tomonlama bayroqning old tomonida rasm 100%, teskari tomonida esa taxminan 90% ko'rinadi — ko'zgu aksida, lekin yorqin. Arzon matolarda teskari tomon ko'pincha deyarli oq bo'ladi: oldida logotip, orqasida oqarib ketgan dog'.
 
 ## Nega qayerdadir arzonroq — va buning nimasi yomon
 
-Bizdan arzonroq bayroqni, ehtimol, topasiz: bozorda qayta sotuvchilar ko'p. Lekin narx farqi odatda konstruksiya hisobiga bo'ladi:
+Bizdan arzonroq bayroqni, ehtimol, topasiz: bozorda qayta sotuvchilar ko'p. Lekin narx farqi odatda rasmda ko'rinmaydigan narsalar hisobiga bo'ladi:
 
 - og'ir bochka-asos o'rniga yengil krestovina — va bayroq birinchi kuchli shamolda yiqiladi;
 - oddiy asos o'rniga kirish oldida qum to'ldirilgan qop — butun ko'rinishni buzadi;
-- ingichka ustun egiladi, arzon mato esa bir mavsumda rangini yo'qotadi.
+- arzon mato: oldida rasm yaxshi, orqasida bayroq deyarli oq, bir mavsumda esa rangini yo'qotadi;
+- egiladigan ingichka ustun.
 
-Biz matolarni o'zimiz bosamiz va turk konstruksiyalarini qo'yamiz. Bochkaga suv yoki qum to'ldiriladi, ustun 15 m/s gacha shamolga chidaydi, bayroq to'ri esa yomg'irdan keyin tez quriydi va quyoshda rangini yo'qotmaydi. Boshqa ishlab chiqaruvchilarda narxlar odatda xuddi shunday yoki yuqoriroq — shuning uchun solishtirganda faqat summaga emas, bayroq tagida nima turganiga ham qarang.
+Biz matolarni o'zimiz bosamiz va turk konstruksiyalarini qo'yamiz. Bochkaga suv yoki qum to'ldiriladi, ustun 15 m/s gacha shamolga chidaydi. Boshqa ishlab chiqaruvchilarda narxlar odatda xuddi shunday yoki yuqoriroq — shuning uchun solishtirganda faqat summaga emas, bayroq nimadan qilinganiga va tagida nima turganiga ham qarang.
 
 ## Dizayn — bepul, va bu shunchaki rasmiyatchilik emas
 
-Tayyor maket shart emas. Logotip, peshlavha rasmi yoki hatto Instagramdan skrinshot yuboring — dizaynerimiz undan uzoqdan o'qiladigan bayroq yasaydi. Yo'ldan qaysi matn ko'rinishini va qaysi ranglar quyoshda yo'qolib ketmasligini maslahat beradi. Ba'zan manba juda oddiy bo'ladi — u hatto undan ham ajoyib natija chiqaradi.
+Tayyor maket shart emas. Logotip, peshlavha rasmi yoki hatto Instagramdan skrinshot yuboring — dizaynerimiz undan uzoqdan o'qiladigan bayroq yasaydi. Yo'ldan qaysi matn ko'rinishini va qaysi ranglar eng yorqin ko'rinishini maslahat beradi. Ba'zan manba juda oddiy bo'ladi — u hatto undan ham ajoyib natija chiqaradi.
 
 Maketni kelishish uchun yuboramiz. Siz tasdiqlaysiz — va faqat shundan keyin bosmani boshlaymiz. Dizayn uchun pul olmaymiz.
 
@@ -58,7 +67,7 @@ Maketni kelishish uchun yuboramiz. Siz tasdiqlaysiz — va faqat shundan keyin b
 
 ## Amalda qancha bo'ladi
 
-- Kafe kirish oldiga bitta parus M qo'yadi — **450 000 so'm**, va bayroq har kuni elektrsiz ishlaydi.
+- Kafe kirish oldiga bitta standart parus M qo'yadi — **450 000 so'm**, va bayroq har kuni elektrsiz ishlaydi.
 - Logotip ikki tomondan o'qilishi kerak — ikki tomonlama parus L, **750 000 so'm**.
 - Beshta nuqtadan iborat tarmoq 150×100 klassik bayroqlar buyurtma qiladi — beshtasi uchun **600 000 so'm**.
 - Aksiya o'zgardi — konstruksiyasiz parus M uchun yangi mato, **200 000 so'm**.
