@@ -1,0 +1,90 @@
+name: Deploy to Beget
+
+# Run by hand (Actions → Deploy to Beget → Run workflow) or by pushing a tag:
+#   deploy-check-*  — list hosting folders only
+#   deploy-first-*  — back up, move the current site to OLD-<date>, upload the new one
+#   deploy-update-* — upload the new build over the current site
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: 'check / deploy / update'
+        required: true
+        default: check
+        type: choice
+        options: [check, deploy, update]
+  push:
+    tags: ['deploy-check-*', 'deploy-first-*', 'deploy-update-*']
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      HOST: ${{ secrets.BEGET_FTP_HOST }}
+      USER: ${{ secrets.BEGET_FTP_USER }}
+      PASS: ${{ secrets.BEGET_FTP_PASSWORD }}
+      SITE_DIR: ${{ vars.BEGET_SITE_DIR }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Pick mode
+        id: mode
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then m="${{ inputs.mode }}"
+          else case "$GITHUB_REF_NAME" in deploy-check-*) m=check;; deploy-first-*) m=deploy;; deploy-update-*) m=update;; *) m=check;; esac; fi
+          echo "mode=$m" >> "$GITHUB_OUTPUT"; echo "mode: $m"
+
+      - name: Check secrets
+        run: |
+          for v in HOST USER PASS; do [ -n "${!v}" ] || { echo "Missing secret for $v (BEGET_FTP_HOST / BEGET_FTP_USER / BEGET_FTP_PASSWORD)"; exit 1; }; done
+
+      - name: Install lftp
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq lftp
+
+      - uses: actions/setup-node@v4
+        if: steps.mode.outputs.mode != 'check'
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Build
+        if: steps.mode.outputs.mode != 'check'
+        run: npm ci && npm run build
+
+      - name: Upload to Beget
+        run: bash scripts/deploy-beget.sh "${{ steps.mode.outputs.mode }}" 2>&1 | tee deploy.log
+
+      - name: Keep backup and log for 30 days
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: deploy-${{ github.run_id }}
+          path: |
+            deploy.log
+            backup/
+          retention-days: 30
+          if-no-files-found: ignore
+
+      - name: Save log to the deploy-log branch
+        if: always()
+        run: |
+          git config user.name "deploy-bot"
+          git config user.email "deploy-bot@users.noreply.github.com"
+          name="logs/$(date -u +%Y%m%d-%H%M%S)-${{ steps.mode.outputs.mode }}.log"
+          if git fetch --depth 1 origin deploy-log:deploy-log 2>/dev/null; then
+            git worktree add /tmp/log deploy-log
+          else
+            git worktree add --detach /tmp/log && git -C /tmp/log checkout --orphan deploy-log && git -C /tmp/log rm -rf --quiet . || true
+          fi
+          mkdir -p "/tmp/log/logs"
+          cp deploy.log "/tmp/log/$name" 2>/dev/null || echo "no log" > "/tmp/log/$name"
+          git -C /tmp/log add logs
+          git -C /tmp/log commit -m "deploy log ${{ github.run_id }}"
+          git -C /tmp/log push origin deploy-log

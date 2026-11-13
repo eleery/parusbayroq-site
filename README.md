@@ -40,3 +40,16 @@ npm run build:preview   # результат в dist-preview/
 Та же сборка, но закрыта от поисковиков (`noindex` и `robots.txt` с `Disallow: /`), без Метрики и тега Google Ads, с пометкой «Тестовая копия» в углу.
 Выкладывается на отдельный поддомен, например `test.parusbayroq.uz`, в его собственную папку — не в корень основного сайта.
 Формы на тестовой копии работают, только если рядом скопировать папку `api/` с основного сайта.
+
+## Выкладка на Beget через GitHub Actions
+
+Workflow `.github/workflows/deploy.yml` собирает сайт и загружает `dist/` по FTP.
+Нужны секреты репозитория (Settings → Secrets and variables → Actions): `BEGET_FTP_HOST`, `BEGET_FTP_USER`, `BEGET_FTP_PASSWORD`.
+Папка сайта определяется сама (`public_html` или `parusbayroq.uz/public_html`); иначе задайте переменную `BEGET_SITE_DIR`.
+
+Режимы (Actions → Deploy to Beget → Run workflow, или тег):
+- `check` / тег `deploy-check-*` — только показать папки на хостинге;
+- `deploy` / тег `deploy-first-*` — полная копия в артефакт, текущий сайт переезжает в `OLD-<дата>` рядом с `public_html`, загружается новый;
+- `update` / тег `deploy-update-*` — загрузить новую сборку поверх текущей.
+
+`api/`, `.htaccess`, `.well-known/` и `cgi-bin/` не трогаются. Лог каждой выкладки сохраняется в ветку `deploy-log`.
