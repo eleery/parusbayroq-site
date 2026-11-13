@@ -1,0 +1,176 @@
+mode=deploy site_dir=public_html
+== FTP root
+drwx------    2 1363     601          4096 Oct  1 05:38 /backup_20261001_pre_cachebust/
+drwx------    8 1363     601          4096 Oct  1 05:38 /public_html/
+drwx------    7 1363     601          4096 Jul 17 11:10 /public_html_old/
+drwx------    7 1363     601          4096 Aug  5 11:25 /public_html_spt26/
+== .
+drwx------    2 1363     601          4096 Oct  1 05:38 ./backup_20261001_pre_cachebust/
+drwx------    8 1363     601          4096 Oct  1 05:38 ./public_html/
+drwx------    7 1363     601          4096 Jul 17 11:10 ./public_html_old/
+drwx------    7 1363     601          4096 Aug  5 11:25 ./public_html_spt26/
+== public_html
+-rwx------    1 1363     601           931 Aug  5 11:25 public_html/.htaccess
+drwx------    2 1363     601          4096 Oct  1 04:46 public_html/api/
+drwx------    2 1363     601          4096 Aug  5 11:25 public_html/css/
+drwx------    2 1363     601          4096 Aug  5 11:25 public_html/fold/
+drwx------    2 1363     601          4096 Aug  5 11:25 public_html/fonts/
+drwx------    2 1363     601          4096 Aug  5 11:25 public_html/images/
+-rwx------    1 1363     601         82999 Oct  1 05:38 public_html/index.html
+drwx------    2 1363     601          4096 Oct  1 05:38 public_html/js/
+-rwx------    1 1363     601            67 Aug  5 11:25 public_html/robots.txt
+-rwx------    1 1363     601          2490 Aug  5 11:25 public_html/sitemap.xml
+-rwx------    1 1363     601           161 Aug  5 11:25 public_html/yandex_5786db3cdfd21203.html
+== backup
+backup files: 96
+== moving current site to ./OLD-2026-11-13_0911
+move: css
+move: fonts
+move: images
+move: index.html
+move: js
+move: robots.txt
+move: sitemap.xml
+copied .htaccess to ./OLD-2026-11-13_0911
+== upload
+Transferring file `404.html'
+Transferring file `favicon.ico'
+Transferring file `index.html'
+Transferring file `robots.txt'
+Transferring file `sitemap.xml'
+Making directory `css'
+Making directory `flagi-na-zakaz'
+Making directory `fonts'
+Making directory `images'
+Transferring file `css/style.css'
+Transferring file `fonts/YSDisplay-Bold.woff2'
+Transferring file `images/Logo.svg'
+Transferring file `flagi-na-zakaz/index.html'
+Transferring file `images/apple-touch-icon.png'
+Making directory `img'
+Transferring file `images/favicon-32.png'
+mirror: style.css: Fatal error: max-retries exceeded
+Transferring file `img/akfa.webp'
+Transferring file `img/bannerimage.webp'
+chmod: Access failed: 550 SITE CHMOD command failed. (./style.css)
+Making directory `js'
+Transferring file `img/byd_1.webp'
+Transferring file `images/favicon.svg'
+Transferring file `img/chevrolet_1.webp'
+Transferring file `images/og-image.jpg'
+Transferring file `img/evos.webp'
+Transferring file `js/main.js'
+Transferring file `img/flag_1.webp'
+mirror: YSDisplay-Bold.woff2: Fatal error: max-retries exceeded
+Transferring file `fonts/YSDisplay-Regular.woff2'
+Transferring file `js/telegram.js'
+Transferring file `img/flag_2.webp'
+mirror: og-image.jpg: Fatal error: max-retries exceeded
+Transferring file `img/flag_3.webp'
+Transferring file `img/flag_4.webp'
+Transferring file `img/icon_1.webp'
+chmod: Access failed: 550 SITE CHMOD command failed. (./og-image.jpg)
+Making directory `privacy'
+Transferring file `img/icon_2.webp'
+Making directory `uz'
+mirror: YSDisplay-Regular.woff2: Fatal error: max-retries exceeded
+chmod: Access failed: 550 SITE CHMOD command failed. (./YSDisplay-Bold.woff2)
+Transferring file `img/icon_3.webp'
+chmod: Access failed: 550 SITE CHMOD command failed. (./YSDisplay-Regular.woff2)
+Making directory `video'
+Transferring file `img/icon_4.webp'
+Transferring file `privacy/index.html'
+Transferring file `img/icon_5.webp'
+Transferring file `img/icon_6.webp'
+Transferring file `img/icon_7.webp'
+Transferring file `video/install_video.mp4'
+Transferring file `img/icon_8.webp'
+Transferring file `uz/index.html'
+Transferring file `img/image_2.webp'
+Transferring file `img/image_3.webp'
+Transferring file `img/image_6.webp'
+Making directory `uz/bayroq-buyurtma'
+Transferring file `img/install_thumb_new.webp'
+Transferring file `video/work_1_video.mp4'
+Transferring file `img/install_video-poster.webp'
+Transferring file `video/work_2_video.mp4'
+Transferring file `video/work_3_video.mp4'
+Transferring file `uz/bayroq-buyurtma/index.html'
+Transferring file `img/klassika.webp'
+mirror: image_3.webp: Fatal error: max-retries exceeded
+Transferring file `img/konstruksiya.webp'
+Making directory `uz/privacy'
+Transferring file `video/work_4_video.mp4'
+Transferring file `video/work_5_video.mp4'
+mirror: klassika.webp: Fatal error: max-retries exceeded
+Transferring file `img/lesailes.webp'
+Transferring file `uz/privacy/index.html'
+Transferring file `img/logo-512.png'
+Transferring file `video/work_6_video.mp4'
+Transferring file `img/mannol.webp'
+Transferring file `video/work_7_video.mp4'
+mirror: konstruksiya.webp: Fatal error: max-retries exceeded
+Transferring file `img/maxway.webp'
+Transferring file `img/oqtepa.webp'
+Transferring file `img/parus_vinder.webp'
+Transferring file `img/paynet.webp'
+Transferring file `img/paynet_1.webp'
+Transferring file `img/pero.webp'
+Transferring file `img/rastyajka.webp'
+Transferring file `img/review_10.webp'
+Transferring file `img/review_3.webp'
+Transferring file `img/review_4.webp'
+Transferring file `img/review_5.webp'
+Transferring file `img/review_6.webp'
+mirror: review_6.webp: Fatal error: max-retries exceeded
+Transferring file `img/review_7.webp'
+mirror: review_4.webp: Fatal error: max-retries exceeded
+Transferring file `img/review_8.webp'
+Transferring file `img/review_9.webp'
+mirror: review_3.webp: Fatal error: max-retries exceeded
+Transferring file `img/safia.webp'
+Transferring file `img/seoul.webp'
+Transferring file `img/uzum_1.webp'
+mirror: review_9.webp: Fatal error: max-retries exceeded
+Transferring file `img/uzum_market.webp'
+Transferring file `img/work_1.webp'
+Transferring file `img/work_1_video-poster.webp'
+Transferring file `img/work_2.webp'
+mirror: review_7.webp: Fatal error: max-retries exceeded
+Transferring file `img/work_2_video-poster.webp'
+Transferring file `img/work_3.webp'
+Transferring file `img/work_3_video-poster.webp'
+mirror: review_5.webp: Fatal error: max-retries exceeded
+Transferring file `img/work_4.webp'
+Transferring file `img/work_4_video-poster.webp'
+Transferring file `img/work_5.webp'
+mirror: work_4.webp: Fatal error: max-retries exceeded
+Transferring file `img/work_5_video-poster.webp'
+mirror: work_3_video-poster.webp: Fatal error: max-retries exceeded
+Transferring file `img/work_6.webp'
+Transferring file `img/work_6_video-poster.webp'
+mirror: work_5_video-poster.webp: Fatal error: max-retries exceeded
+Transferring file `img/work_7.webp'
+mirror: work_5.webp: Fatal error: max-retries exceeded
+Transferring file `img/work_7_video-poster.webp'
+mirror: work_4_video-poster.webp: Fatal error: max-retries exceeded
+Transferring file `img/work_8.webp'
+Transferring file `img/yandex_1.webp'
+mirror: work_6_video-poster.webp: Fatal error: max-retries exceeded
+mirror: work_8.webp: Fatal error: max-retries exceeded
+chmod: Access failed: 550 SITE CHMOD command failed. (./image_3.webp)
+chmod: Access failed: 550 SITE CHMOD command failed. (./konstruksiya.webp)
+chmod: Access failed: 550 SITE CHMOD command failed. (./klassika.webp)
+chmod: Access failed: 550 SITE CHMOD command failed. (./review_3.webp)
+chmod: Access failed: 550 SITE CHMOD command failed. (./review_4.webp)
+chmod: Access failed: 550 SITE CHMOD command failed. (./review_5.webp)
+chmod: Access failed: 550 SITE CHMOD command failed. (./review_6.webp)
+chmod: Access failed: 550 SITE CHMOD command failed. (./review_7.webp)
+chmod: Access failed: 550 SITE CHMOD command failed. (./review_9.webp)
+chmod: Access failed: 550 SITE CHMOD command failed. (./work_3_video-poster.webp)
+chmod: Access failed: 550 SITE CHMOD command failed. (./work_4.webp)
+chmod: Access failed: 550 SITE CHMOD command failed. (./work_4_video-poster.webp)
+chmod: Access failed: 550 SITE CHMOD command failed. (./work_5.webp)
+chmod: Access failed: 550 SITE CHMOD command failed. (./work_5_video-poster.webp)
+chmod: Access failed: 550 SITE CHMOD command failed. (./work_6_video-poster.webp)
+chmod: Access failed: 550 SITE CHMOD command failed. (./work_8.webp)
