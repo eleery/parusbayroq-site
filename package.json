@@ -8,7 +8,8 @@
     "build": "astro build",
     "build:preview": "PREVIEW=1 astro build --outDir dist-preview && node scripts/preview-robots.mjs",
     "build:local": "npm run build:preview && node scripts/make-local.mjs",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "blog-images": "node scripts/blog-images.mjs"
   },
   "dependencies": {
     "astro": "^5.18.2",

@@ -2,10 +2,10 @@
 // Shared <head>: meta, hreflang, Open Graph, structured data, analytics (Google Ads tag + Yandex Metrica with goals).
 import { SITE, LANGS, META } from '../lib/site.mjs';
 
-const { lang, title, description, alternates, schema = [], noindex = false, jsDict = null, keywords = null, bodyClass = '' } = Astro.props;
+const { lang, title, description, alternates, schema = [], noindex = false, jsDict = null, keywords = null, bodyClass = '', ogImage: ogCustom = null } = Astro.props;
 const canonical = SITE + alternates[lang];
 const m = META[lang];
-const ogImage = `${SITE}/images/og-image.jpg`;
+const ogImage = ogCustom || `${SITE}/images/og-image.jpg`;
 // Test copy for the owner: not indexed, no analytics, marked on screen.
 const preview = process.env.PREVIEW === '1';
 ---

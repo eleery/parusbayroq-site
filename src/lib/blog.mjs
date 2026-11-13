@@ -1,4 +1,26 @@
 import { getCollection } from 'astro:content';
+import media from '../media-manifest.json';
+import blogImages from '../blog-images.json';
+
+// Cover of an article: either a site image name ("parus_vinder.png") or a blog image path ("/img/blog/<pair>/<name>.webp").
+export function coverOf(data) {
+  if (!data.cover) return null;
+  if (data.cover.startsWith('/img/blog/')) { const m = blogImages[data.cover]; return m ? { src: data.cover, ...m } : null; }
+  return media[`images/${data.cover}`] || null;
+}
+
+// Markdown images become figures with real sizes, lazy loading and a caption from the image title:
+// ![alt](/img/blog/<pair>/<name>.webp "Caption")
+export function figures(html) {
+  return html.replace(/<p>\s*(<img [^>]*>)\s*<\/p>/g, '$1').replace(/<img ([^>]*)>/g, (m, attrs) => {
+    const src = (attrs.match(/src="([^"]+)"/) || [])[1];
+    const meta = src && blogImages[src];
+    if (!meta) return m;
+    const alt = (attrs.match(/alt="([^"]*)"/) || [])[1] || '';
+    const title = (attrs.match(/title="([^"]*)"/) || [])[1];
+    return `<figure class="article__fig"><img src="${src}" alt="${alt}" width="${meta.width}" height="${meta.height}" loading="lazy" decoding="async" />${title ? `<figcaption>${title}</figcaption>` : ''}</figure>`;
+  });
+}
 
 const showDrafts = process.env.PREVIEW === '1';
 export const slugOf = (entry) => entry.id.split('/').pop();

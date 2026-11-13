@@ -1006,3 +1006,9 @@ a.lang-btn { text-decoration: none; display: inline-block; line-height: 1.4; }
 @media (max-width: 640px) { .price-cards { grid-template-columns: 1fr; } .price-card { padding: 18px 18px 10px; } .price-card__rows li { margin: 0 -10px !important; padding: 10px; } }
 .price-card__rows li { border-radius: 0; }
 .price-card__rows li.is-standard { border-radius: 12px; }
+
+/* ===== Images inside articles ===== */
+.article__fig { margin: 24px 0; }
+.article__fig img { display: block; width: 100%; height: auto; border-radius: 18px; background: #f2f2f2; }
+.article__fig figcaption { color: #888; font-size: 14px; line-height: 1.5; margin-top: 8px; text-align: center; }
+.article__cover--photo { max-height: none; height: auto; object-fit: cover; background: none; }

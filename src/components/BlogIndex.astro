@@ -1,9 +1,8 @@
 ---
 import Base from '../layouts/Base.astro';
 import { renderChrome } from '../lib/home.mjs';
-import { getPosts, slugOf, postPath, blogIndex, BLOG_TEXT, fmtDate } from '../lib/blog.mjs';
+import { getPosts, slugOf, postPath, blogIndex, BLOG_TEXT, fmtDate, coverOf } from '../lib/blog.mjs';
 import { SITE, paths } from '../lib/site.mjs';
-import manifest from '../media-manifest.json';
 
 const { lang } = Astro.props;
 const T = BLOG_TEXT[lang];
@@ -28,7 +27,7 @@ const schema = [{ '@context': 'https://schema.org', '@type': 'BreadcrumbList', i
     <section class="page-section">
       <div class="container blog-list">
         {posts.map((p) => {
-          const img = p.data.cover && manifest[`images/${p.data.cover}`];
+          const img = coverOf(p.data);
           return (
             <a class="blog-card" href={postPath(lang, slugOf(p))}>
               {img && <img src={img.src} width={img.width} height={img.height} alt="" loading="lazy" decoding="async" />}
