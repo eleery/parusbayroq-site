@@ -6,12 +6,12 @@
 #            (outside the web root, so it is not public), then uploads dist/;
 #   update — uploads dist/ over the current site (for later releases).
 # Kept in place in every mode: api/ (Telegram form), .htaccess, .well-known/, cgi-bin/,
-# search engine verification files (yandex_*.html, google*.html).
+# search engine verification files (yandex_*.html, google*.html), fold/ (e-mail signature images).
 # Needs env: HOST, USER, PASS; optional SITE_DIR (auto-detected).
 set -euo pipefail
 MODE="${1:-check}"
 STAMP=$(date -u +%Y-%m-%d_%H%M)
-KEEP='^(api|\.htaccess|\.well-known|cgi-bin|yandex_[0-9a-f]+\.html|google[0-9a-z]+\.html|\.|\.\.)$'
+KEEP='^(api|fold|\.htaccess|\.well-known|cgi-bin|yandex_[0-9a-f]+\.html|google[0-9a-z]+\.html|\.|\.\.)$'
 
 # Certificate check is off because Beget's FTP certificate may not match the host name; traffic stays encrypted.
 lf() { lftp -u "$USER,$PASS" -e "set ftp:ssl-allow yes; set ssl:verify-certificate no; set net:max-retries 2; set net:timeout 30; $1; bye" "$HOST" </dev/null; }
