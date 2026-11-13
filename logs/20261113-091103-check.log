@@ -1,0 +1,51 @@
+mode=check site_dir=public_html
+== FTP root
+drwx------    2 1363     601          4096 Oct  1 05:38 /backup_20261001_pre_cachebust/
+drwx------    8 1363     601          4096 Oct  1 05:38 /public_html/
+drwx------    7 1363     601          4096 Jul 17 11:10 /public_html_old/
+drwx------    7 1363     601          4096 Aug  5 11:25 /public_html_spt26/
+== .
+drwx------    2 1363     601          4096 Oct  1 05:38 ./backup_20261001_pre_cachebust/
+drwx------    8 1363     601          4096 Oct  1 05:38 ./public_html/
+drwx------    7 1363     601          4096 Jul 17 11:10 ./public_html_old/
+drwx------    7 1363     601          4096 Aug  5 11:25 ./public_html_spt26/
+== public_html
+-rwx------    1 1363     601           931 Aug  5 11:25 public_html/.htaccess
+drwx------    2 1363     601          4096 Oct  1 04:46 public_html/api/
+drwx------    2 1363     601          4096 Aug  5 11:25 public_html/css/
+drwx------    2 1363     601          4096 Aug  5 11:25 public_html/fold/
+drwx------    2 1363     601          4096 Aug  5 11:25 public_html/fonts/
+drwx------    2 1363     601          4096 Aug  5 11:25 public_html/images/
+-rwx------    1 1363     601         82999 Oct  1 05:38 public_html/index.html
+drwx------    2 1363     601          4096 Oct  1 05:38 public_html/js/
+-rwx------    1 1363     601            67 Aug  5 11:25 public_html/robots.txt
+-rwx------    1 1363     601          2490 Aug  5 11:25 public_html/sitemap.xml
+-rwx------    1 1363     601           161 Aug  5 11:25 public_html/yandex_5786db3cdfd21203.html
+== public_html/.htaccess
+# ===== Каноническая версия сайта: https://parusbayroq.uz/ =====
+RewriteEngine On
+
+# 1) Принудительный HTTPS (http -> https)
+#    Покрывает http://parusbayroq.uz/ и http://www.parusbayroq.uz/
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://parusbayroq.uz%{REQUEST_URI} [L,R=301]
+
+# 2) Убираем www (www -> без www)
+#    Покрывает https://www.parusbayroq.uz/
+RewriteCond %{HTTP_HOST} ^www\.parusbayroq\.uz$ [NC]
+RewriteRule ^ https://parusbayroq.uz%{REQUEST_URI} [L,R=301]
+
+# 3) Главная без слеша -> со слешем (https://parusbayroq.uz -> https://parusbayroq.uz/)
+#    На корне обычно не требуется (сервер сам отдаёт /), правило оставлено как страховка.
+RewriteCond %{HTTP_HOST} ^parusbayroq\.uz$ [NC]
+RewriteCond %{REQUEST_URI} ^$
+RewriteRule ^ https://parusbayroq.uz/ [L,R=301]
+== public_html/api
+-rwx------    1 1363     601          6493 Oct  1 05:53 public_html/api/telegram.php
+== public_html/fold
+-rwx------    1 1363     601           919 Aug  5 11:25 public_html/fold/linkedin.svg
+-rwx------    1 1363     601          1181 Aug  5 11:25 public_html/fold/logo.svg
+-rwx------    1 1363     601         21858 Aug  5 11:25 public_html/fold/signature.png
+-rwx------    1 1363     601         69502 Aug  5 11:25 public_html/fold/signature2.png
+-rwx------    1 1363     601         36071 Aug  5 11:25 public_html/fold/signature22.png
+-rwx------    1 1363     601          2026 Aug  5 11:25 public_html/fold/site.svg
