@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import { renderHome } from '../lib/home.mjs';
 import { META, businessSchema } from '../lib/site.mjs';
+import { calcData } from '../lib/prices.mjs';
 
 const { lang } = Astro.props;
 const m = META[lang];
@@ -13,6 +14,7 @@ const schema = [
 ---
 <Base lang={lang} title={m.title} description={m.description} keywords={m.keywords} alternates={{ ru: '/', uz: '/uz/' }} schema={schema} jsDict={jsDict}>
   <Fragment set:html={html} />
+  <script is:inline set:html={'window.PB_CALC=' + JSON.stringify(calcData()) + ';'} />
   <script is:inline src="/js/telegram.js?v=20261113"></script>
   <script is:inline src="/js/main.js?v=20261113"></script>
   <script is:inline>

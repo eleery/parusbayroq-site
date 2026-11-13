@@ -13,3 +13,24 @@ export const num = (n) => n.toLocaleString('ru-RU').replace(/[  ]/g, ' ');
 export const cur = (lang) => (lang === 'ru' ? 'сум' : "so'm");
 export const minPrice = (key) => Math.min(...PRICES.find((p) => p.key === key).rows.map((r) => r[1]));
 export const maxPrice = (key) => Math.max(...PRICES.find((p) => p.key === key).rows.map((r) => r[1]));
+
+// Calculator rules agreed with the owner (2026-11-13):
+// - sail/feather table prices include the construction (mast + base) = 250 000; canvas = price - 250 000;
+// - double-sided flag (two printed sides + middle layer) = canvas x 2, construction added once;
+// - classic and stretch flags have no construction;
+// - delivery is approximate: sail/feather with construction 25 000 Tashkent / 35 000 regions per item,
+//   anything else 15 000 / 20 000 per order.
+export const CONSTRUCTION = 250000;
+export const DELIVERY = { kit: { tashkent: 25000, regions: 35000 }, flat: { tashkent: 15000, regions: 20000 } };
+export function calcData() {
+  const rows = (key) => PRICES.find((p) => p.key === key).rows.map(([size, price], i) => ({ code: SIZES[i], size, price }));
+  return {
+    discount: DISCOUNT,
+    delivery: DELIVERY,
+    types: {
+      parus: { kit: CONSTRUCTION, sizes: rows('parus') },
+      rastyajka: { kit: 0, sizes: rows('rastyajka') },
+      klassika: { kit: 0, sizes: rows('flag') },
+    },
+  };
+}

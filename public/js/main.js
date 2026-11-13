@@ -208,217 +208,88 @@ if (successClose) successClose.addEventListener('click', closeModal);
   nextBtn.addEventListener('click', () => scrollByCard(1));
 })();
 
-// ===== CALCULATOR =====
-(function() {
+// ===== CALCULATORS =====
+// Both calculators on the homepage share this code. Prices and rules come from window.PB_CALC,
+// generated at build time from src/lib/prices.mjs (one source of truth with the price table).
+(function () {
+  const C = window.PB_CALC;
+  if (!C) return;
+  const num = (n) => Math.round(n).toLocaleString('ru-RU').replace(/[  ]/g, ' ');
+  const money = (n) => num(n) + ' ' + t('js_currency');
 
-  // ---------- DATA ----------
-  const SIZES = {
-    parus: [
-      { key: 'size_parus_small',    price: 100000 },
-      { key: 'size_parus_standard', price: 150000 },
-    ],
-    rastyajka: [
-      { key: 'size_r_s', price: 70000  },
-      { key: 'size_r_m', price: 90000  },
-      { key: 'size_r_l', price: 110000 },
-    ],
-    klassika: [
-      { key: 'size_k_s', price: 88000  },
-      { key: 'size_k_m', price: 100000 },
-      { key: 'size_k_l', price: 200000 },
-    ],
-  };
+  function initCalc(sfx) {
+    const el = (id) => document.getElementById(id + sfx);
+    const selType = el('calc-type'), selSize = el('calc-size'), selPrint = el('calc-print');
+    const selKit = el('calc-kit'), kitField = el('calc-kit-field'), selDelivery = el('calc-delivery');
+    const qtyInput = el('qty-input'), qtyMinus = el('qty-minus'), qtyPlus = el('qty-plus');
+    const elNew = el('price-new'), elOld = el('price-old');
+    if (!selType || !selSize || !elNew) return;
 
-  // ---------- ELEMENTS ----------
-  const selType     = document.getElementById('calc-type');
-  const selSize     = document.getElementById('calc-size');
-  const selPrint    = document.getElementById('calc-print');
-  const selKit      = document.getElementById('calc-kit');
-  const kitField    = document.getElementById('calc-kit-field');
-  const selDelivery = document.getElementById('calc-delivery');
-  const qtyInput    = document.getElementById('qty-input');
-  const qtyMinus    = document.getElementById('qty-minus');
-  const qtyPlus     = document.getElementById('qty-plus');
-  const elPriceNew  = document.getElementById('price-new');
-  const elPriceOld  = document.getElementById('price-old');
+    const qty = () => { const v = parseInt(qtyInput.value, 10); return isNaN(v) || v < 1 ? 1 : v; };
+    const type = () => C.types[selType.value] || C.types.parus;
+    const withKit = () => type().kit > 0 && selKit && selKit.value === 'with';
 
-  if (!selType) return; // calc not on this page
-
-  // ---------- HELPERS ----------
-  function fmt(n) {
-    return Math.round(n).toLocaleString('ru-RU').replace(/\u202f/g, ' ') + ' ' + t('js_currency');
-  }
-
-  function getQty() {
-    const v = parseInt(qtyInput.value);
-    return (isNaN(v) || v < 1) ? 1 : v;
-  }
-
-  // ---------- POPULATE SIZES ----------
-  function populateSizes(type) {
-    selSize.innerHTML = '';
-    (SIZES[type] || []).forEach(s => {
-      const opt = document.createElement('option');
-      opt.value = s.price;
-      opt.textContent = (typeof t === 'function') ? t(s.key) : s.key;
-      selSize.appendChild(opt);
-    });
-  }
-
-  // ---------- UPDATE KIT FIELD ----------
-  function updateKitField(type) {
-    const noKit = (type === 'klassika' || type === 'rastyajka');
-    selKit.disabled = noKit;
-    kitField.classList.toggle('calc-field--disabled', noKit);
-    if (noKit) selKit.value = '0';
-  }
-
-  // ---------- CALCULATE ----------
-  function calculate() {
-    const type     = selType.value;
-    const basePrice = parseFloat(selSize.value) || 0;
-    const printMult = parseFloat(selPrint.value) || 1;
-    const kitCost   = parseFloat(selKit.value) || 0;
-    const delivery  = parseFloat(selDelivery.value) || 0;
-    const qty       = getQty();
-
-    // Flag price per unit (print multiplier applied to flag only)
-    const flagUnit = basePrice * printMult;
-
-    // Kit per unit
-    const kitUnit = kitCost; // 0 or 300 000
-
-    // Unit total
-    const unitTotal = flagUnit + kitUnit;
-
-    // Subtotal before delivery
-    const subtotal = unitTotal * qty;
-
-    // Delivery logic
-    let deliveryTotal = 0;
-    if (delivery > 0) {
-      // Base delivery (flat, once)
-      deliveryTotal += delivery;
-
-      // If kit selected AND parus — add delivery per each kit
-      if (type === 'parus' && kitCost > 0) {
-        deliveryTotal += delivery * qty;
-      }
+    function populateSizes() {
+      selSize.innerHTML = '';
+      type().sizes.forEach((s, i) => {
+        const o = document.createElement('option');
+        o.value = String(i);
+        o.textContent = s.code + ' — ' + s.size + ' ' + t('js_cm');
+        selSize.appendChild(o);
+      });
+      // Classic and stretch flags have no construction: hide the choice completely.
+      if (kitField) kitField.style.display = type().kit > 0 ? '' : 'none';
     }
 
-    const rawTotal = subtotal + deliveryTotal;
-    if (rawTotal <= 0) return;
+    function deliveryLabels() {
+      if (!selDelivery) return;
+      [...selDelivery.options].forEach((o) => {
+        if (o.value === 'none') return;
+        if (!o.dataset.base) o.dataset.base = o.textContent;
+        const amount = withKit() ? C.delivery.kit[o.value] : C.delivery.flat[o.value];
+        o.textContent = o.dataset.base + ' ≈ ' + num(amount) + (withKit() ? ' ' + t('js_per_item') : '');
+      });
+    }
 
-    // Final prices
-    const priceWithDiscount    = rawTotal - 20000;          // цена со скидкой
-    const priceWithoutDiscount = priceWithDiscount * 1.2;   // цена без скидки
+    function deliveryCost() {
+      const d = selDelivery ? selDelivery.value : 'none';
+      if (d === 'none') return 0;
+      return withKit() ? C.delivery.kit[d] * qty() : C.delivery.flat[d];
+    }
 
-    animatePrice(elPriceNew, fmt(priceWithDiscount));
-    animatePrice(elPriceOld, fmt(priceWithoutDiscount));
+    function calculate() {
+      const tp = type();
+      const size = tp.sizes[parseInt(selSize.value, 10)] || tp.sizes[0];
+      const canvas = size.price - tp.kit;                      // table price includes construction for sail/feather
+      const printMult = selPrint && selPrint.value === 'double' ? 2 : 1;
+      const kit = withKit() ? tp.kit : 0;
+      const goods = (canvas * printMult + kit) * qty();
+      const delivery = deliveryCost();
+      const before = Math.round(goods / (1 - C.discount) / 500) * 500;
+      const approx = delivery ? '≈ ' : '';
+      deliveryLabels();
+      animate(elNew, approx + money(goods + delivery));
+      if (elOld) animate(elOld, approx + money(before + delivery));
+    }
+
+    function animate(node, text) {
+      if (node.textContent === text) return;
+      node.classList.add('price-updating');
+      setTimeout(() => { node.textContent = text; node.classList.remove('price-updating'); }, 200);
+    }
+
+    function onType() { populateSizes(); calculate(); }
+
+    if (qtyMinus) qtyMinus.addEventListener('click', () => { if (qty() > 1) { qtyInput.value = qty() - 1; calculate(); } });
+    if (qtyPlus) qtyPlus.addEventListener('click', () => { qtyInput.value = qty() + 1; calculate(); });
+    if (qtyInput) qtyInput.addEventListener('input', () => { if (qtyInput.value !== '' && qtyInput.value < 1) qtyInput.value = 1; calculate(); });
+    selType.addEventListener('change', onType);
+    [selSize, selPrint, selKit, selDelivery].forEach((s) => s && s.addEventListener('change', calculate));
+    onType();
   }
 
-  // ---------- ANIMATE PRICE ----------
-  function animatePrice(el, newText) {
-    if (el.textContent === newText) return;
-    el.classList.add('price-updating');
-    setTimeout(() => {
-      el.textContent = newText;
-      el.classList.remove('price-updating');
-    }, 200);
-  }
-
-  // ---------- ON TYPE CHANGE ----------
-  function onTypeChange() {
-    const type = selType.value;
-    populateSizes(type);
-    updateKitField(type);
-    calculate();
-  }
-
-  // Expose for language switch
-  window.repopulateCalcSizes = onTypeChange;
-
-  // ---------- QTY CONTROLS ----------
-  qtyMinus.addEventListener('click', () => {
-    const v = getQty();
-    if (v > 1) { qtyInput.value = v - 1; calculate(); }
-  });
-  qtyPlus.addEventListener('click', () => {
-    qtyInput.value = getQty() + 1;
-    calculate();
-  });
-  qtyInput.addEventListener('input', () => {
-    if (qtyInput.value < 1 || qtyInput.value === '') qtyInput.value = 1;
-    calculate();
-  });
-
-  // ---------- SELECT LISTENERS ----------
-  selType.addEventListener('change', onTypeChange);
-  selSize.addEventListener('change', calculate);
-  selPrint.addEventListener('change', calculate);
-  selKit.addEventListener('change', calculate);
-  selDelivery.addEventListener('change', calculate);
-
-  // ---------- INIT ----------
-  onTypeChange();
-
-})();
-
-// ===== CALCULATOR #2 (top section) =====
-(function() {
-  const SIZES = {
-    parus:    [{ key:'size_parus_small', price: 100000 }, { key:'size_parus_standard', price: 150000 }],
-    rastyajka:[{ key:'size_r_s', price: 70000 }, { key:'size_r_m', price: 90000 }, { key:'size_r_l', price: 110000 }],
-    klassika: [{ key:'size_k_s', price: 88000 }, { key:'size_k_m', price: 100000 }, { key:'size_k_l', price: 200000 }],
-  };
-  const s = (id) => document.getElementById(id);
-  const selType=s('calc-type2'), selSize=s('calc-size2'), selPrint=s('calc-print2');
-  const selKit=s('calc-kit2'), kitField=s('calc-kit-field2');
-  const selDelivery=s('calc-delivery2'), qtyInput=s('qty-input2');
-  const qtyMinus=s('qty-minus2'), qtyPlus=s('qty-plus2');
-  const elNew=s('price-new2'), elOld=s('price-old2');
-  if (!selType) return;
-  function fmt(n) { return Math.round(n).toLocaleString('ru-RU').replace(/\u202f/g,' ') + ' ' + t('js_currency'); }
-  function getQty() { const v=parseInt(qtyInput.value); return (isNaN(v)||v<1)?1:v; }
-  function populateSizes(type) {
-    selSize.innerHTML='';
-    (SIZES[type]||[]).forEach(s=>{ const o=document.createElement('option'); o.value=s.price; o.textContent=(typeof t==='function'?t(s.key):s.key); selSize.appendChild(o); });
-  }
-  function updateKit(type) {
-    const noKit=(type==='klassika'||type==='rastyajka');
-    selKit.disabled=noKit; kitField.classList.toggle('calc-field--disabled',noKit);
-    if(noKit) selKit.value='0';
-  }
-  function calculate() {
-    const type=selType.value, base=parseFloat(selSize.value)||0;
-    const print=parseFloat(selPrint.value)||1, kit=parseFloat(selKit.value)||0;
-    const delivery=parseFloat(selDelivery.value)||0, qty=getQty();
-    const unit=base*print+kit, subtotal=unit*qty;
-    let delTotal=0;
-    if(delivery>0){ delTotal+=delivery; if(type==='parus'&&kit>0) delTotal+=delivery*qty; }
-    const raw=subtotal+delTotal;
-    if(raw<=0) return;
-    const discounted=raw-20000, original=discounted*1.2;
-    animPrice(elNew,fmt(discounted)); animPrice(elOld,fmt(original));
-  }
-  function animPrice(el,txt) {
-    if(el.textContent===txt) return;
-    el.classList.add('price-updating');
-    setTimeout(()=>{ el.textContent=txt; el.classList.remove('price-updating'); },200);
-  }
-  function onType() { populateSizes(selType.value); updateKit(selType.value); calculate(); }
-  // Chain into global repopulate
-  const _prev = window.repopulateCalcSizes;
-  window.repopulateCalcSizes = function() { if(_prev) _prev(); onType(); };
-  qtyMinus.addEventListener('click',()=>{ if(getQty()>1){qtyInput.value=getQty()-1;calculate();} });
-  qtyPlus.addEventListener('click',()=>{ qtyInput.value=getQty()+1; calculate(); });
-  qtyInput.addEventListener('input',()=>{ if(qtyInput.value<1)qtyInput.value=1; calculate(); });
-  selType.addEventListener('change',onType);
-  selSize.addEventListener('change',calculate);
-  selPrint.addEventListener('change',calculate);
-  selKit.addEventListener('change',calculate);
-  selDelivery.addEventListener('change',calculate);
-  onType();
+  initCalc('');
+  initCalc('2');
 })();
 
 // ===== VIDEO MODAL =====

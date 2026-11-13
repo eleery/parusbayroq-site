@@ -61,7 +61,7 @@ const schema = [
             <thead><tr><th>{c.sizeCol}</th><th>{c.priceCol}</th></tr></thead>
             <tbody>{flagRows.map(([size, price]) => <tr><td><b>{size}</b></td><td><s class="price-ref">{num(refPrice(price))}</s> <b class="price-now">{num(price)}</b></td></tr>)}</tbody>
           </table></div>
-          <p class="price-note"><span class="price-badge">−20%</span><span>{c.priceNote}</span></p>
+          <p class="price-note"><span class="price-note__badge">−20%</span><span>{c.priceNote}</span></p>
           <h2 class="section-title page-mt">{c.printTitle}</h2>
           <div class="page-grid page-grid--2">
             {c.print.map(([h, p]) => <div class="page-card"><h3>{h}</h3><p>{p}</p></div>)}
