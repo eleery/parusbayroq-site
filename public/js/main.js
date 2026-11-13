@@ -266,10 +266,10 @@ if (successClose) successClose.addEventListener('click', closeModal);
       const goods = (canvas * printMult + kit) * qty();
       const delivery = deliveryCost();
       const before = Math.round(goods / (1 - C.discount) / 500) * 500;
-      const approx = delivery ? '≈ ' : '';
       deliveryLabels();
-      animate(elNew, approx + money(goods + delivery));
-      if (elOld) animate(elOld, approx + money(before + delivery));
+      // Totals never carry "≈": only the delivery option shows that the delivery cost is approximate.
+      animate(elNew, money(goods + delivery));
+      if (elOld) animate(elOld, money(before + delivery));
     }
 
     function animate(node, text) {

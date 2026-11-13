@@ -29,13 +29,18 @@ export function renderHome(lang) {
     `<tr><td class="size-table__name">${p.label[lang]}</td>` +
     p.rows.map(([size, price]) => `<td><span class="sz">${size}</span><s class="price-ref">${num(refPrice(price))}</s><b class="price-now">${num(price)}</b></td>`).join('') +
     '</tr>').join(''));
-  $('.size-table-wrap').after(`<p class="price-note"><span class="price-note__badge">−${Math.round(DISCOUNT * 100)}%</span><span>${t.price_note}</span></p><p class="price-any">${t.price_kit}</p><p class="price-any">${t.price_any}</p>`);
+  $('.size-table-wrap').after(`<p class="price-note"><span class="price-note__badge">−${Math.round(DISCOUNT * 100)}%</span><span>${t.price_note}</span></p><p class="price-any">${t.price_any}</p>`);
   // Calculator selects: readable option values; construction first (table prices include it).
   $('select[id^="calc-print"]').each((_, el) => { $(el).find('option').each((i, o) => $(o).attr('value', ['single', 'double'][i])); });
   $('select[id^="calc-delivery"]').each((_, el) => { $(el).find('option').each((i, o) => $(o).attr('value', ['none', 'tashkent', 'regions'][i])); });
+  // Defaults: sail, single-sided, with construction, no delivery (shown as a dash), quantity 1.
+  $('select[id^="calc-delivery"]').each((_, el) => { $(el).find('option').first().text('—').attr('selected', 'selected').removeAttr('data-i18n-opt'); });
+  $('select[id^="calc-print"]').each((_, el) => { $(el).find('option').first().attr('selected', 'selected'); });
+  $('select[id^="calc-type"]').each((_, el) => { $(el).find('option[value="parus"]').attr('selected', 'selected'); });
+  $('select[id^="calc-"], input[id^="qty-input"]').attr('autocomplete', 'off');
   $('select[id^="calc-kit"]').each((_, el) => {
     const opts = $(el).find('option');
-    opts.eq(0).attr('value', 'without'); opts.eq(1).attr('value', 'with');
+    opts.eq(0).attr('value', 'without'); opts.eq(1).attr('value', 'with').attr('selected', 'selected');
     $(el).prepend(opts.eq(1));
   });
 
