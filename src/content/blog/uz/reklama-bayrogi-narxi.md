@@ -1,63 +1,72 @@
 ---
-title: "Toshkentda reklama bayrog'i qancha turadi: 2026-yil narxlari"
-description: "Toshkentda parus, pero, klassik bayroq va rastyajka narxlari: 75 000 so'mdan 500 000 so'mgacha. Narxga nimalar ta'sir qiladi va hisob-kitob misollari."
+title: "Toshkentda reklama bayrog'i qancha turadi: 2026-yil"
+description: "Toshkentda parus, pero, rastyajka va klassik bayroq narxlari. Nega arzon bayroq ko'pincha qimmatga tushadi, narxga nima kiradi va dizaynni qanday bepul qilamiz."
 date: 2026-11-13
 lang: uz
 pair: price
 cover: parus_vinder.png
 draft: true
 faq:
-  - q: "Konstruksiyali parus bayroq qancha turadi?"
-    a: "200×60 sm mato uchun 350 000 so'mdan 300×70 sm uchun 500 000 so'mgacha. Narxga mato bosmasi, ustun va asos kiradi."
-  - q: "Parus uchun faqat matoni sotib olsa bo'ladimi?"
-    a: "Ha. Konstruksiyasiz mato komplektdan 250 000 so'm arzon — 100 000 so'mdan."
-  - q: "Yetkazib berish qancha turadi?"
-    a: "Taxminan: konstruksiyali parus yoki pero — Toshkent bo'ylab 25 000 so'm, viloyatlarga 35 000 so'm (dona uchun), bayroq yoki rastyajka — buyurtma uchun 15 000 va 20 000 so'm atrofida."
+  - q: "Parus bayroq qancha turadi?"
+    a: "200×60 sm mato uchun ustun va bochka-asos bilan birga 350 000 so'mdan. Ustuningiz bo'lsa, mato 250 000 so'm arzonga tushadi."
+  - q: "Tayyor maket kerakmi?"
+    a: "Yo'q. Logotip yoki hatto peshlavha rasmini yuboring — dizayner bepul maket tayyorlab, kelishish uchun yuboradi. Faqat sizning roziligingizdan keyin bosamiz."
+  - q: "Chegirmalar bormi?"
+    a: "Ha, katta buyurtmalarga. Doimiy mijozlarimizni esa sovg'alar bilan xursand qilamiz."
 ---
 
-Toshkentda reklama bayrog'i kichik klassik bayroq yoki rastyajka uchun 75 000 so'mdan, 300×70 sm matoli konstruksiyali parus bayroq uchun 500 000 so'mgacha turadi. Quyida Parus Bayroqning narxlari va yakuniy summa nimalardan iboratligi.
+Qisqasi: klassik bayroq yoki rastyajka bizda 75 000 so'mdan, konstruksiyali parus bayroq esa 350 000 so'mdan turadi. Quyida narx nimalardan iboratligi, bayroqlarda odatda nimada tejashlari va birinchi shamolda yiqiladigan bayroqni qanday sotib olmaslik haqida ochiq gaplashamiz.
 
-## Reklama bayroqlari narxlari
+## Nega aynan bayroq
+
+Parus bayroq — tashqi reklamaning eng arzon va ayni paytda eng ko'zga tashlanadigan turlaridan biri. U shamolda harakatlanadi va o'tkinchining ko'zi o'zi unga tushadi — qimirlamaydigan peshlavha buni qila olmaydi. Elektr kerak emas, bir-ikki daqiqada o'rnatiladi, nuqta ko'chsa — bayroqni o'zingiz bilan olib ketasiz.
+
+Bir marta sotib oldingiz — yillar davomida ishlaydi. Mato 2–4 yil xizmat qiladi, konstruksiyadan esa keyin ham foydalanish mumkin: yangi aksiya uchun matoni almashtirdingiz — va yana ishga tayyor.
+
+## Narxlarimiz
 
 <div data-price-table></div>
 
-Parus va pero narxi konstruksiya — ustun va asos bilan birga ko'rsatilgan. Klassik bayroq va rastyajka konstruksiyasiz sotiladi: ularga u kerak emas.
+Parus va pero — darhol konstruksiya bilan: ustun va bochka-asos. Ustuningiz bo'lsa, mato 250 000 so'm arzonga tushadi.
 
-## Narxga nimalar ta'sir qiladi
+Klassik bayroqlarni istalgan o'lchamda tikamiz — kerak bo'lsa, bir yarim metrga yuz metr ham. Jadvalda ommabop o'lchamlar, cheklov emas: har bir buyurtmaga alohida yondashamiz.
 
-### Shakl va o'lcham
+Logotip ikki tomondan to'g'ri o'qilishi kerakmi? Ikki tomonlama bayroq tayyorlaymiz: alohida bosilgan ikki tomon va ular orasidagi qatlam. Bunday bayroqning matosi ikki baravar qimmat.
 
-Mato qanchalik katta bo'lsa, bayroq shunchalik qimmat. Parus va pero bir xil turadi: 200×60 sm uchun 350 000 so'mdan 300×70 sm uchun 500 000 so'mgacha. Klassik bayroq — 100×70 sm uchun 75 000 so'mdan 300×150 sm uchun 280 000 so'mgacha, rastyajka — 75 000 so'mdan 180 000 so'mgacha.
+## Nega qayerdadir arzonroq — va buning nimasi yomon
 
-Klassik bayroqni istalgan o'lchamda tayyorlash mumkin: bitta matoning eni 1,5 m gacha, uzunligi 100 m gacha, katta bayroqlarni esa bir nechta matodan tikamiz.
+Bizdan arzonroq bayroqni, ehtimol, topasiz: bozorda qayta sotuvchilar ko'p. Lekin narx farqi odatda konstruksiya hisobiga bo'ladi:
 
-### Konstruksiya
+- og'ir bochka-asos o'rniga yengil krestovina — va bayroq birinchi kuchli shamolda yiqiladi;
+- oddiy asos o'rniga kirish oldida qum to'ldirilgan qop — butun ko'rinishni buzadi;
+- ingichka ustun egiladi, arzon mato esa bir mavsumda rangini yo'qotadi.
 
-Parus yoki pero uchun ustun va asos 250 000 so'm turadi. Konstruksiyangiz bo'lsa, faqat matoni buyurtma qilishingiz mumkin — u komplektdan 250 000 so'm arzon.
+Biz matolarni o'zimiz bosamiz va turk konstruksiyalarini qo'yamiz. Bochkaga suv yoki qum to'ldiriladi, ustun 15 m/s gacha shamolga chidaydi, bayroq to'ri esa yomg'irdan keyin tez quriydi va quyoshda rangini yo'qotmaydi. Boshqa ishlab chiqaruvchilarda narxlar odatda xuddi shunday yoki yuqoriroq — shuning uchun solishtirganda faqat summaga emas, bayroq tagida nima turganiga ham qarang.
 
-### Bir tomonlama yoki ikki tomonlama bayroq
+## Dizayn — bepul, va bu shunchaki rasmiyatchilik emas
 
-Bir tomonlama bayroq ikki tomondan ko'rinadi, lekin teskari tomonda tasvir ko'zgu aksida. Ikki tomonlama bayroq uch qatlamdan tikiladi: alohida bosilgan ikki tomon va ular orasidagi qatlam. Shuning uchun mato ikki baravar qimmat, konstruksiya narxi esa o'zgarmaydi.
+Tayyor maket shart emas. Logotip, peshlavha rasmi yoki hatto Instagramdan skrinshot yuboring — dizaynerimiz undan uzoqdan o'qiladigan bayroq yasaydi. Yo'ldan qaysi matn ko'rinishini va qaysi ranglar quyoshda yo'qolib ketmasligini maslahat beradi. Ba'zan manba juda oddiy bo'ladi — u hatto undan ham ajoyib natija chiqaradi.
 
-### Miqdor va dizayn
+Maketni kelishish uchun yuboramiz. Siz tasdiqlaysiz — va faqat shundan keyin bosmani boshlaymiz. Dizayn uchun pul olmaymiz.
 
-Bayroqlarni bir donadan tayyorlaymiz. Maket dizayni bepul: dizayner uni logotipingiz asosida tayyorlab, bosmadan oldin kelishish uchun yuboradi.
+## Summaga yana nimalar ta'sir qiladi
 
-### Yetkazib berish
+- **Miqdor.** Hatto bitta bayroq buyurtma qilish mumkin, katta buyurtmalarga esa chegirma qilamiz — yozing, hisoblab beramiz.
+- **Shoshilinchlik.** Odatda 3 kunda tayyorlaymiz, juda shoshilinch bo'lsa — 2 soatdan.
+- **Yetkazib berish.** Toshkent bo'ylab bir kun ichida olib boramiz, viloyatlarga 1–3 kunda jo'natamiz. Taxminan 15–35 ming so'm, yuk va shaharga qarab.
+- **Sovg'alar.** Doimiy mijozlarimizni yoqimli sovg'alar bilan xursand qilamiz. Qanday — bu sir bo'lib qolsin.
 
-Toshkent bo'ylab kuryer orqali bir kun ichida yetkazamiz, viloyatlarga transport kompaniyasi orqali 1–3 kunda jo'natamiz. Taxminan: konstruksiyali parus yoki pero — Toshkent bo'ylab 25 000 so'm, viloyatlarga 35 000 so'm (dona uchun), bayroq yoki rastyajka — buyurtma uchun 15 000 va 20 000 so'm atrofida.
+## Amalda qancha bo'ladi
 
-## Hisob-kitob misollari
+- Kafe kirish oldiga bitta parus M qo'yadi — **450 000 so'm**, va bayroq har kuni elektrsiz ishlaydi.
+- Logotip ikki tomondan o'qilishi kerak — ikki tomonlama parus L, **750 000 so'm**.
+- Beshta nuqtadan iborat tarmoq 150×100 klassik bayroqlar buyurtma qiladi — beshtasi uchun **600 000 so'm**.
+- Aksiya o'zgardi — konstruksiyasiz parus M uchun yangi mato, **200 000 so'm**.
 
-| Vazifa | Nima buyurtma qilish kerak | Narxi |
-| --- | --- | --- |
-| Kafe: kirish oldida bayroq | Parus M 280×70, bir tomonlama, konstruksiya bilan | 450 000 so'm |
-| Logotip ikki tomondan o'qilishi kerak | Parus L 300×70, ikki tomonlama, konstruksiya bilan | 750 000 so'm |
-| Rangi o'chgan matoni almashtirish | Konstruksiyasiz parus M matosi | 200 000 so'm |
-| Beshta filial uchun bayroqlar | 5 ta klassik bayroq 150×100 | 600 000 so'm |
+## Faqat bayroqlar emas
 
-Tayyorlash muddati — 3 kun, shoshilinch buyurtma — 2 soatdan.
+Bayroqlardan tashqari promo-tekstil ham tayyorlaymiz. Ochilish yoki aksiyaga tayyorlanayotgan bo'lsangiz, vazifani aytib bering — yana nima kerak bo'lishini tanlab beramiz.
 
-## Aniq narxni qanday bilish mumkin
+## Qanday buyurtma qilish mumkin
 
-[Bosh sahifadagi kalkulyatorda](/uz/#price) shakl, o'lcham va bosma turini tanlang — u darhol narxni ko'rsatadi. Istalgan o'lchamdagi klassik bayroqlar — [«Buyurtma bayroqlar»](/uz/bayroq-buyurtma/) sahifasida. Yoki Telegramda menejerga yozing: 10 daqiqa ichida javob beramiz.
+Quyidagi shaklda ariza qoldiring yoki Telegramda menejerga yozing. 10 daqiqa ichida javob beramiz, vazifangizga mos narxni hisoblaymiz va maket tayyorlaymiz. Istalgan variant narxini [bosh sahifadagi kalkulyatorda](/uz/#price) o'zingiz ham taxminlashingiz mumkin.

@@ -23,7 +23,10 @@ export const BLOG_TEXT = {
     h1: 'Блог о рекламных флагах', lead: 'Цены, размеры, печать, установка — простыми словами и с цифрами.',
     home: 'Главная', blog: 'Блог', read: 'Читать →', published: 'Опубликовано', updated: 'обновлено',
     ctaTitle: 'Рассчитать флаг для вашего бизнеса', ctaText: 'Калькулятор сразу покажет цену, а менеджер ответит в течение 10 минут.',
-    ctaCalc: 'Открыть калькулятор', ctaTg: 'Написать в Telegram', related: 'Ещё статьи', faq: 'Вопросы и ответы', draft: 'Черновик — на сайте не опубликовано',
+    ctaCalc: 'Открыть калькулятор', ctaTg: 'Написать в Telegram',
+    formTitle: 'Заказать флаг', formText: 'Оставьте имя и телефон — ответим в течение 10 минут, посчитаем цену и бесплатно подготовим макет.',
+    formName: 'Ваше имя', formComment: 'Что нужно: тип флага, размер, количество', formSubmit: 'Отправить заявку →',
+    formOk: 'Спасибо! Заявка отправлена — мы свяжемся с вами в течение 10 минут.', formOr: 'Или напишите менеджеру в Telegram →', formSource: 'Заявка из статьи', related: 'Ещё статьи', faq: 'Вопросы и ответы', draft: 'Черновик — на сайте не опубликовано',
     months: ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'],
   },
   uz: {
@@ -32,7 +35,10 @@ export const BLOG_TEXT = {
     h1: 'Reklama bayroqlari haqida blog', lead: "Narxlar, o'lchamlar, bosma, o'rnatish — oddiy so'zlar va raqamlar bilan.",
     home: 'Bosh sahifa', blog: 'Blog', read: "O'qish →", published: 'Chop etilgan', updated: 'yangilangan',
     ctaTitle: 'Biznesingiz uchun bayroqni hisoblang', ctaText: "Kalkulyator narxni darhol ko'rsatadi, menejer esa 10 daqiqa ichida javob beradi.",
-    ctaCalc: 'Kalkulyatorni ochish', ctaTg: 'Telegramda yozish', related: 'Boshqa maqolalar', faq: 'Savol va javoblar', draft: "Qoralama — saytda chop etilmagan",
+    ctaCalc: 'Kalkulyatorni ochish', ctaTg: 'Telegramda yozish',
+    formTitle: 'Bayroq buyurtma qilish', formText: "Ismingiz va telefoningizni qoldiring — 10 daqiqa ichida javob beramiz, narxni hisoblaymiz va maketni bepul tayyorlaymiz.",
+    formName: 'Ismingiz', formComment: "Nima kerak: bayroq turi, o'lcham, miqdor", formSubmit: 'Arizani yuborish →',
+    formOk: "Rahmat! Ariza yuborildi — 10 daqiqa ichida siz bilan bog'lanamiz.", formOr: 'Yoki Telegramda menejerga yozing →', formSource: 'Maqoladan ariza', related: 'Boshqa maqolalar', faq: 'Savol va javoblar', draft: "Qoralama — saytda chop etilmagan",
     months: ['yanvar', 'fevral', 'mart', 'aprel', 'may', 'iyun', 'iyul', 'avgust', 'sentabr', 'oktabr', 'noyabr', 'dekabr'],
   },
 };

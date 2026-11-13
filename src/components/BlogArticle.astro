@@ -52,13 +52,17 @@ const schema = [
             </div>
           </section>
         )}
-        <aside class="article-cta">
-          <h2>{T.ctaTitle}</h2>
-          <p>{T.ctaText}</p>
-          <div class="article-cta__btns">
-            <a class="btn btn--orange btn--lg" href={home + '#price'}>{T.ctaCalc}</a>
-            <a class="btn btn--tg btn--lg" href={CONTACTS.manager} target="_blank" rel="noopener">{T.ctaTg}</a>
-          </div>
+        <aside class="article-order" id="order">
+          <h2>{T.formTitle}</h2>
+          <p>{T.formText}</p>
+          <form class="article-order__form" novalidate data-source={`${T.formSource}: ${d.title}`}>
+            <input type="text" name="pb_name" class="article-order__input" placeholder={T.formName} autocomplete="name" required />
+            <input type="tel" name="pb_phone" class="article-order__input" placeholder="+998 __ ___ __ __" autocomplete="tel" required />
+            <textarea name="pb_comment" class="article-order__input article-order__textarea" placeholder={T.formComment}></textarea>
+            <button type="submit" class="btn btn--orange btn--lg">{T.formSubmit}</button>
+          </form>
+          <p class="article-order__ok" hidden>{T.formOk}</p>
+          <p class="article-order__alt"><a href={CONTACTS.manager} target="_blank" rel="noopener">{T.formOr}</a></p>
         </aside>
         {related.length > 0 && (
           <section class="article__related">
@@ -76,4 +80,27 @@ const schema = [
   <Fragment set:html={tg} />
   <script is:inline src="/js/telegram.js?v=20261113"></script>
   <script is:inline src="/js/main.js?v=20261113b"></script>
+  <script is:inline>
+    // Order form at the end of every article: sends to the same Telegram endpoint as the site forms.
+    document.querySelectorAll('.article-order__form').forEach(function (f) {
+      f.querySelectorAll('input').forEach(function (i) { i.addEventListener('input', function () { i.style.borderColor = ''; }); });
+      f.addEventListener('submit', async function (e) {
+        e.preventDefault();
+        var name = f.elements.pb_name, phone = f.elements.pb_phone, comment = f.elements.pb_comment;
+        var okName = name.value.trim().length > 0, okPhone = phone.value.replace(/\D/g, '').length >= 12;
+        name.style.borderColor = okName ? '' : '#f97316';
+        phone.style.borderColor = okPhone ? '' : '#f97316';
+        if (!okName || !okPhone) return;
+        var btn = f.querySelector('button'), label = btn.textContent, sent = false;
+        btn.disabled = true; btn.textContent = t('js_sending');
+        try { sent = await submitModalForm({ title: f.dataset.source, name: name.value.trim(), phone: phone.value.trim(), comment: comment.value.trim() }); } catch (err) {}
+        btn.disabled = false; btn.textContent = label;
+        if (sent) {
+          f.hidden = true;
+          f.parentNode.querySelector('.article-order__ok').hidden = false;
+          if (typeof gtag_report_conversion === 'function') gtag_report_conversion();
+        } else { alert(t('js_send_error')); }
+      });
+    });
+  </script>
 </Base>
