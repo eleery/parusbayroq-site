@@ -6,6 +6,7 @@ import strings from '../i18n/strings.json' with { type: 'json' };
 import manifest from '../media-manifest.json' with { type: 'json' };
 import { overrides, alts } from '../i18n/overrides.mjs';
 import { SITE, CONTACTS, paths } from './site.mjs';
+import { PRICES, DISCOUNT, refPrice, num } from './prices.mjs';
 
 
 export function dict(lang) {
@@ -22,15 +23,13 @@ export function renderHome(lang) {
 
   // Second calculator gets its own heading (there were two identical H2).
   $('#order h2').first().attr('data-i18n', 'calc2_title');
-  // Size table: header cell translated, stretch-flag sizes corrected by the owner.
+  // Size table with the owner's sizes and prices (crossed-out = average price at other companies).
   $('.size-table thead th').first().attr('data-i18n', 'size_table_product');
-  const r = $('td[data-i18n="size_table_rastyajka"]').parent();
-  r.find('td').slice(1).each((i, el) => $(el).text(['120x48', '160x60', '180x72', '220x150'][i]));
-  // Classic flag: any size (canvas width up to 1.5 m, length up to 100 m).
-  const k = $('td[data-i18n="size_table_flag"]').parent();
-  k.find('td').first().attr('data-i18n', 'size_table_klassika');
-  k.find('td').slice(2).remove();
-  k.find('td').eq(1).attr('colspan', '4').attr('data-i18n', 'size_table_klassika_any');
+  $('.size-table tbody').html(PRICES.map((p) =>
+    `<tr><td class="size-table__name">${p.label[lang]}</td>` +
+    p.rows.map(([size, price]) => `<td><span class="sz">${size}</span><s class="price-ref">${num(refPrice(price))}</s><b class="price-now">${num(price)}</b></td>`).join('') +
+    '</tr>').join(''));
+  $('.size-table-wrap').after(`<p class="price-note"><span class="price-badge">−${Math.round(DISCOUNT * 100)}%</span><span>${t.price_note}</span></p><p class="price-any">${t.price_any}</p>`);
 
   // Text
   $('[data-i18n]').each((_, el) => { const k = $(el).attr('data-i18n'); if (t[k] != null) $(el).html(t[k]); $(el).removeAttr('data-i18n'); });

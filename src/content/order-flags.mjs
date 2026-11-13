@@ -5,7 +5,7 @@ export const orderFlags = {
     title: 'Флаги на заказ с логотипом в Ташкенте — любой размер | Parus Bayroq',
     description: 'Флаги на заказ с логотипом любого размера: корпоративные, фасадные, для мероприятий. Полноцветная печать, бесплатный дизайн, 3 дня, доставка по Узбекистану.',
     crumbHome: 'Главная', h1: 'Флаги на заказ с логотипом',
-    lead: 'Печатаем флаги с логотипом компании любого размера: полотно шириной до 1,5 м и длиной до 100 м, а большие флаги сшиваем из нескольких полотен. Дизайн бесплатно, изготовление за 3 дня, срочно — от 2 часов.',
+    lead: 'Печатаем флаги с логотипом компании любого размера: полотно шириной до 1,5 м и длиной до 100 м, а большие флаги сшиваем из нескольких полотен. Цены от 75 000 сум, дизайн бесплатно, изготовление за 3 дня, срочно — от 2 часов.',
     cta: 'Рассчитать стоимость →', tg: 'Написать в Telegram',
     usesTitle: 'Для чего заказывают',
     uses: [
@@ -14,9 +14,9 @@ export const orderFlags = {
       ['Флаги для мероприятий', 'Открытие, выставка, спортивное событие, презентация: флаги в фирменных цветах.'],
       ['Флаги для сети точек', 'Одинаковые флаги для всех филиалов: магазины, кафе, аптеки, автосервисы.'],
     ],
-    sizesTitle: 'Размеры',
-    sizes: 'Стандартные размеры — 70×100, 150×100 и 150×225 см. Ширина одного полотна до 1,5 м, длина до 100 м. Нужен другой размер — напишите, рассчитаем.',
-    sizeChips: ['70×100 см', '150×100 см', '150×225 см', 'Любой другой'],
+    sizesTitle: 'Размеры и цены',
+    sizes: 'Готовые размеры и цены — в таблице. Ширина одного полотна до 1,5 м, длина до 100 м, поэтому сделаем и любой другой размер — напишите, рассчитаем.',
+    sizeCol: 'Размер, см', priceCol: 'Цена, сум', priceNote: 'Зачёркнута средняя цена у других компаний: мы производитель, поэтому дешевле на 20%.',
     printTitle: 'Печать',
     print: [
       ['Односторонняя', 'Флажная сетка или полиэфирный шёлк. Изображение видно с двух сторон, с обратной — зеркально и с насыщенностью до 85%.'],
@@ -39,7 +39,7 @@ export const orderFlags = {
     title: "Buyurtma asosida logotipli bayroqlar Toshkentda | Parus Bayroq",
     description: "Istalgan o'lchamdagi logotipli bayroqlar: korporativ, fasad va tadbirlar uchun. To'liq rangli bosma, bepul dizayn, 3 kun, O'zbekiston bo'ylab yetkazib berish.",
     crumbHome: 'Bosh sahifa', h1: 'Buyurtma asosida logotipli bayroqlar',
-    lead: "Kompaniya logotipi tushirilgan istalgan o'lchamdagi bayroqlarni chop etamiz: eni 1,5 m gacha va uzunligi 100 m gacha bo'lgan mato, katta bayroqlarni esa bir nechta matodan tikamiz. Dizayn bepul, tayyorlash 3 kun, shoshilinch — 2 soatdan.",
+    lead: "Kompaniya logotipi tushirilgan istalgan o'lchamdagi bayroqlarni chop etamiz: eni 1,5 m gacha va uzunligi 100 m gacha bo'lgan mato, katta bayroqlarni esa bir nechta matodan tikamiz. Narxlar 75 000 so'mdan, dizayn bepul, tayyorlash 3 kun, shoshilinch — 2 soatdan.",
     cta: 'Narxini hisoblash →', tg: 'Telegramda yozish',
     usesTitle: 'Nima uchun buyurtma qilishadi',
     uses: [
@@ -48,9 +48,9 @@ export const orderFlags = {
       ['Tadbirlar uchun bayroqlar', "Ochilish, ko'rgazma, sport tadbiri, taqdimot: korporativ ranglardagi bayroqlar."],
       ["Filiallar tarmog'i uchun bayroqlar", "Barcha filiallar uchun bir xil bayroqlar: do'konlar, kafelar, dorixonalar, avtoservislar."],
     ],
-    sizesTitle: "O'lchamlar",
-    sizes: "Standart o'lchamlar — 70×100, 150×100 va 150×225 sm. Bitta matoning eni 1,5 m gacha, uzunligi 100 m gacha. Boshqa o'lcham kerak bo'lsa — yozing, hisoblab beramiz.",
-    sizeChips: ['70×100 sm', '150×100 sm', '150×225 sm', 'Istalgan boshqa'],
+    sizesTitle: "O'lchamlar va narxlar",
+    sizes: "Tayyor o'lchamlar va narxlar — jadvalda. Bitta matoning eni 1,5 m gacha, uzunligi 100 m gacha, shuning uchun istalgan boshqa o'lchamni ham tayyorlaymiz — yozing, hisoblab beramiz.",
+    sizeCol: "O'lcham, sm", priceCol: "Narx, so'm", priceNote: "Boshqa kompaniyalardagi o'rtacha narx chizib qo'yilgan: biz ishlab chiqaruvchimiz, shuning uchun 20% arzonroq.",
     printTitle: 'Bosma turi',
     print: [
       ['Bir tomonlama', "Bayroq to'ri yoki poliefir ipak. Tasvir ikki tomondan ko'rinadi, teskari tomonda — ko'zgu aksida va 85% gacha yorqinlikda."],

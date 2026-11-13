@@ -6,6 +6,8 @@ const { lang, title, description, alternates, schema = [], noindex = false, jsDi
 const canonical = SITE + alternates[lang];
 const m = META[lang];
 const ogImage = `${SITE}/images/og-image.jpg`;
+// Test copy for the owner: not indexed, no analytics, marked on screen.
+const preview = process.env.PREVIEW === '1';
 ---
 <!DOCTYPE html>
 <html lang={lang}>
@@ -15,7 +17,7 @@ const ogImage = `${SITE}/images/og-image.jpg`;
   <title>{title}</title>
   <meta name="description" content={description} />
   {keywords && <meta name="keywords" content={keywords} />}
-  <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
+  <meta name="robots" content={preview ? 'noindex, nofollow' : noindex ? 'noindex, follow' : 'index, follow'} />
   {!noindex && <link rel="canonical" href={canonical} />}
   {!noindex && LANGS.map((l) => alternates[l] && <link rel="alternate" hreflang={l} href={SITE + alternates[l]} />)}
   {!noindex && alternates.ru && <link rel="alternate" hreflang="x-default" href={SITE + alternates.ru} />}
@@ -45,6 +47,10 @@ const ogImage = `${SITE}/images/og-image.jpg`;
 
   {schema.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
 
+  {preview ? (
+    <script is:inline set:html={'function gtag(){} function pbGoal(){} function gtag_report_conversion(){ return false; }'} />
+  ) : (
+    <Fragment>
   <!-- Google tag (Google Ads) -->
   <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-18375986450"></script>
   <script is:inline>
@@ -79,9 +85,12 @@ const ogImage = `${SITE}/images/og-image.jpg`;
     ym(109805664, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
   </script>
   <noscript><div><img src="https://mc.yandex.ru/watch/109805664" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    </Fragment>
+  )}
   {jsDict && <script is:inline set:html={`var currentLang=${JSON.stringify(lang)};var TRANSLATIONS={};TRANSLATIONS[currentLang]=${JSON.stringify(jsDict)};function t(k){return (TRANSLATIONS[currentLang]||{})[k]||k;}`} />}
 </head>
 <body class={bodyClass}>
   <slot />
+  {preview && <div style="position:fixed;left:12px;bottom:12px;z-index:9999;background:#111920;color:#fff;font:600 12px/1 sans-serif;padding:8px 12px;border-radius:50px;opacity:.85">Тестовая копия · Test</div>}
 </body>
 </html>

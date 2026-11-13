@@ -910,3 +910,15 @@ a.lang-btn { text-decoration: none; display: inline-block; line-height: 1.4; }
   .page-hero__cta .btn { width: 100%; }
 }
 .seo__inner p a { color: #F97316; text-decoration: none; font-weight: 600; }
+
+/* ===== Prices ===== */
+.size-table__name { font-weight: 700; }
+.size-table td .sz { display: block; font-weight: 600; }
+.size-table .price-ref { display: block; color: #a3a3a3; font-size: 12px; text-decoration: line-through; }
+.size-table .price-now { display: block; color: var(--orange, #F97316); font-weight: 700; white-space: nowrap; }
+.price-table { max-width: 460px; }
+.price-table td .price-ref, .price-table td .price-now { display: inline; margin-right: 8px; }
+.price-note { display: flex; gap: 10px; align-items: flex-start; margin-top: 12px; font-size: 13px; line-height: 1.5; color: #666; }
+.price-badge { background: #F97316; color: #fff; border-radius: 50px; padding: 2px 9px; font-weight: 700; font-size: 12px; flex-shrink: 0; }
+.price-any { margin-top: 6px; font-size: 13px; color: #666; }
+@media (max-width: 560px) { .size-table td .sz { font-size: 11.5px; } .size-table .price-now { font-size: 12.5px; } }

@@ -6,6 +6,7 @@
     "media": "node scripts/build-media.mjs",
     "dev": "astro dev",
     "build": "astro build",
+    "build:preview": "PREVIEW=1 astro build --outDir dist-preview && node scripts/preview-robots.mjs",
     "preview": "astro preview"
   },
   "dependencies": {
