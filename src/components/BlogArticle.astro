@@ -1,6 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
-import { renderChrome } from '../lib/home.mjs';
+import { renderChrome, dict } from '../lib/home.mjs';
 import { getPosts, slugOf, postPath, blogIndex, alternatesOf, BLOG_TEXT, fmtDate } from '../lib/blog.mjs';
 import { SITE, CONTACTS, paths } from '../lib/site.mjs';
 import { priceCardsHtml } from '../lib/prices.mjs';
@@ -19,7 +19,31 @@ const { header, footer, modal, tg, jsDict } = renderChrome(lang, alternates, { b
 const home = paths(lang).home;
 const cover = d.cover && manifest[`images/${d.cover}`];
 // Non-breaking spaces inside sums ("350 000 сум") so they never split across lines.
-const html = (entry.rendered?.html || '').replace(/(\d) (?=\d{3}\b)/g, '$1\u00a0').replace(/(\d) (сум|so'm)/g, '$1\u00a0$2').replace(/<div data-price-table(?:="([a-z,]*)")?\s*><\/div>/g, (m, keys) => priceCardsHtml(lang, keys ? keys.split(',') : undefined));
+// Order form: the same fields as the popup on the homepage, but open. The article puts it with
+// <div data-order-form></div> (in the "How to order" section); without the marker it goes after the text.
+const D = dict(lang);
+const esc = (v) => String(v).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+const orderForm = `<div class="order-inline" id="order">
+  <div class="order-inline__body">
+    <p class="order-inline__title">${esc(T.formTitle)}</p>
+    <p class="order-inline__sub">${esc(D.modal_default_sub)}</p>
+    <form class="order-inline__form" novalidate data-source="${esc(`${T.formSource}: ${d.title}`)}">
+      <div class="modal__field"><label class="modal__label" for="of-name">${esc(D.modal_name_label)}</label><input id="of-name" type="text" name="pb_name" class="modal__input" placeholder="${esc(T.formName)}" autocomplete="name" required /></div>
+      <div class="modal__field"><label class="modal__label" for="of-phone">${esc(D.modal_phone_label)}</label><input id="of-phone" type="tel" name="pb_phone" class="modal__input" placeholder="+998 __ ___ __ __" autocomplete="tel" required /></div>
+      <div class="modal__field order-inline__wide"><label class="modal__label" for="of-comment">${esc(D.modal_comment_label)}</label><textarea id="of-comment" name="pb_comment" class="modal__input modal__textarea" placeholder="${esc(T.formComment)}"></textarea></div>
+      <button type="submit" class="btn btn--orange modal__submit order-inline__wide">${esc(T.formSubmit)}</button>
+    </form>
+    <p class="order-inline__alt"><a href="${CONTACTS.manager}" target="_blank" rel="noopener">${esc(T.formOr)}</a></p>
+  </div>
+  <div class="order-inline__ok" hidden>
+    <div class="order-inline__ok-icon">✅</div>
+    <p class="order-inline__title">${esc(D.modal_success_title)}</p>
+    <p class="order-inline__sub">${esc(D.modal_success_sub)}</p>
+  </div>
+</div>`;
+let html = (entry.rendered?.html || '').replace(/(\d) (?=\d{3}\b)/g, '$1\u00a0').replace(/(\d) (сум|so'm)/g, '$1\u00a0$2').replace(/<div data-price-table(?:="([a-z,]*)")?\s*><\/div>/g, (m, keys) => priceCardsHtml(lang, keys ? keys.split(',') : undefined));
+const formMarker = /<div data-order-form(?:="")?\s*><\/div>/;
+html = formMarker.test(html) ? html.replace(formMarker, orderForm) : html + orderForm;
 const schema = [
   { '@context': 'https://schema.org', '@type': 'Article', headline: d.title, description: d.description, inLanguage: lang,
     datePublished: d.date.toISOString().slice(0, 10), dateModified: (d.updated || d.date).toISOString().slice(0, 10),
@@ -52,18 +76,6 @@ const schema = [
             </div>
           </section>
         )}
-        <aside class="article-order" id="order">
-          <h2>{T.formTitle}</h2>
-          <p>{T.formText}</p>
-          <form class="article-order__form" novalidate data-source={`${T.formSource}: ${d.title}`}>
-            <input type="text" name="pb_name" class="article-order__input" placeholder={T.formName} autocomplete="name" required />
-            <input type="tel" name="pb_phone" class="article-order__input" placeholder="+998 __ ___ __ __" autocomplete="tel" required />
-            <textarea name="pb_comment" class="article-order__input article-order__textarea" placeholder={T.formComment}></textarea>
-            <button type="submit" class="btn btn--orange btn--lg">{T.formSubmit}</button>
-          </form>
-          <p class="article-order__ok" hidden>{T.formOk}</p>
-          <p class="article-order__alt"><a href={CONTACTS.manager} target="_blank" rel="noopener">{T.formOr}</a></p>
-        </aside>
         {related.length > 0 && (
           <section class="article__related">
             <h2>{T.related}</h2>
@@ -81,8 +93,8 @@ const schema = [
   <script is:inline src="/js/telegram.js?v=20261113"></script>
   <script is:inline src="/js/main.js?v=20261113b"></script>
   <script is:inline>
-    // Order form at the end of every article: sends to the same Telegram endpoint as the site forms.
-    document.querySelectorAll('.article-order__form').forEach(function (f) {
+    // Open order form inside the article: sends to the same Telegram endpoint as the popup on the homepage.
+    document.querySelectorAll('.order-inline__form').forEach(function (f) {
       f.querySelectorAll('input').forEach(function (i) { i.addEventListener('input', function () { i.style.borderColor = ''; }); });
       f.addEventListener('submit', async function (e) {
         e.preventDefault();
@@ -96,8 +108,9 @@ const schema = [
         try { sent = await submitModalForm({ title: f.dataset.source, name: name.value.trim(), phone: phone.value.trim(), comment: comment.value.trim() }); } catch (err) {}
         btn.disabled = false; btn.textContent = label;
         if (sent) {
-          f.hidden = true;
-          f.parentNode.querySelector('.article-order__ok').hidden = false;
+          var box = f.closest('.order-inline');
+          box.querySelector('.order-inline__body').hidden = true;
+          box.querySelector('.order-inline__ok').hidden = false;
           if (typeof gtag_report_conversion === 'function') gtag_report_conversion();
         } else { alert(t('js_send_error')); }
       });

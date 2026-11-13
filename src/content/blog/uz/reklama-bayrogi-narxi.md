@@ -79,3 +79,5 @@ Bayroqlardan tashqari promo-tekstil ham tayyorlaymiz. Ochilish yoki aksiyaga tay
 ## Qanday buyurtma qilish mumkin
 
 Quyidagi shaklda ariza qoldiring yoki Telegramda menejerga yozing. 10 daqiqa ichida javob beramiz, vazifangizga mos narxni hisoblaymiz va maket tayyorlaymiz. Istalgan variant narxini [bosh sahifadagi kalkulyatorda](/uz/#price) o'zingiz ham taxminlashingiz mumkin.
+
+<div data-order-form></div>

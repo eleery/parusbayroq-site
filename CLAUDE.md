@@ -6,6 +6,6 @@
 - Факты о компании, цены и правила текстов — `content-plan/knowledge.md`. Ничего не придумывать сверх этого файла; если факта нет — спросить владельца.
 - Цены — только в `src/lib/prices.mjs` (из него строятся таблицы, калькулятор и разметка).
 - Блог: `src/content/blog/{ru,uz}/*.md`, общий `pair` связывает версии. Новая статья всегда `draft: true` до одобрения. Очередь тем — `content-plan/topics.md`.
-- Внизу каждой статьи — форма заказа (шаблон `src/components/BlogArticle.astro`).
+- В каждой статье — открытая форма заказа в разделе «Как заказать»: метка `<div data-order-form></div>` в markdown (шаблон `src/components/BlogArticle.astro`; без метки форма встаёт после текста).
 - Проверка: `npm run build` (живой сайт) и `npm run build:local` (копия с черновиками, открывается с диска).
 - Выкладка на Beget: push в ветку `deploy-update` (см. README). `api/`, `fold/`, `.htaccess` и `yandex_*.html` на хостинге не трогать.
