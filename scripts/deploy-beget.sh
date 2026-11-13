@@ -69,7 +69,8 @@ fi
 
 echo "== check live site"
 sleep 5
-curl -fsS https://parusbayroq.uz/ | grep -q 'Ташкенте | Parus Bayroq' && echo "OK: new homepage is live"
+home=$(curl -fsS https://parusbayroq.uz/)
+if printf '%s' "$home" | grep -q 'Ташкенте | Parus Bayroq'; then echo "OK: new homepage is live"; else echo "WARNING: homepage title not found"; fi
 curl -fsS -o /dev/null -w 'uz: %{http_code}\n' https://parusbayroq.uz/uz/
 curl -fsS -o /dev/null -w 'flagi-na-zakaz: %{http_code}\n' https://parusbayroq.uz/flagi-na-zakaz/
 curl -sS -o /dev/null -w 'api/telegram.php (405 expected for GET): %{http_code}\n' https://parusbayroq.uz/api/telegram.php
