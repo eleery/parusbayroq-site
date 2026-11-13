@@ -1,0 +1,53 @@
+---
+import Base from '../layouts/Base.astro';
+import { CONTACTS, META, paths } from '../lib/site.mjs';
+const { lang } = Astro.props;
+const p = paths(lang);
+const ru = lang === 'ru';
+const title = ru ? 'Политика конфиденциальности | Parus Bayroq' : 'Maxfiylik siyosati | Parus Bayroq';
+const description = ru ? 'Какие данные собирает сайт parusbayroq.uz, зачем и как их удалить.' : "parusbayroq.uz sayti qanday ma'lumotlarni to'playdi, nima uchun va ularni qanday o'chirish mumkin.";
+const addr = `${META[lang].city}, ${META[lang].street}`;
+---
+<Base lang={lang} title={title} description={description} alternates={{ ru: '/privacy/', uz: '/uz/privacy/' }}>
+  <header class="simple-header"><div class="container">
+    <a href={p.home} class="logo"><img src="/images/Logo.svg" alt="Parus Bayroq" width="24" height="24" class="logo__icon" /> <span><strong>Parus</strong> <span class="logo-accent">Bayroq</span></span></a>
+    <a href={p.home}>{ru ? '← На главную' : '← Bosh sahifa'}</a>
+  </div></header>
+  <main class="legal-page"><div class="container">
+    {ru ? (
+      <Fragment>
+        <h1>Политика конфиденциальности</h1>
+        <p class="muted">Действует с 13 ноября 2026 года</p>
+        <h2>Кто обрабатывает данные</h2>
+        <p>Parus Bayroq, {addr}, телефон <a href={`tel:${CONTACTS.phone}`}>{CONTACTS.phoneText}</a>.</p>
+        <h2>Какие данные мы получаем</h2>
+        <p>Только то, что вы сами указываете в формах на сайте: имя, номер телефона, комментарий и параметры заказа из калькулятора.</p>
+        <h2>Зачем</h2>
+        <p>Чтобы связаться с вами, рассчитать стоимость, подготовить макет и выполнить заказ. Рассылок по этим данным мы не делаем.</p>
+        <h2>Где хранятся заявки</h2>
+        <p>Заявка с сайта приходит нашему менеджеру в Telegram. Третьим лицам мы её не передаём, кроме службы доставки, если она нужна для вашего заказа.</p>
+        <h2>Аналитика и cookie</h2>
+        <p>Сайт использует Яндекс Метрику (включая запись действий на странице) и теги Google. Они собирают обезличенные данные о посещениях с помощью cookie. Отключить cookie можно в настройках браузера.</p>
+        <h2>Как удалить данные</h2>
+        <p>Позвоните по номеру <a href={`tel:${CONTACTS.phone}`}>{CONTACTS.phoneText}</a> или напишите в <a href={CONTACTS.manager}>Telegram</a> — удалим вашу заявку.</p>
+      </Fragment>
+    ) : (
+      <Fragment>
+        <h1>Maxfiylik siyosati</h1>
+        <p class="muted">2026-yil 13-noyabrdan amal qiladi</p>
+        <h2>Ma'lumotlarga kim ishlov beradi</h2>
+        <p>Parus Bayroq, {addr}, telefon <a href={`tel:${CONTACTS.phone}`}>{CONTACTS.phoneText}</a>.</p>
+        <h2>Qanday ma'lumotlarni olamiz</h2>
+        <p>Faqat saytdagi shakllarda o'zingiz ko'rsatgan ma'lumotlar: ism, telefon raqami, izoh va kalkulyatordagi buyurtma parametrlari.</p>
+        <h2>Nima uchun</h2>
+        <p>Siz bilan bog'lanish, narxni hisoblash, maket tayyorlash va buyurtmani bajarish uchun. Bu ma'lumotlar bo'yicha xabarnomalar yubormaymiz.</p>
+        <h2>Arizalar qayerda saqlanadi</h2>
+        <p>Saytdan kelgan ariza menejerimizga Telegram orqali keladi. Uni uchinchi shaxslarga bermaymiz, buyurtmangiz uchun kerak bo'lsa, faqat yetkazib berish xizmatiga.</p>
+        <h2>Analitika va cookie</h2>
+        <p>Sayt Yandeks Metrika (sahifadagi harakatlarni yozib olish bilan) va Google teglaridan foydalanadi. Ular cookie yordamida tashriflar haqida shaxsiylashtirilmagan ma'lumotlarni to'playdi. Cookie'ni brauzer sozlamalarida o'chirish mumkin.</p>
+        <h2>Ma'lumotlarni qanday o'chirish mumkin</h2>
+        <p><a href={`tel:${CONTACTS.phone}`}>{CONTACTS.phoneText}</a> raqamiga qo'ng'iroq qiling yoki <a href={CONTACTS.manager}>Telegram</a>da yozing — arizangizni o'chiramiz.</p>
+      </Fragment>
+    )}
+  </div></main>
+</Base>

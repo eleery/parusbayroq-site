@@ -1,0 +1,7 @@
+node_modules/
+dist/
+.astro/
+deliver/
+preview/
+# Original videos are large; the source files are on the hosting in /images/
+media-src/video/

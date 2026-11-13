@@ -1,0 +1,402 @@
+{
+ "images/akfa.png": {
+  "src": "/img/akfa.webp",
+  "width": 360,
+  "height": 77,
+  "bytes": 4506,
+  "origBytes": 14932
+ },
+ "images/bannerimage.png": {
+  "src": "/img/bannerimage.webp",
+  "width": 1000,
+  "height": 926,
+  "bytes": 133022,
+  "origBytes": 351139
+ },
+ "images/byd_1.png": {
+  "src": "/img/byd_1.webp",
+  "width": 113,
+  "height": 349,
+  "bytes": 5994,
+  "origBytes": 37935
+ },
+ "images/chevrolet_1.png": {
+  "src": "/img/chevrolet_1.webp",
+  "width": 113,
+  "height": 349,
+  "bytes": 5126,
+  "origBytes": 28305
+ },
+ "images/evos.png": {
+  "src": "/img/evos.webp",
+  "width": 360,
+  "height": 105,
+  "bytes": 11430,
+  "origBytes": 10429
+ },
+ "images/flag_1.png": {
+  "src": "/img/flag_1.webp",
+  "width": 321,
+  "height": 930,
+  "bytes": 30154,
+  "origBytes": 199730
+ },
+ "images/flag_2.png": {
+  "src": "/img/flag_2.webp",
+  "width": 91,
+  "height": 265,
+  "bytes": 6910,
+  "origBytes": 26873
+ },
+ "images/flag_3.png": {
+  "src": "/img/flag_3.webp",
+  "width": 321,
+  "height": 930,
+  "bytes": 30154,
+  "origBytes": 199730
+ },
+ "images/flag_4.png": {
+  "src": "/img/flag_4.webp",
+  "width": 321,
+  "height": 930,
+  "bytes": 30008,
+  "origBytes": 201345
+ },
+ "images/icon_1.png": {
+  "src": "/img/icon_1.webp",
+  "width": 80,
+  "height": 80,
+  "bytes": 2540,
+  "origBytes": 4679
+ },
+ "images/icon_2.png": {
+  "src": "/img/icon_2.webp",
+  "width": 80,
+  "height": 80,
+  "bytes": 1904,
+  "origBytes": 3332
+ },
+ "images/icon_3.png": {
+  "src": "/img/icon_3.webp",
+  "width": 80,
+  "height": 80,
+  "bytes": 1892,
+  "origBytes": 2954
+ },
+ "images/icon_4.png": {
+  "src": "/img/icon_4.webp",
+  "width": 80,
+  "height": 80,
+  "bytes": 1244,
+  "origBytes": 1860
+ },
+ "images/icon_5.png": {
+  "src": "/img/icon_5.webp",
+  "width": 80,
+  "height": 80,
+  "bytes": 1098,
+  "origBytes": 1863
+ },
+ "images/icon_6.png": {
+  "src": "/img/icon_6.webp",
+  "width": 80,
+  "height": 80,
+  "bytes": 1458,
+  "origBytes": 2442
+ },
+ "images/icon_7.png": {
+  "src": "/img/icon_7.webp",
+  "width": 80,
+  "height": 80,
+  "bytes": 2034,
+  "origBytes": 4054
+ },
+ "images/icon_8.png": {
+  "src": "/img/icon_8.webp",
+  "width": 80,
+  "height": 80,
+  "bytes": 1652,
+  "origBytes": 2221
+ },
+ "images/image_2.png": {
+  "src": "/img/image_2.webp",
+  "width": 1600,
+  "height": 260,
+  "bytes": 31192,
+  "origBytes": 310736
+ },
+ "images/image_3.png": {
+  "src": "/img/image_3.webp",
+  "width": 1200,
+  "height": 721,
+  "bytes": 47306,
+  "origBytes": 446206
+ },
+ "images/image_6.png": {
+  "src": "/img/image_6.webp",
+  "width": 477,
+  "height": 438,
+  "bytes": 25996,
+  "origBytes": 259962
+ },
+ "images/install_thumb_new.png": {
+  "src": "/img/install_thumb_new.webp",
+  "width": 628,
+  "height": 412,
+  "bytes": 12612,
+  "origBytes": 30387
+ },
+ "images/klassika.png": {
+  "src": "/img/klassika.webp",
+  "width": 559,
+  "height": 335,
+  "bytes": 61708,
+  "origBytes": 327831
+ },
+ "images/konstruksiya.png": {
+  "src": "/img/konstruksiya.webp",
+  "width": 1000,
+  "height": 1333,
+  "bytes": 44216,
+  "origBytes": 1518682
+ },
+ "images/lesailes.png": {
+  "src": "/img/lesailes.webp",
+  "width": 360,
+  "height": 360,
+  "bytes": 6882,
+  "origBytes": 37750
+ },
+ "images/mannol.png": {
+  "src": "/img/mannol.webp",
+  "width": 360,
+  "height": 51,
+  "bytes": 7450,
+  "origBytes": 27369
+ },
+ "images/maxway.jpg": {
+  "src": "/img/maxway.webp",
+  "width": 120,
+  "height": 120,
+  "bytes": 1474,
+  "origBytes": 52564
+ },
+ "images/oqtepa.png": {
+  "src": "/img/oqtepa.webp",
+  "width": 360,
+  "height": 128,
+  "bytes": 15874,
+  "origBytes": 25680
+ },
+ "images/parus_vinder.png": {
+  "src": "/img/parus_vinder.webp",
+  "width": 321,
+  "height": 930,
+  "bytes": 30154,
+  "origBytes": 199730
+ },
+ "images/paynet.png": {
+  "src": "/img/paynet.webp",
+  "width": 360,
+  "height": 83,
+  "bytes": 8306,
+  "origBytes": 16585
+ },
+ "images/paynet_1.png": {
+  "src": "/img/paynet_1.webp",
+  "width": 113,
+  "height": 350,
+  "bytes": 4804,
+  "origBytes": 23370
+ },
+ "images/pero.png": {
+  "src": "/img/pero.webp",
+  "width": 321,
+  "height": 930,
+  "bytes": 32854,
+  "origBytes": 206709
+ },
+ "images/rastyajka.png": {
+  "src": "/img/rastyajka.webp",
+  "width": 700,
+  "height": 790,
+  "bytes": 31590,
+  "origBytes": 195966
+ },
+ "images/review_10.jpg": {
+  "src": "/img/review_10.webp",
+  "width": 560,
+  "height": 996,
+  "bytes": 26790,
+  "origBytes": 73916
+ },
+ "images/review_3.jpg": {
+  "src": "/img/review_3.webp",
+  "width": 560,
+  "height": 1244,
+  "bytes": 50508,
+  "origBytes": 103406
+ },
+ "images/review_4.jpg": {
+  "src": "/img/review_4.webp",
+  "width": 560,
+  "height": 1196,
+  "bytes": 51872,
+  "origBytes": 677357
+ },
+ "images/review_5.jpg": {
+  "src": "/img/review_5.webp",
+  "width": 560,
+  "height": 1196,
+  "bytes": 51168,
+  "origBytes": 563713
+ },
+ "images/review_6.jpg": {
+  "src": "/img/review_6.webp",
+  "width": 560,
+  "height": 1244,
+  "bytes": 50074,
+  "origBytes": 108076
+ },
+ "images/review_7.jpg": {
+  "src": "/img/review_7.webp",
+  "width": 560,
+  "height": 1244,
+  "bytes": 51212,
+  "origBytes": 105353
+ },
+ "images/review_8.jpg": {
+  "src": "/img/review_8.webp",
+  "width": 385,
+  "height": 627,
+  "bytes": 31760,
+  "origBytes": 48509
+ },
+ "images/review_9.jpg": {
+  "src": "/img/review_9.webp",
+  "width": 560,
+  "height": 1196,
+  "bytes": 45702,
+  "origBytes": 580142
+ },
+ "images/safia.jpg": {
+  "src": "/img/safia.webp",
+  "width": 120,
+  "height": 120,
+  "bytes": 2124,
+  "origBytes": 170634
+ },
+ "images/seoul.png": {
+  "src": "/img/seoul.webp",
+  "width": 360,
+  "height": 360,
+  "bytes": 12526,
+  "origBytes": 62255
+ },
+ "images/uzum_1.png": {
+  "src": "/img/uzum_1.webp",
+  "width": 113,
+  "height": 350,
+  "bytes": 6050,
+  "origBytes": 24801
+ },
+ "images/uzum_market.png": {
+  "src": "/img/uzum_market.webp",
+  "width": 360,
+  "height": 118,
+  "bytes": 11420,
+  "origBytes": 30402
+ },
+ "images/work_1.jpg": {
+  "src": "/img/work_1.webp",
+  "width": 640,
+  "height": 853,
+  "bytes": 100318,
+  "origBytes": 208991
+ },
+ "images/work_2.jpg": {
+  "src": "/img/work_2.webp",
+  "width": 640,
+  "height": 853,
+  "bytes": 89166,
+  "origBytes": 203907
+ },
+ "images/work_3.jpg": {
+  "src": "/img/work_3.webp",
+  "width": 640,
+  "height": 806,
+  "bytes": 83722,
+  "origBytes": 211316
+ },
+ "images/work_4.jpg": {
+  "src": "/img/work_4.webp",
+  "width": 640,
+  "height": 1138,
+  "bytes": 43936,
+  "origBytes": 83858
+ },
+ "images/work_5.jpg": {
+  "src": "/img/work_5.webp",
+  "width": 640,
+  "height": 853,
+  "bytes": 47696,
+  "origBytes": 133998
+ },
+ "images/work_6.jpg": {
+  "src": "/img/work_6.webp",
+  "width": 640,
+  "height": 853,
+  "bytes": 101764,
+  "origBytes": 204832
+ },
+ "images/work_7.jpg": {
+  "src": "/img/work_7.webp",
+  "width": 640,
+  "height": 850,
+  "bytes": 89400,
+  "origBytes": 215200
+ },
+ "images/work_8.jpg": {
+  "src": "/img/work_8.webp",
+  "width": 640,
+  "height": 288,
+  "bytes": 41226,
+  "origBytes": 152729
+ },
+ "images/yandex_1.png": {
+  "src": "/img/yandex_1.webp",
+  "width": 113,
+  "height": 350,
+  "bytes": 6234,
+  "origBytes": 23683
+ },
+ "images/Logo.svg": {
+  "src": "/images/Logo.svg",
+  "width": 24,
+  "height": 24
+ },
+ "images/install_video.mp4": {
+  "src": "/video/install_video.mp4"
+ },
+ "images/work_1_video.mp4": {
+  "src": "/video/work_1_video.mp4"
+ },
+ "images/work_2_video.mp4": {
+  "src": "/video/work_2_video.mp4"
+ },
+ "images/work_3_video.mp4": {
+  "src": "/video/work_3_video.mp4"
+ },
+ "images/work_4_video.mp4": {
+  "src": "/video/work_4_video.mp4"
+ },
+ "images/work_5_video.mp4": {
+  "src": "/video/work_5_video.mp4"
+ },
+ "images/work_6_video.mp4": {
+  "src": "/video/work_6_video.mp4"
+ },
+ "images/work_7_video.mp4": {
+  "src": "/video/work_7_video.mp4"
+ }
+}

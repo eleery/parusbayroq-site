@@ -1,0 +1,87 @@
+---
+// Shared <head>: meta, hreflang, Open Graph, structured data, analytics (Google Ads tag + Yandex Metrica with goals).
+import { SITE, LANGS, META } from '../lib/site.mjs';
+
+const { lang, title, description, alternates, schema = [], noindex = false, jsDict = null, keywords = null, bodyClass = '' } = Astro.props;
+const canonical = SITE + alternates[lang];
+const m = META[lang];
+const ogImage = `${SITE}/images/og-image.jpg`;
+---
+<!DOCTYPE html>
+<html lang={lang}>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  {keywords && <meta name="keywords" content={keywords} />}
+  <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow'} />
+  {!noindex && <link rel="canonical" href={canonical} />}
+  {!noindex && LANGS.map((l) => alternates[l] && <link rel="alternate" hreflang={l} href={SITE + alternates[l]} />)}
+  {!noindex && alternates.ru && <link rel="alternate" hreflang="x-default" href={SITE + alternates.ru} />}
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content={canonical} />
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:image" content={ogImage} />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Parus Bayroq" />
+  <meta property="og:locale" content={m.locale} />
+  {LANGS.filter((l) => l !== lang).map((l) => <meta property="og:locale:alternate" content={META[l].locale} />)}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  <meta name="twitter:image" content={ogImage} />
+
+  <meta name="theme-color" content="#F97316" />
+  <link rel="icon" href="/favicon.ico" sizes="32x32" />
+  <link rel="icon" type="image/svg+xml" href="/images/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png" />
+  <link rel="preload" href="/fonts/YSDisplay-Regular.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="/fonts/YSDisplay-Bold.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="/css/style.css?v=20261113" />
+
+  {schema.map((s) => <script type="application/ld+json" set:html={JSON.stringify(s)} />)}
+
+  <!-- Google tag (Google Ads) -->
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=AW-18375986450"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-18375986450');
+    function pbGoal(name){ try { if (typeof ym === 'function') ym(109805664, 'reachGoal', name); } catch (e) {} }
+    // Called by main.js after a form is sent successfully.
+    function gtag_report_conversion(url) {
+      pbGoal('lead');
+      var callback = function () { if (typeof(url) != 'undefined') { window.location = url; } };
+      gtag('event', 'conversion', { 'send_to': 'AW-18375986450/DUXgCIfawt0cEJKarbpE', 'value': 1.0, 'currency': 'USD', 'event_callback': callback });
+      return false;
+    }
+    document.addEventListener('click', function (e) {
+      var a = e.target.closest && e.target.closest('a[href]'); if (!a) return;
+      var h = a.getAttribute('href');
+      if (h.indexOf('tel:') === 0) pbGoal('phone_click');
+      else if (h.indexOf('t.me/') > -1) pbGoal('telegram_click');
+      else if (h.indexOf('instagram.com') > -1) pbGoal('instagram_click');
+    });
+  </script>
+  <!-- Yandex.Metrika counter -->
+  <script is:inline>
+    (function(m,e,t,r,i,k,a){
+      m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+      m[i].l=1*new Date();
+      for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+      k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)
+    })(window, document,'script','https://mc.yandex.ru/metrika/tag.js?id=109805664', 'ym');
+    ym(109805664, 'init', {ssr:true, webvisor:true, clickmap:true, ecommerce:"dataLayer", referrer: document.referrer, url: location.href, accurateTrackBounce:true, trackLinks:true});
+  </script>
+  <noscript><div><img src="https://mc.yandex.ru/watch/109805664" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+  {jsDict && <script is:inline set:html={`var currentLang=${JSON.stringify(lang)};var TRANSLATIONS={};TRANSLATIONS[currentLang]=${JSON.stringify(jsDict)};function t(k){return (TRANSLATIONS[currentLang]||{})[k]||k;}`} />}
+</head>
+<body class={bodyClass}>
+  <slot />
+</body>
+</html>

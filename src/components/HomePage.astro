@@ -1,0 +1,22 @@
+---
+import Base from '../layouts/Base.astro';
+import { renderHome } from '../lib/home.mjs';
+import { META, businessSchema } from '../lib/site.mjs';
+
+const { lang } = Astro.props;
+const m = META[lang];
+const { html, faq, jsDict } = renderHome(lang);
+const schema = [
+  businessSchema(lang, m.description),
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+];
+---
+<Base lang={lang} title={m.title} description={m.description} keywords={m.keywords} alternates={{ ru: '/', uz: '/uz/' }} schema={schema} jsDict={jsDict}>
+  <Fragment set:html={html} />
+  <script is:inline src="/js/telegram.js?v=20261113"></script>
+  <script is:inline src="/js/main.js?v=20261113"></script>
+  <script is:inline>
+    // Old site switched language by button; keep #lang links working if bookmarked.
+    try { localStorage.removeItem('lang'); } catch (e) {}
+  </script>
+</Base>

@@ -1,0 +1,811 @@
+
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="#" class="logo">
+        <img src="images/Logo.svg" alt="logo" class="logo__icon" />
+        <span><strong>Parus</strong> <span class="logo-accent">Bayroq</span></span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#types" class="nav__link" data-i18n="nav_types">Виды флагов</a>
+        <a href="#about" class="nav__link" data-i18n="nav_about">О Компании</a>
+        <a href="#price" class="nav__link" data-i18n="nav_price">Стоимость</a>
+        <a href="#promo" class="nav__link" data-i18n="nav_promo">Акции</a>
+        <a href="#delivery" class="nav__link" data-i18n="nav_delivery">Оплата и доставка</a>
+        <a href="#contacts" class="nav__link" data-i18n="nav_contacts">Контакты</a>
+      </nav>
+      <div class="header__right">
+        <a href="tel:+998979000133" class="header__phone" aria-label="Позвонить">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          <span class="header__phone-num">+998 97 900 01 33</span>
+        </a>
+        <div class="lang-switcher" id="lang-switcher">
+          <div class="lang-pill" id="lang-pill"></div>
+          <button class="lang-btn lang-btn--active" data-lang="ru" onclick="setLang('ru')">RU</button>
+          <button class="lang-btn" data-lang="uz" onclick="setLang('uz')">UZ</button>
+        </div>
+        <button class="btn btn--orange btn--sm header__cta" data-modal data-modal-title="modal_default_title" data-i18n="header_cta">Заказать</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Меню">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="badge badge--orange"><span class="badge-dot"></span><span data-i18n="hero_badge">№1 решение для уличной рекламы в Узбекистане</span></span>
+        <h1 class="hero__title"><span data-i18n="hero_title1">Флаг парус</span><br><span class="text-orange" data-i18n="hero_title2">и рекламные флаги</span></h1>
+      </div>
+      <!-- Флаги — на мобиле идут сразу после заголовка -->
+      <div class="hero__right">
+        <div class="hero__flags">
+          <div class="hero__flag-wrap"><img src="images/yandex_1.png" alt="Yandex Go" /></div>
+          <div class="hero__flag-wrap"><img src="images/paynet_1.png" alt="Paynet" /></div>
+          <div class="hero__flag-wrap"><img src="images/uzum_1.png" alt="Uzum" /></div>
+          <div class="hero__flag-wrap"><img src="images/chevrolet_1.png" alt="Chevrolet" /></div>
+          <div class="hero__flag-wrap"><img src="images/byd_1.png" alt="BYD" /></div>
+        </div>
+      </div>
+      <!-- Описание, кнопка, доверие — после флагов -->
+      <div class="hero__bottom">
+        <p class="hero__desc" data-i18n="hero_desc">Эффективная уличная реклама для вашего бизнеса. Флаги, которые работают 24/7, не требуют электричества и дополнительных затрат, устанавливаются за 2 минуты.</p>
+        <a href="#price" class="btn btn--orange btn--hero" data-modal data-modal-key="hero_cta" data-i18n="hero_cta">Заказать свой флаг →</a>
+        <div class="hero__trust">
+          <div class="hero__avatars">
+            <img src="images/safia.jpg" alt="" class="avatar-img" />
+            <img src="images/maxway.jpg" alt="" class="avatar-img" />
+            <img src="images/oqtepa.png" alt="" class="avatar-img avatar-img--logo" />
+            <img src="images/paynet.png" alt="" class="avatar-img avatar-img--logo" />
+          </div>
+          <p data-i18n="hero_trust">Нам доверяют более <strong>2 000+</strong> местных бизнесов</p>
+        </div>
+        <!-- Галочки — в самом низу hero -->
+        <div class="hero__features-inner">
+          <div class="feature-item">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#F97316" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="feat_1">Срочные заказы — от 1 дня</span>
+          </div>
+          <div class="feature-item">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#F97316" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="feat_2">Гарантия качества флагов</span>
+          </div>
+          <div class="feature-item">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#F97316" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="feat_3">Бесплатный дизайн</span>
+          </div>
+          <div class="feature-item">
+            <svg class="feature-icon" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="#F97316" stroke-width="2"/><path d="M8 12l3 3 5-5" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <span data-i18n="feat_4">Дешевле не найдете</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="brands-wrap">
+    <div class="container">
+      <div class="brands-card">
+        <div class="brands__track">
+          <div class="brands__inner">
+            <img src="images/akfa.png" alt="AKFA" class="brand-img" />
+            <img src="images/seoul.png" alt="Seoul" class="brand-img brand-img--square" />
+            <img src="images/uzum_market.png" alt="Uzum Market" class="brand-img" />
+            <img src="images/lesailes.png" alt="Les Ailes" class="brand-img brand-img--square" />
+            <img src="images/paynet.png" alt="Paynet" class="brand-img" />
+            <img src="images/mannol.png" alt="Mannol" class="brand-img" />
+            <img src="images/evos.png" alt="EVOS" class="brand-img" />
+            <img src="images/oqtepa.png" alt="Oqtepa" class="brand-img brand-img--square" />
+            <img src="images/akfa.png" alt="AKFA" class="brand-img" />
+            <img src="images/seoul.png" alt="Seoul" class="brand-img brand-img--square" />
+            <img src="images/uzum_market.png" alt="Uzum Market" class="brand-img" />
+            <img src="images/lesailes.png" alt="Les Ailes" class="brand-img brand-img--square" />
+            <img src="images/paynet.png" alt="Paynet" class="brand-img" />
+            <img src="images/mannol.png" alt="Mannol" class="brand-img" />
+            <img src="images/evos.png" alt="EVOS" class="brand-img" />
+            <img src="images/oqtepa.png" alt="Oqtepa" class="brand-img brand-img--square" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <span id="promo"></span>
+  <section class="calc-section" id="price">
+    <div class="container">
+      <div class="calc-card calc-card--full">
+        <div class="calc-card__gradient"></div>
+        <h2 class="calc-card__title" data-i18n="calc_full_title">Заказать флаг с доставкой</h2>
+        <p class="calc-card__sub" data-i18n="calc_full_sub">Выберите параметры — мы сразу покажем ориентировочную стоимость</p>
+        <div class="calc-form calc-form--full">
+          <div class="calc-field">
+            <label class="calc-label" data-i18n="label_type">ТИП ФЛАГА</label>
+            <div class="select-wrap"><select class="calc-select" id="calc-type2">
+              <option value="parus" data-i18n-opt="opt_parus">Парус (Перо)</option>
+              <option value="rastyajka" data-i18n-opt="opt_rastyajka">Растяжка</option>
+              <option value="klassika" data-i18n-opt="opt_klassika">Классика</option>
+            </select></div>
+          </div>
+          <div class="calc-field">
+            <label class="calc-label" data-i18n="label_size">РАЗМЕР ФЛАГА</label>
+            <div class="select-wrap"><select class="calc-select" id="calc-size2"></select></div>
+          </div>
+          <div class="calc-field">
+            <label class="calc-label" data-i18n="label_print">ПЕЧАТЬ</label>
+            <div class="select-wrap"><select class="calc-select" id="calc-print2">
+              <option value="1" data-i18n-opt="opt_single">Односторонняя</option>
+              <option value="1.8" data-i18n-opt="opt_double">Двусторонняя</option>
+            </select></div>
+          </div>
+          <div class="calc-field" id="calc-kit-field2">
+            <label class="calc-label" data-i18n="label_kit">КОМПЛЕКТАЦИЯ</label>
+            <div class="select-wrap"><select class="calc-select" id="calc-kit2">
+              <option value="0" data-i18n-opt="opt_no_kit">Без конструкции</option>
+              <option value="300000" data-i18n-opt="opt_with_kit">С конструкцией</option>
+            </select></div>
+          </div>
+        </div>
+        <div class="calc-form--row2">
+          <div class="calc-field">
+            <label class="calc-label" data-i18n="label_delivery">ДОСТАВКА</label>
+            <div class="select-wrap"><select class="calc-select" id="calc-delivery2">
+              <option value="0" data-i18n-opt="opt_no_delivery">Не учитывать</option>
+              <option value="20000" data-i18n-opt="opt_tashkent">По Ташкенту</option>
+              <option value="30000" data-i18n-opt="opt_uzbekistan">По Узбекистану</option>
+            </select></div>
+          </div>
+          <div class="calc-field">
+            <label class="calc-label" data-i18n="label_qty">КОЛИЧЕСТВО</label>
+            <div class="qty-wrap"><button class="qty-btn" id="qty-minus2">−</button><input type="number" class="qty-input" id="qty-input2" value="1" min="1" /><button class="qty-btn" id="qty-plus2">+</button></div>
+          </div>
+          <div class="calc-result">
+            <div class="calc-price">
+              <span class="price-old" id="price-old2">—</span>
+              <span class="price-badge">-20%</span>
+              <span class="price-new" id="price-new2">—</span>
+            </div>
+          </div>
+          <button class="btn btn--orange btn--lg" style="white-space:nowrap;height:50px;" data-modal data-i18n="calc_order_btn">Заказать сейчас</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-section" id="about">
+    <div class="container why__inner">
+      <div class="why__content">
+        <h2 class="section-title" data-i18n="why_title">Почему флаги привлекают больше клиентов, чем обычные вывески</h2>
+        <p class="section-sub" data-i18n="why_sub">Движение всегда притягивает взгляд — именно поэтому флаги работают лучше статичной рекламы</p>
+        <div class="why__grid">
+          <div class="why__item">
+            <div class="why__icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+            </div>
+            <div class="why__item-text">
+              <h4 data-i18n="why_1_title">Бросаются в глаза</h4>
+              <p data-i18n="why_1_desc">Двигаются на ветру и сразу привлекают внимание прохожих</p>
+            </div>
+          </div>
+          <div class="why__item">
+            <div class="why__icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+                <line x1="2" y1="2" x2="22" y2="22"/>
+              </svg>
+            </div>
+            <div class="why__item-text">
+              <h4 data-i18n="why_2_title">Без затрат на электричество</h4>
+              <p data-i18n="why_2_desc">Работают 24/7 без дополнительных расходов</p>
+            </div>
+          </div>
+          <div class="why__item">
+            <div class="why__icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="5 9 2 12 5 15"/><polyline points="19 9 22 12 19 15"/>
+                <polyline points="9 5 12 2 15 5"/><polyline points="9 19 12 22 15 19"/>
+                <line x1="2" y1="12" x2="22" y2="12"/><line x1="12" y1="2" x2="12" y2="22"/>
+              </svg>
+            </div>
+            <div class="why__item-text">
+              <h4 data-i18n="why_3_title">Мобильность</h4>
+              <p data-i18n="why_3_desc">Легко переносить и устанавливать в любом месте.</p>
+            </div>
+          </div>
+          <div class="why__item">
+            <div class="why__icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#F97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="14" r="7"/><polyline points="12 10 12 14 14.5 16"/>
+                <line x1="10" y1="3" x2="14" y2="3"/><line x1="12" y1="3" x2="12" y2="6"/>
+              </svg>
+            </div>
+            <div class="why__item-text">
+              <h4 data-i18n="why_4_title">2-х минутная установка</h4>
+              <p data-i18n="why_4_desc">Сборка и разборка флага занимает всего пару минут</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="why__visual">
+        <div class="why__photo-card">
+          <div class="why__badge-top">
+            <svg viewBox="0 0 20 20" fill="none" width="20" height="20"><circle cx="10" cy="10" r="9" stroke="#22C55E" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#22C55E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div>
+              <div class="badge-text-main" data-i18n="why_badge_quality">Премиальное качество ткани</div>
+              <div class="badge-text-sub" data-i18n="why_badge_quality_sub">Устойчивость к выцветанию и погодным условиям Узбекистана</div>
+            </div>
+          </div>
+          <img src="images/bannerimage.png" alt="Рекламные флаги" class="why__photo" />
+          <div class="why__badge-bottom">
+            <span class="stat-num" data-i18n="why_stat_num">+40%</span>
+            <div class="stat-label" data-i18n="why_stat_label">к потоку клиентов</div>
+            <div class="stat-desc" data-i18n="why_stat_desc">в среднем за счёт уличного привлечения внимания</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="ticker">
+    <div class="ticker__inner">
+      <img src="images/image_2.png" alt="Наши цены ниже на 21% чем у других компаний — мы производители!" class="ticker__img" />
+    </div>
+  </div>
+
+  <section class="types-section" id="types">
+    <div class="container">
+      <div class="card-white">
+        <h2 class="section-title" data-i18n="types_title">Начните с выбора формы</h2>
+        <p class="section-sub" data-i18n="types_sub">Форма флага — ключевой элемент, который влияет на внешний вид и восприятие рекламы.<br>Выберите подходящий вариант под ваш бизнес и задачу.</p>
+        <div class="types__grid">
+          <div class="type-card">
+            <div class="type-card__img"><img src="images/parus_vinder.png" alt="Парус виндер" /></div>
+            <h4 data-i18n="type_parus_title">Парус (виндер)</h4>
+            <p data-i18n="type_parus_desc">Самый популярный формат флага с узнаваемым изгибом и максимальной площадью для вашего сообщения.</p>
+            <span class="type-size" data-i18n="type_parus_size">Высота флага до 5 м</span>
+          </div>
+          <div class="type-card">
+            <div class="type-card__img"><img src="images/pero.png" alt="Перо" /></div>
+            <h4 data-i18n="type_pero_title">Перо</h4>
+            <p data-i18n="type_pero_desc">Самый популярный формат флага с узнаваемым изгибом и максимальной площадью для вашего сообщения.</p>
+            <span class="type-size" data-i18n="type_pero_size">Высота флага до 5 м</span>
+          </div>
+          <div class="type-card">
+            <div class="type-card__img type-card__img--fit"><img src="images/rastyajka.png" alt="Растяжка" /></div>
+            <h4 data-i18n="type_rastyajka_title">Растяжка</h4>
+            <p data-i18n="type_rastyajka_desc">Самый популярный формат флага с узнаваемым изгибом и максимальной площадью для вашего сообщения.</p>
+            <span class="type-size" data-i18n="type_rastyajka_size">Ширина до 1,5 м</span>
+          </div>
+          <div class="type-card">
+            <div class="type-card__img type-card__img--fit"><img src="images/klassika.png" alt="Классика" /></div>
+            <h4 data-i18n="type_klassika_title">Классика</h4>
+            <p data-i18n="type_klassika_desc">Самый популярный формат флага с узнаваемым изгибом и максимальной площадью для вашего сообщения.</p>
+            <span class="type-size" data-i18n="type_klassika_size">Размер флага до 100 м</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="card-white mt-20">
+        <div class="size-section__inner">
+          <div class="size-section__text">
+            <h2 class="section-title" data-i18n="size_title">Выберите размер флага</h2>
+            <p class="section-sub" data-i18n="size_sub">Подберите высоту в зависимости от задачи и места установки. Флаги доступны в нескольких размерах — от компактных до максимально заметных. Чем выше флаг, тем лучше его видно с расстояния.</p>
+            <div class="size-table-wrap">
+              <table class="size-table">
+                <thead><tr><th>Продукт</th><th>XS</th><th>S</th><th>M</th><th>L</th></tr></thead>
+                <tbody>
+                  <tr><td data-i18n="size_table_parus">Парус</td><td>200x60</td><td>220x65</td><td>280x70</td><td>300x70</td></tr>
+                  <tr><td data-i18n="size_table_pero">Перо</td><td>200x60</td><td>220x65</td><td>280x70</td><td>300x70</td></tr>
+                  <tr><td data-i18n="size_table_flag">Флаг</td><td>200x60</td><td>220x65</td><td>280x70</td><td>300x70</td></tr>
+                  <tr><td data-i18n="size_table_rastyajka">Растяжка</td><td>—</td><td>220x65</td><td>280x70</td><td>300x70</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="size-section__visual">
+            <img src="images/image_3.png" alt="Сравнение размеров флагов" class="size-img" />
+          </div>
+        </div>
+        <div class="cta-banner">
+          <div><strong data-i18n="size_cta_text">Не уверены с выбором или хотите свой размер?</strong><p data-i18n="size_cta_sub">Поможем подобрать оптимальный размер под вашу задачу или рассчитать стоимость вашего размера</p></div>
+          <button class="btn btn--orange" data-modal data-modal-key="size_cta_btn" data-i18n="size_cta_btn">Заказать свой флаг →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="print-section">
+    <div class="container">
+      <div class="card-white">
+        <h2 class="section-title text-center" data-i18n="print_title">Выберите тип печати</h2>
+        <p class="section-sub text-center" data-i18n="print_sub">Определяет, как будет выглядеть флаг с обратной стороны. Выберите тот, который лучше подходит под ваш дизайн и задачу.</p>
+        <div class="print-grid">
+          <div class="print-card">
+            <div class="print-card__img print-card__img--double">
+              <img src="images/flag_1.png" alt="Флаг лицевая" />
+              <img src="images/flag_2.png" alt="Флаг зеркальная" class="print-second" />
+            </div>
+            <h4 data-i18n="print_single_title">Односторонняя печать (Single Reverse)</h4>
+            <p data-i18n="print_single_desc">Изображение видно с двух сторон, но с обратной стороны оно зеркальное. Полиэфирный шелк и флажная сетка позволяют печатать макет только с одной стороны, но вторая сторона всегда будет иметь цветность до 85% и зеркальное изображение.</p>
+          </div>
+          <div class="print-card">
+            <div class="print-card__img print-card__img--double">
+              <img src="images/flag_3.png" alt="Двусторонняя печать" />
+              <img src="images/flag_4.png" alt="Двусторонняя печать зеркало" class="print-mirror" />
+            </div>
+            <h4 data-i18n="print_double_title">Двусторонняя печать (Double Sided)</h4>
+            <p data-i18n="print_double_desc">Ткань блекаут - трехслойный светопоглощающий комплект материалов, который позволяет наносить печать с двух сторон любого дизайна, без потери качества и гарантирует 100% цветопередачу.</p>
+          </div>
+        </div>
+        <div class="cta-banner">
+          <div><strong data-i18n="print_cta_text">Не уверены, что выбрать?</strong><p data-i18n="print_cta_sub">Поможем подобрать оптимальный вариант под ваш макет</p></div>
+          <button class="btn btn--orange btn--lg" data-modal data-modal-key="print_cta_btn" data-i18n="print_cta_btn">Помочь с выбором →</button>
+        </div>
+      </div>
+
+      <div class="card-white mt-20">
+        <div class="construction__inner">
+          <div class="construction__text">
+            <h2 class="section-title" data-i18n="construction_title">Надёжная конструкция в комплекте</h2>
+            <p class="section-sub" data-i18n="construction_sub">Импортные комплектующие и устойчивая база для любых условий</p>
+            <p data-i18n="construction_body">Мы используем качественные конструкции <strong>турецкого производства</strong> — прочные, устойчивые и рассчитанные на длительное использование на улице.<br>Флаг надёжно держится даже при ветре и подходит для разных типов поверхностей.</p>
+            <div class="construction__features">
+              <div class="con-feat"><svg viewBox="0 0 20 20" fill="none" width="18" height="18"><circle cx="10" cy="10" r="9" stroke="#F97316" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#F97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><strong data-i18n="con_feat1_title">Прочная конструкция</strong><p data-i18n="con_feat1_desc">Лёгкая и устойчивая конструкция, удобная для перевозки и быстрой установки</p></div></div>
+              <div class="con-feat"><svg viewBox="0 0 20 20" fill="none" width="18" height="18"><circle cx="10" cy="10" r="9" stroke="#F97316" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#F97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><strong data-i18n="con_feat2_title">Можно утяжелить</strong><p data-i18n="con_feat2_desc">Основание заполняется водой или песком для дополнительной устойчивости</p></div></div>
+              <div class="con-feat"><svg viewBox="0 0 20 20" fill="none" width="18" height="18"><circle cx="10" cy="10" r="9" stroke="#F97316" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#F97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><strong data-i18n="con_feat3_title">Универсальное основание</strong><p data-i18n="con_feat3_desc">Подходит для установки в офисе, на асфальте, плитке, земле и других поверхностях</p></div></div>
+              <div class="con-feat"><svg viewBox="0 0 20 20" fill="none" width="18" height="18"><circle cx="10" cy="10" r="9" stroke="#F97316" stroke-width="1.5"/><path d="M6 10l3 3 5-5" stroke="#F97316" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg><div><strong data-i18n="con_feat4_title">Готово к установке</strong><p data-i18n="con_feat4_desc">Сборка и разборка занимает всего несколько минут</p></div></div>
+            </div>
+          </div>
+          <div class="construction__visual">
+            <img src="images/konstruksiya.png" alt="Конструкция флага" class="construction-img" />
+          </div>
+        </div>
+        <div class="cta-banner">
+          <div><strong data-i18n="construction_cta_text">Хотите приобрести только конструкции?</strong><p data-i18n="construction_cta_sub">Вы можете обратиться к нам и мы предложим вам оптовые цены</p></div>
+          <button class="btn btn--orange" data-modal data-modal-key="construction_cta_btn" data-i18n="construction_cta_btn">Нужны оптовые цены на конструкции →</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="design-section">
+    <div class="container">
+      <div class="card-white">
+        <div class="design__inner">
+          <div class="design__content">
+            <h2 class="section-title"><span data-i18n="design_title">Дизайн флага</span> <span class="text-orange" data-i18n="design_title_accent">БЕСПЛАТНО!</span></h2>
+            <p class="section-sub" data-i18n="design_sub">Разработаем макет или вы можете создать его самостоятельно</p>
+            <p data-i18n="design_body">Мы бесплатно разработаем дизайн флага под ваш бизнес — с учётом вашей сферы, цветов и задач. Если у вас уже есть идея, вы можете скачать шаблон и подготовить макет самостоятельно.</p>
+            <ul class="check-list">
+              <li data-i18n="design_check1">Бесплатная разработка макета</li>
+              <li data-i18n="design_check2">Учтём ваш бренд и пожелания</li>
+              <li data-i18n="design_check3">Поможем доработать ваш макет перед печатью</li>
+            </ul>
+            <div class="design__btns">
+              <button class="btn btn--orange" data-modal data-modal-key="design_cta_btn" data-i18n="design_cta_btn">Хочу бесплатный дизайн →</button>
+              <a href="images/Avtopro_2.psd" download="Avtopro_2.psd" class="btn btn--dark-outline" data-i18n="design_download_btn">Скачать шаблон →</a>
+            </div>
+          </div>
+          <div class="design__photo">
+            <img src="images/image_6.png" alt="Дизайн флага" class="design-img" />
+          </div>
+        </div>
+      </div>
+
+      <div class="card-white mt-20">
+        <div class="install__inner">
+          <div class="install__content">
+            <h2 class="section-title"><span data-i18n="install_title">Установка за</span> <span class="text-orange" data-i18n="install_title_accent">2 минуты</span></h2>
+            <p class="section-sub" data-i18n="install_sub">Подходит для самостоятельной установки — без инструментов</p>
+            <div class="install__steps">
+              <div class="install-step"><strong data-i18n="install_step1_title">Соберите мачту</strong><p data-i18n="install_step1_desc">Соедините все металлические части конструкции между собой</p></div>
+              <div class="install-step"><strong data-i18n="install_step2_title">Наденьте флаг</strong><p data-i18n="install_step2_desc">Аккуратно проденьте флаг на мачту и подвяжите конец веревкой.</p></div>
+              <div class="install-step"><strong data-i18n="install_step3_title">Установите основание</strong><p data-i18n="install_step3_desc">Закрепите конструкцию и установите флаг вертикально</p></div>
+              <div class="install-step"><strong data-i18n="install_step4_title">Укрепите конструкцию</strong><p data-i18n="install_step4_desc">В основание вы можете залить воду или песок, для большей устойчивости</p></div>
+            </div>
+          </div>
+          <div class="install__video">
+            <div class="video-placeholder" id="video-thumb" onclick="openVideoModal()">
+              <img src="images/install_thumb_new.png" alt="Установка флага" class="video-thumb-img" />
+              <button class="play-btn" aria-label="Воспроизвести видео">
+                <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><polygon points="5,2 16,9 5,16" fill="white"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- VIDEO POPUP MODAL -->
+          <div class="video-modal" id="video-modal" onclick="closeVideoModal(event)">
+            <div class="video-modal__inner">
+              <button class="video-modal__close" onclick="closeVideoModal(null, true)" aria-label="Закрыть">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" width="22" height="22"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+              </button>
+              <video id="install-video" controls playsinline preload="metadata" poster="images/install_thumb_new.png">
+                <source src="images/install_video.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="fullcalc-section" id="order">
+    <div class="container">
+      <div class="calc-card calc-card--full">
+        <div class="calc-card__gradient"></div>
+        <h2 class="calc-card__title" data-i18n="calc_full_title">Заказать флаг с доставкой</h2>
+        <p class="calc-card__sub" data-i18n="calc_full_sub">Выберите параметры — мы сразу покажем ориентировочную стоимость</p>
+        <div class="calc-form calc-form--full">
+          <div class="calc-field">
+            <label class="calc-label" data-i18n="label_type">ТИП ФЛАГА</label>
+            <div class="select-wrap"><select class="calc-select" id="calc-type">
+              <option value="parus" data-i18n-opt="opt_parus">Парус (Перо)</option>
+              <option value="rastyajka" data-i18n-opt="opt_rastyajka">Растяжка</option>
+              <option value="klassika" data-i18n-opt="opt_klassika">Классика</option>
+            </select></div>
+          </div>
+          <div class="calc-field">
+            <label class="calc-label" data-i18n="label_size">РАЗМЕР ФЛАГА</label>
+            <div class="select-wrap"><select class="calc-select" id="calc-size"></select></div>
+          </div>
+          <div class="calc-field">
+            <label class="calc-label" data-i18n="label_print">ПЕЧАТЬ</label>
+            <div class="select-wrap"><select class="calc-select" id="calc-print">
+              <option value="1" data-i18n-opt="opt_single">Односторонняя</option>
+              <option value="1.8" data-i18n-opt="opt_double">Двусторонняя</option>
+            </select></div>
+          </div>
+          <div class="calc-field" id="calc-kit-field">
+            <label class="calc-label" data-i18n="label_kit">КОМПЛЕКТАЦИЯ</label>
+            <div class="select-wrap"><select class="calc-select" id="calc-kit">
+              <option value="0" data-i18n-opt="opt_no_kit">Без конструкции</option>
+              <option value="300000" data-i18n-opt="opt_with_kit">С конструкцией</option>
+            </select></div>
+          </div>
+        </div>
+        <div class="calc-form--row2">
+          <div class="calc-field">
+            <label class="calc-label" data-i18n="label_delivery">ДОСТАВКА</label>
+            <div class="select-wrap"><select class="calc-select" id="calc-delivery">
+              <option value="0" data-i18n-opt="opt_no_delivery">Не учитывать</option>
+              <option value="20000" data-i18n-opt="opt_tashkent">По Ташкенту</option>
+              <option value="30000" data-i18n-opt="opt_uzbekistan">По Узбекистану</option>
+            </select></div>
+          </div>
+          <div class="calc-field">
+            <label class="calc-label" data-i18n="label_qty">КОЛИЧЕСТВО</label>
+            <div class="qty-wrap"><button class="qty-btn" id="qty-minus">−</button><input type="number" class="qty-input" id="qty-input" value="1" min="1" /><button class="qty-btn" id="qty-plus">+</button></div>
+          </div>
+          <div class="calc-result">
+            <div class="calc-price">
+              <span class="price-old" id="price-old">—</span>
+              <span class="price-badge">-20%</span>
+              <span class="price-new" id="price-new">—</span>
+            </div>
+          </div>
+          <button class="btn btn--orange btn--lg" style="white-space:nowrap;height:50px;" data-modal data-modal-key="calc_order_btn" data-i18n="calc_order_btn">Заказать сейчас</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="usecases-section">
+    <div class="container text-center">
+      <h2 class="section-title" data-i18n="usecases_title">Флаги для любого бизнеса и задач</h2>
+      <p class="section-sub" data-i18n="usecases_sub">Привлекают внимание там, где это действительно важно</p>
+      <p class="usecases-desc" data-i18n="usecases_body">Флаги-парусы используются в самых разных сферах — от кафе и магазинов до автосалонов и мероприятий.<br>Они помогают выделиться, привлечь внимание и увеличить поток клиентов.</p>
+    </div>
+
+    <!-- SLIDER — 15 карточек: 8 фото + 7 видео -->
+    <div class="works-slider-wrap">
+      <button class="works-btn works-btn--prev" id="works-prev" aria-label="Назад">&#8592;</button>
+      <div class="works-track" id="works-track">
+
+        <!-- ФОТО 1 -->
+        <div class="uc-photo">
+          <img src="images/work_1.jpg" alt="Работа 1" class="uc-img" />
+        </div>
+
+        <!-- ВИДЕО 1 -->
+        <div class="uc-photo uc-has-video">
+          <div class="uc-play">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+          <video src="images/work_1_video.mp4" class="uc-video" playsinline muted preload="metadata"></video>
+        </div>
+
+        <!-- ФОТО 2 -->
+        <div class="uc-photo">
+          <img src="images/work_2.jpg" alt="Работа 2" class="uc-img" />
+        </div>
+
+        <!-- ВИДЕО 2 -->
+        <div class="uc-photo uc-has-video">
+          <div class="uc-play">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+          <video src="images/work_2_video.mp4" class="uc-video" playsinline muted preload="metadata"></video>
+        </div>
+
+        <!-- ФОТО 3 -->
+        <div class="uc-photo">
+          <img src="images/work_3.jpg" alt="Работа 3" class="uc-img" />
+        </div>
+
+        <!-- ВИДЕО 3 -->
+        <div class="uc-photo uc-has-video">
+          <div class="uc-play">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+          <video src="images/work_3_video.mp4" class="uc-video" playsinline muted preload="metadata"></video>
+        </div>
+
+        <!-- ФОТО 4 -->
+        <div class="uc-photo">
+          <img src="images/work_4.jpg" alt="Работа 4" class="uc-img" />
+        </div>
+
+        <!-- ВИДЕО 4 -->
+        <div class="uc-photo uc-has-video">
+          <div class="uc-play">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+          <video src="images/work_4_video.mp4" class="uc-video" playsinline muted preload="metadata"></video>
+        </div>
+
+        <!-- ФОТО 5 -->
+        <div class="uc-photo">
+          <img src="images/work_5.jpg" alt="Работа 5" class="uc-img" />
+        </div>
+
+        <!-- ВИДЕО 5 -->
+        <div class="uc-photo uc-has-video">
+          <div class="uc-play">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+          <video src="images/work_5_video.mp4" class="uc-video" playsinline muted preload="metadata"></video>
+        </div>
+
+        <!-- ФОТО 6 -->
+        <div class="uc-photo">
+          <img src="images/work_6.jpg" alt="Работа 6" class="uc-img" />
+        </div>
+
+        <!-- ВИДЕО 6 -->
+        <div class="uc-photo uc-has-video">
+          <div class="uc-play">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+          <video src="images/work_6_video.mp4" class="uc-video" playsinline muted preload="metadata"></video>
+        </div>
+
+        <!-- ФОТО 7 -->
+        <div class="uc-photo">
+          <img src="images/work_7.jpg" alt="Работа 7" class="uc-img" />
+        </div>
+
+        <!-- ВИДЕО 7 -->
+        <div class="uc-photo uc-has-video">
+          <div class="uc-play">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="white"><polygon points="5,3 19,12 5,21"/></svg>
+          </div>
+          <video src="images/work_7_video.mp4" class="uc-video" playsinline muted preload="metadata"></video>
+        </div>
+
+        <!-- ФОТО 8 -->
+        <div class="uc-photo">
+          <img src="images/work_8.jpg" alt="Работа 8" class="uc-img" />
+        </div>
+
+      </div>
+      <button class="works-btn works-btn--next" id="works-next" aria-label="Вперёд">&#8594;</button>
+    </div>
+
+    <div class="container">
+      <p class="usecase-tags-label" data-i18n="tags_label">НЕДОРОГАЯ И УДОБНАЯ РЕКЛАМА ДЛЯ:</p>
+      <div class="usecase-tags">
+        <button class="tag" data-modal data-i18n="tag_cafe">Кафе и ресторанов</button><button class="tag" data-modal data-i18n="tag_shops">Магазинов и торговых точек</button>
+        <button class="tag" data-modal data-i18n="tag_events">Выставок и мероприятий</button><button class="tag" data-modal data-i18n="tag_auto">Автобизнеса</button>
+        <button class="tag" data-modal data-i18n="tag_service">Автосервиса</button><button class="tag" data-modal data-i18n="tag_beauty">Салона красоты и СПА</button>
+        <button class="tag" data-modal data-i18n="tag_construction">Строительных объектов</button><button class="tag" data-modal data-i18n="tag_boutique">Бутика</button>
+        <button class="tag" data-modal data-i18n="tag_payneta">Пайнета</button><button class="tag" data-modal data-i18n="tag_clothes">Магазина одежды</button>
+        <button class="tag" data-modal data-i18n="tag_grocery">Продуктовых магазинов</button><button class="tag" data-modal data-i18n="tag_supermarket">Супермаркета</button>
+        <button class="tag" data-modal data-i18n="tag_fastfood">Фастфуда</button><button class="tag" data-modal data-i18n="tag_clinic">Клиники</button>
+        <button class="tag" data-modal data-i18n="tag_coffee">Кофейни</button><button class="tag" data-modal data-i18n="tag_materials">Стройматериалов</button>
+        <button class="tag" data-modal data-i18n="tag_edu">Учебного центра</button><button class="tag" data-modal data-i18n="tag_autosalon">Автосалона</button>
+        <button class="tag" data-modal data-i18n="tag_tire">Шиномонтажа</button><button class="tag" data-modal data-i18n="tag_barber">Барбершопа</button>
+        <button class="tag" data-modal data-i18n="tag_dental">Стоматологии</button><button class="tag" data-modal data-i18n="tag_fitness">Фитнес клуба</button>
+        <button class="tag" data-modal data-i18n="tag_sport">Спортзалов</button><button class="tag" data-modal data-i18n="tag_promo">Акций</button>
+        <button class="tag" data-modal data-i18n="tag_opening">Открытия</button><button class="tag" data-modal data-i18n="tag_hotel">Отеля и хостела</button>
+        <button class="tag" data-modal data-i18n="tag_rest">Зоны отдыха</button><button class="tag" data-modal data-i18n="tag_office">Офиса</button>
+        <button class="tag" data-modal data-i18n="tag_yandex">Yandex такси</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="advantages-section">
+    <div class="container advantages__grid">
+      <div class="adv-item"><img src="images/icon_1.png" alt="" class="adv-icon-img" /><div><strong data-i18n="adv_1_title">Яркая полноцветная печать</strong><p data-i18n="adv_1_desc">Насыщенные цвета, которые привлекают внимание и не выгорают</p></div></div>
+      <div class="adv-item"><img src="images/icon_5.png" alt="" class="adv-icon-img" /><div><strong data-i18n="adv_2_title">Прямая печать по ткани</strong><p data-i18n="adv_2_desc">Изображение чёткое и хорошо видно с обеих сторон</p></div></div>
+      <div class="adv-item"><img src="images/icon_2.png" alt="" class="adv-icon-img" /><div><strong data-i18n="adv_3_title">Прочный материал (флажная сетка)</strong><p data-i18n="adv_3_desc">Износостойкая турецкая ткань, рассчитанная на уличные условия</p></div></div>
+      <div class="adv-item"><img src="images/icon_6.png" alt="" class="adv-icon-img" /><div><strong data-i18n="adv_4_title">Супербыстрое изготовление</strong><p data-i18n="adv_4_desc">Быстрое изготовление от 2 часов</p></div></div>
+      <div class="adv-item"><img src="images/icon_3.png" alt="" class="adv-icon-img" /><div><strong data-i18n="adv_5_title">Без ограничений по заказу</strong><p data-i18n="adv_5_desc">Можно заказать от 1 штуки, а на больших заказах - большие скидки.</p></div></div>
+      <div class="adv-item"><img src="images/icon_7.png" alt="" class="adv-icon-img" /><div><strong data-i18n="adv_6_title">Индивидуальные решения</strong><p data-i18n="adv_6_desc">Подберём размер, форму и дизайн под любой ваш бизнес</p></div></div>
+      <div class="adv-item"><img src="images/icon_4.png" alt="" class="adv-icon-img" /><div><strong data-i18n="adv_7_title">Только импортные комплектующие</strong><p data-i18n="adv_7_desc">Наши конструкции привезены из Турции и имеют гарантию качества.</p></div></div>
+      <div class="adv-item"><img src="images/icon_8.png" alt="" class="adv-icon-img" /><div><strong data-i18n="adv_8_title">Бесплатные услуги дизайна</strong><p data-i18n="adv_8_desc">Нарисуем для вас макет и покажем как он будет выглядеть на месте.</p></div></div>
+    </div>
+  </section>
+
+  <section class="reviews-section">
+    <div class="container text-center">
+      <h2 class="section-title" style="color:#fff" data-i18n="reviews_title">Отзывы наших клиентов</h2>
+      <p class="section-sub" style="color:rgba(255,255,255,0.6)" data-i18n="reviews_sub">Бизнесы уже используют флаги и получают результат</p>
+    </div>
+    <div class="reviews__slider-wrap">
+      <div class="reviews__nav">
+        <button class="slider-btn" id="prev-btn">←</button>
+        <button class="slider-btn" id="next-btn">→</button>
+      </div>
+      <div class="reviews__slider" id="reviews-track">
+        <div class="review-wrap"><div class="review-card"><div class="review-photo"><img src="images/review_3.jpg" alt="Отзыв"></div></div><div class="review-card__info"><span class="stars">★★★★★</span><div><strong>qizil Nariman</strong></div></div></div>
+        <div class="review-wrap"><div class="review-card"><div class="review-photo"><img src="images/review_4.jpg" alt="Отзыв"></div></div><div class="review-card__info"><span class="stars">★★★★★</span><div><strong>Magistr</strong></div></div></div>
+        <div class="review-wrap"><div class="review-card"><div class="review-photo"><img src="images/review_5.jpg" alt="Отзыв"></div></div><div class="review-card__info"><span class="stars">★★★★★</span><div><strong>DiLYani</strong></div></div></div>
+        <div class="review-wrap"><div class="review-card"><div class="review-photo"><img src="images/review_6.jpg" alt="Отзыв"></div></div><div class="review-card__info"><span class="stars">★★★★★</span><div><strong>0302</strong></div></div></div>
+        <div class="review-wrap"><div class="review-card"><div class="review-photo"><img src="images/review_7.jpg" alt="Отзыв"></div></div><div class="review-card__info"><span class="stars">★★★★★</span><div><strong>Рушанчик</strong></div></div></div>
+        <div class="review-wrap"><div class="review-card"><div class="review-photo"><img src="images/review_8.jpg" alt="Отзыв"></div></div><div class="review-card__info"><span class="stars">★★★★★</span><div><strong>Ситора</strong></div></div></div>
+        <div class="review-wrap"><div class="review-card"><div class="review-photo"><img src="images/review_9.jpg" alt="Отзыв"></div></div><div class="review-card__info"><span class="stars">★★★★★</span><div><strong>Prava.uz</strong></div></div></div>
+        <div class="review-wrap"><div class="review-card"><div class="review-photo"><img src="images/review_10.jpg" alt="Отзыв"></div></div><div class="review-card__info"><span class="stars">★★★★★</span><div><strong>Клиент</strong></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <span id="delivery"></span>
+  <section class="faq-section" id="faq">
+    <div class="container faq__inner">
+      <div class="faq__list">
+        <h2 class="section-title" data-i18n="faq_title">Часто задаваемые вопросы</h2>
+        <p class="section-sub" data-i18n="faq_sub">Ответы на самые популярные вопросы о наших флагах и заказе</p>
+        <div class="faq-item faq-item--open"><div class="faq-q" data-i18n="faq_q1">Из какого материала флаг?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a1">Мы используем прочную полиэстеровую ткань под названием Флажная сетка Рашель, устойчивую к ветру, солнцу и погодным условиям.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q2">Флаг выдержит ветер, снег или дождь?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a2">Да. Ткань и конструкция рассчитаны на уличное использование в любую погоду. Флажная сетка Рашель не намокает, быстро сохнет и не выгорает на солнце. Алюминиевая мачта выдерживает ветер до 15 м/с.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q3">Сколько служит флаг?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a3">При правильной эксплуатации флаг служит от 2 до 4 лет. Полотно можно заменить отдельно — конструкция (мачта и основание) рассчитана на многолетнее использование.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q4">Можно ли заказать 1 штуку?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a4">Да, мы принимаем заказы от 1 штуки. Минимального количества нет — вы можете заказать ровно столько, сколько вам нужно.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q5">Сколько времени занимает изготовление?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a5">Стандартный срок — 3–5 рабочих дней. Если нужно срочно, мы можем изготовить флаг за 1 день — уточняйте наличие срочного слота при оформлении заказа.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q6">Вы помогаете с дизайном?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a6">Да, дизайн входит в стоимость бесплатно. Наш дизайнер подготовит макет на основе вашего логотипа и пожеланий. Вы получите готовый макет на согласование перед печатью.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q7">Можно ли сделать свой дизайн?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a7">Конечно. Вы можете предоставить готовый макет в формате AI, PDF или PSD — мы напечатаем именно его. Если нужна помощь с адаптацией под размер флага, наш дизайнер поможет бесплатно.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q8">Как установить/разобрать флаг?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a8">Установка занимает около 2 минут и не требует инструментов. Мачта собирается по секциям, полотно надевается сверху, основание заполняется водой для устойчивости.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q9">Куда можно установить флаг?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a9">Флаг устанавливается практически везде: перед входом в магазин, на парковке, у дороги, на мероприятии или выставке. Основание на воде не требует сверления или крепления к земле.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q10">Есть ли доставка?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a10">Да, мы доставляем по всему Узбекистану. По Ташкенту — курьером в течение дня. В регионы — через транспортные компании, срок 1–3 дня в зависимости от города.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q11">Сколько стоит флаг-парус в Ташкенте?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a11">Стоимость зависит от размера, типа печати, количества, комплектации и доставки. Для точного расчёта нужно выбрать формат флага, размер, одностороннюю или двустороннюю печать, а также указать, нужна ли конструкция. Мы поможем подобрать оптимальный вариант под вашу задачу и бюджет.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q12">Чем отличается флаг-парус от флага-перо?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a12">Флаг-парус имеет более широкую и плавную форму, поэтому хорошо подходит для крупных надписей, логотипов и рекламных сообщений. Флаг-перо выглядит уже и динамичнее, его часто выбирают для компактных мест, промо-зон и оформления входа.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q13">Можно ли заказать только полотно без конструкции?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a13">Да, можно заказать только флаг-полотно, если у вас уже есть подходящая мачта или основание. Перед печатью желательно уточнить размер и тип крепления, чтобы новое полотно подошло к вашей конструкции.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q14">Можно ли заказать только конструкцию без флага?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a14">Да, можно заказать конструкцию отдельно. Это удобно, если у вас уже есть готовое полотно или нужно заменить старую мачту, основание или комплектующие.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q15">Какой размер флага лучше выбрать для магазина или кафе?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a15">Для входной зоны обычно подходят средние размеры, которые хорошо видны прохожим и не занимают слишком много места. Если флаг должен быть заметен с дороги или с большого расстояния, лучше выбрать более высокий вариант. Мы можем подсказать размер по фото вашей локации.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q16">Подходит ли флаг-парус для установки у дороги?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a16">Да, флаг-парус хорошо подходит для установки возле дороги, парковки, фасада, магазина, кафе, автосервиса или автомойки. За счёт высоты и движения на ветру он помогает привлечь внимание водителей и прохожих.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q17">Можно ли сделать флаг в фирменных цветах компании?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a17">Да, флаг можно сделать в фирменных цветах вашей компании. Для этого можно отправить логотип, брендбук, готовый макет или просто описать пожелания. Дизайнер подготовит макет перед печатью и отправит его на согласование.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q18">Что лучше выбрать: одностороннюю или двустороннюю печать?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a18">Односторонняя печать подходит для большинства задач: изображение видно с двух сторон, но с обратной стороны оно будет зеркальным. Двусторонняя печать нужна, если важно, чтобы логотип, текст или акция читались правильно с обеих сторон.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q19">Можно ли сделать флаг для акции или открытия?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a19">Да, флаги часто заказывают для открытия магазина, кафе, салона, офиса, автосервиса или временной акции. На флаге можно разместить логотип, скидку, короткий оффер, стрелку, надпись «Открытие» или другое рекламное сообщение.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q20">Можно ли посмотреть макет перед печатью?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a20">Да, перед печатью мы отправляем макет на согласование. Печать запускается только после того, как вы подтвердите дизайн, текст, логотип, цвета и расположение элементов.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q21">Можно ли напечатать флаг по фото или скриншоту?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a21">Иногда можно использовать фото или скриншот как пример идеи, но для качественной печати нужен логотип или макет в хорошем разрешении. Если исходник слабый, дизайнер подскажет, что можно улучшить перед печатью.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q22">Делаете ли флаги для регионов Узбекистана?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a22">Да, мы можем изготовить флаг и отправить заказ по Узбекистану. Условия и срок доставки зависят от города, количества и выбранного способа отправки.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q23">Можно ли заказать несколько одинаковых флагов?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a23">Да, можно заказать несколько одинаковых флагов для одной или нескольких точек. Это удобно для сетевых магазинов, кафе, автосервисов, аптек, учебных центров и других бизнесов с несколькими филиалами.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q24">Можно ли сделать разные дизайны в одном заказе?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a24">Да, можно заказать несколько флагов с разными макетами. Например, один флаг с логотипом, второй с акцией, третий с направлением входа или отдельным предложением.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q25">Как ухаживать за флагом, чтобы он служил дольше?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a25">Рекомендуется периодически очищать полотно от пыли, не оставлять флаг на улице при очень сильном ветре и хранить в сухом месте, если он временно не используется. При аккуратной эксплуатации флаг дольше сохраняет внешний вид.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q26">Можно ли использовать флаг внутри помещения?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a26">Да, флаг можно использовать не только на улице, но и внутри помещения: в шоуруме, офисе, торговом зале, на выставке, презентации или мероприятии.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q27">Чем флаг-парус лучше обычного баннера?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a27">Флаг-парус легче переносить, быстрее устанавливать и можно использовать много раз в разных местах. Он двигается на ветру, поэтому привлекает внимание иначе, чем статичный баннер или вывеска.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q28">Можно ли заказать флаг без готового логотипа?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a28">Да, можно. Если у вас нет готового логотипа или макета, мы можем подготовить простой рекламный дизайн с текстом, цветами, контактами и нужным сообщением.</div></div></div>
+        <div class="faq-item"><div class="faq-q" data-i18n="faq_q29">Какие фразы лучше писать на рекламном флаге?</div><div class="faq-a"><div class="faq-a__inner" data-i18n="faq_a29">Лучше использовать короткие и понятные фразы: название бренда, услугу, акцию, направление входа или главное преимущество. Например: «Открыто», «Скидка», «Автомойка», «Кофе», «Вход здесь», «Бесплатная консультация».</div></div></div>
+      </div>
+      <div class="faq__contact">
+        <h3 data-i18n="faq_contact_title">Все еще остались вопросы?</h3>
+        <p data-i18n="faq_contact_sub">Оставьте заявку — мы свяжемся с вами и поможем с выбором</p>
+        <input type="text" class="contact-input" data-i18n-ph="modal_name_ph" placeholder="Ваше имя" />
+        <input type="tel" class="contact-input" placeholder="+998 __ ___ __ __" />
+        <textarea class="contact-input contact-textarea" placeholder="Сообщение"></textarea>
+        <div class="contact-submit-row">
+          <button class="btn btn--orange" data-i18n="faq_contact_btn">Задать вопрос →</button>
+          <span class="reply-time" data-i18n="faq_reply">Ответим в течение 10 минут</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts-section" id="contacts">
+    <div class="container">
+      <h2 class="section-title text-center" data-i18n="contacts_title">Контакты</h2>
+      <p class="section-sub text-center" data-i18n="contacts_sub">Свяжитесь с нами удобным способом — ответим в течение 10 минут</p>
+      <div class="contacts-grid">
+        <a href="tel:+998979000133" class="contact-card">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          </div>
+          <div class="contact-card__info">
+            <span class="contact-card__label" data-i18n="contacts_phone_label">Телефон</span>
+            <span class="contact-card__value">+998 97 900 01 33</span>
+          </div>
+        </a>
+        <div class="contact-card contact-card--static">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="10" r="3"/><path d="M12 21.7C17.3 17 20 13 20 10a8 8 0 1 0-16 0c0 3 2.7 7 8 11.7z"/></svg>
+          </div>
+          <div class="contact-card__info">
+            <span class="contact-card__label" data-i18n="contacts_addr_label">Адрес</span>
+            <span class="contact-card__value" data-i18n="contacts_addr_value">Ташкент, Узбекистан</span>
+          </div>
+        </div>
+        <div class="contact-card contact-card--static">
+          <div class="contact-card__icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </div>
+          <div class="contact-card__info">
+            <span class="contact-card__label" data-i18n="contacts_hours_label">Часы работы</span>
+            <span class="contact-card__value" data-i18n="contacts_hours_value">Ежедневно, 09:00–18:30</span>
+          </div>
+        </div>
+      </div>
+      <div class="contacts-cta">
+        <a href="tel:+998979000133" class="btn btn--orange btn--lg" data-i18n="contacts_call_btn">Позвонить сейчас</a>
+        <button class="btn btn--dark btn--lg" data-modal data-modal-title="modal_default_title" data-i18n="contacts_request_btn">Оставить заявку</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <a href="#" class="logo">
+        <img src="images/Logo.svg" alt="logo" class="logo__icon" />
+        <span><strong>Parus</strong> <span class="logo-accent">Bayroq</span></span>
+      </a>
+      <nav class="footer__nav">
+        <a href="#types" data-i18n="footer_types">Виды флагов</a>
+        <a href="#about" data-i18n="footer_about">О Компании</a>
+        <a href="#price" data-i18n="footer_price">Стоимость</a>
+        <a href="#promo" data-i18n="footer_promo">Акции</a>
+        <a href="#delivery" data-i18n="footer_delivery">Оплата и доставка</a>
+        <a href="#contacts" data-i18n="footer_contacts">Контакты</a>
+      </nav>
+      <div class="footer__socials">
+        <a href="https://www.facebook.com/willmodauz/" class="social-link" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg></a>
+        <a href="https://t.me/willmodauz" class="social-link" target="_blank" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg></a>
+        <a href="https://www.instagram.com/willmodauz/" class="social-link" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal" id="modal">
+      <button class="modal__close" id="modal-close" aria-label="Закрыть">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+      <div class="modal__body" id="modal-body">
+        <div class="modal__icon">📋</div>
+        <h3 class="modal__title" id="modal-title">Оставить заявку</h3>
+        <p class="modal__sub" data-i18n="modal_default_sub">Мы свяжемся с вами в течение 10 минут</p>
+        <form class="modal__form" id="modal-form" novalidate>
+          <div class="modal__field">
+            <label class="modal__label" data-i18n="modal_name_label">Имя</label>
+            <input type="text" class="modal__input" id="modal-name" data-i18n-ph="modal_name_ph" placeholder="Ваше имя" required />
+          </div>
+          <div class="modal__field">
+            <label class="modal__label" data-i18n="modal_phone_label">Номер телефона</label>
+            <input type="tel" class="modal__input" id="modal-phone" placeholder="+998 __ ___ __ __" required />
+          </div>
+          <div class="modal__field">
+            <label class="modal__label" data-i18n="modal_comment_label">Комментарий</label>
+            <textarea class="modal__input modal__textarea" id="modal-comment" data-i18n-ph="modal_comment_ph" placeholder="Расскажите о вашем проекте..."></textarea>
+          </div>
+          <button type="submit" class="btn btn--orange modal__submit" data-i18n="modal_submit">Отправить заявку →</button>
+        </form>
+      </div>
+      <div class="modal__success" id="modal-success">
+        <div class="modal__success-icon">✅</div>
+        <h3 class="modal__title" data-i18n="modal_success_title">Заявка отправлена!</h3>
+        <p class="modal__sub" data-i18n="modal_success_sub">Мы свяжемся с вами в течение 10 минут. Спасибо!</p>
+        <button class="btn btn--orange modal__submit" id="modal-success-close" data-i18n="modal_success_close">Закрыть</button>
+      </div>
+    </div>
+  </div>
+
+  
+  
+  
