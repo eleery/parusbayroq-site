@@ -1,0 +1,23 @@
+mode=check site_dir=public_html
+== FTP root
+drwx------    2 1363     601          4096 Oct  1 05:38 /backup_20261001_pre_cachebust/
+drwx------    8 1363     601          4096 Oct  1 05:38 /public_html/
+drwx------    7 1363     601          4096 Jul 17 11:10 /public_html_old/
+drwx------    7 1363     601          4096 Aug  5 11:25 /public_html_spt26/
+== .
+drwx------    2 1363     601          4096 Oct  1 05:38 ./backup_20261001_pre_cachebust/
+drwx------    8 1363     601          4096 Oct  1 05:38 ./public_html/
+drwx------    7 1363     601          4096 Jul 17 11:10 ./public_html_old/
+drwx------    7 1363     601          4096 Aug  5 11:25 ./public_html_spt26/
+== public_html
+-rwx------    1 1363     601           931 Aug  5 11:25 public_html/.htaccess
+drwx------    2 1363     601          4096 Oct  1 04:46 public_html/api/
+drwx------    2 1363     601          4096 Aug  5 11:25 public_html/css/
+drwx------    2 1363     601          4096 Aug  5 11:25 public_html/fold/
+drwx------    2 1363     601          4096 Aug  5 11:25 public_html/fonts/
+drwx------    2 1363     601          4096 Aug  5 11:25 public_html/images/
+-rwx------    1 1363     601         82999 Oct  1 05:38 public_html/index.html
+drwx------    2 1363     601          4096 Oct  1 05:38 public_html/js/
+-rwx------    1 1363     601            67 Aug  5 11:25 public_html/robots.txt
+-rwx------    1 1363     601          2490 Aug  5 11:25 public_html/sitemap.xml
+-rwx------    1 1363     601           161 Aug  5 11:25 public_html/yandex_5786db3cdfd21203.html
