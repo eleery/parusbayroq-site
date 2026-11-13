@@ -1,9 +1,9 @@
 name: Deploy to Beget
 
-# Run by hand (Actions → Deploy to Beget → Run workflow) or by pushing a tag:
-#   deploy-check-*  — list hosting folders only
-#   deploy-first-*  — back up, move the current site to OLD-<date>, upload the new one
-#   deploy-update-* — upload the new build over the current site
+# Run by hand (Actions → Deploy to Beget → Run workflow) or by pushing to a trigger branch:
+#   deploy-check  — list hosting folders only
+#   deploy-first  — back up, move the current site to OLD-<date>, upload the new one
+#   deploy-update — upload the new build over the current site
 on:
   workflow_dispatch:
     inputs:
@@ -14,7 +14,7 @@ on:
         type: choice
         options: [check, deploy, update]
   push:
-    tags: ['deploy-check-*', 'deploy-first-*', 'deploy-update-*']
+    branches: [deploy-check, deploy-first, deploy-update]
 
 permissions:
   contents: write
@@ -38,7 +38,7 @@ jobs:
         id: mode
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then m="${{ inputs.mode }}"
-          else case "$GITHUB_REF_NAME" in deploy-check-*) m=check;; deploy-first-*) m=deploy;; deploy-update-*) m=update;; *) m=check;; esac; fi
+          else case "$GITHUB_REF_NAME" in deploy-check) m=check;; deploy-first) m=deploy;; deploy-update) m=update;; *) m=check;; esac; fi
           echo "mode=$m" >> "$GITHUB_OUTPUT"; echo "mode: $m"
 
       - name: Check secrets

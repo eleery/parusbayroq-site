@@ -47,9 +47,9 @@ Workflow `.github/workflows/deploy.yml` собирает сайт и загру�
 Нужны секреты репозитория (Settings → Secrets and variables → Actions): `BEGET_FTP_HOST`, `BEGET_FTP_USER`, `BEGET_FTP_PASSWORD`.
 Папка сайта определяется сама (`public_html` или `parusbayroq.uz/public_html`); иначе задайте переменную `BEGET_SITE_DIR`.
 
-Режимы (Actions → Deploy to Beget → Run workflow, или тег):
-- `check` / тег `deploy-check-*` — только показать папки на хостинге;
-- `deploy` / тег `deploy-first-*` — полная копия в артефакт, текущий сайт переезжает в `OLD-<дата>` рядом с `public_html`, загружается новый;
-- `update` / тег `deploy-update-*` — загрузить новую сборку поверх текущей.
+Режимы (Actions → Deploy to Beget → Run workflow, или push в служебную ветку):
+- `check` / ветка `deploy-check` — только показать папки на хостинге;
+- `deploy` / ветка `deploy-first` — полная копия в артефакт, текущий сайт переезжает в `OLD-<дата>` рядом с `public_html`, загружается новый;
+- `update` / ветка `deploy-update` — загрузить новую сборку поверх текущей.
 
 `api/`, `.htaccess`, `.well-known/` и `cgi-bin/` не трогаются. Лог каждой выкладки сохраняется в ветку `deploy-log`.
