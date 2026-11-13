@@ -14,7 +14,7 @@ STAMP=$(date -u +%Y-%m-%d_%H%M)
 KEEP='^(api|fold|\.htaccess|\.well-known|cgi-bin|yandex_[0-9a-f]+\.html|google[0-9a-z]+\.html|\.|\.\.)$'
 
 # Certificate check is off because Beget's FTP certificate may not match the host name; traffic stays encrypted.
-lf() { lftp -u "$USER,$PASS" -e "set ftp:ssl-allow yes; set ssl:verify-certificate no; set net:max-retries 2; set net:timeout 30; $1; bye" "$HOST" </dev/null; }
+lf() { lftp -u "$USER,$PASS" -e "set ftp:ssl-allow yes; set ssl:verify-certificate no; set net:max-retries 8; set net:timeout 30; set net:reconnect-interval-base 3; set net:reconnect-interval-max 20; $1; bye" "$HOST" </dev/null; }
 
 if [ -z "${SITE_DIR:-}" ]; then
   if lf "cls -1 public_html" >/dev/null 2>&1; then SITE_DIR=public_html; else SITE_DIR=parusbayroq.uz/public_html; fi
@@ -51,7 +51,13 @@ if [ "$MODE" = deploy ]; then
 fi
 
 echo "== upload"
-lf "mirror -R --verbose=1 --parallel=4 dist $SITE_DIR"
+# One connection at a time (Beget drops parallel uploads), no chmod (Beget refuses SITE CHMOD); retried twice.
+for attempt in 1 2 3; do
+  lf "mirror -R --verbose=1 --parallel=1 --no-perms dist $SITE_DIR" 2>&1 | tee -a upload.log
+  grep -q "Fatal error" upload.log || break
+  echo "retrying failed files (attempt $attempt)"; : > upload.log
+done
+
 
 echo "== check live site"
 sleep 5
