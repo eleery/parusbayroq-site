@@ -1,0 +1,198 @@
+mode=update site_dir=public_html
+== FTP root
+drwx------    6 1363     601          4096 Nov 13 09:15 /OLD-2026-11-13_0911/
+drwx------    2 1363     601          4096 Oct  1 05:38 /backup_20261001_pre_cachebust/
+drwx------   13 1363     601          4096 Nov 13 09:21 /public_html/
+drwx------    7 1363     601          4096 Jul 17 11:10 /public_html_old/
+drwx------    7 1363     601          4096 Aug  5 11:25 /public_html_spt26/
+== .
+drwx------    6 1363     601          4096 Nov 13 09:15 ./OLD-2026-11-13_0911/
+drwx------    2 1363     601          4096 Oct  1 05:38 ./backup_20261001_pre_cachebust/
+drwx------   13 1363     601          4096 Nov 13 09:21 ./public_html/
+drwx------    7 1363     601          4096 Jul 17 11:10 ./public_html_old/
+drwx------    7 1363     601          4096 Aug  5 11:25 ./public_html_spt26/
+== public_html
+-rwx------    1 1363     601           931 Aug  5 11:25 public_html/.htaccess
+-rw-------    1 1363     601          3913 Nov 13 09:21 public_html/404.html
+drwx------    2 1363     601          4096 Oct  1 04:46 public_html/api/
+drwxr-xr-x    2 1363     601          4096 Nov 13 09:22 public_html/css/
+-rw-------    1 1363     601           463 Nov 13 09:21 public_html/favicon.ico
+drwxr-xr-x    2 1363     601          4096 Nov 13 09:22 public_html/flagi-na-zakaz/
+drwx------    2 1363     601          4096 Aug  5 11:25 public_html/fold/
+drwxr-xr-x    2 1363     601          4096 Nov 13 09:23 public_html/fonts/
+drwxr-xr-x    2 1363     601          4096 Nov 13 09:24 public_html/images/
+drwxr-xr-x    2 1363     601          4096 Nov 13 09:40 public_html/img/
+-rw-------    1 1363     601        106246 Nov 13 09:21 public_html/index.html
+drwxr-xr-x    2 1363     601          4096 Nov 13 09:40 public_html/js/
+drwxr-xr-x    2 1363     601          4096 Nov 13 09:40 public_html/privacy/
+-rw-------    1 1363     601           256 Nov 13 09:21 public_html/robots.txt
+-rw-------    1 1363     601          2545 Nov 13 09:21 public_html/sitemap.xml
+drwxr-xr-x    4 1363     601          4096 Nov 13 09:40 public_html/uz/
+drwxr-xr-x    2 1363     601          4096 Nov 13 09:40 public_html/video/
+-rwx------    1 1363     601           161 Aug  5 11:25 public_html/yandex_5786db3cdfd21203.html
+== upload
+Removing old file `404.html'
+Transferring file `404.html'
+Removing old file `favicon.ico'
+Transferring file `favicon.ico'
+Removing old file `index.html'
+Transferring file `index.html'
+Removing old file `robots.txt'
+Transferring file `robots.txt'
+Removing old file `sitemap.xml'
+Transferring file `sitemap.xml'
+Transferring file `css/style.css'
+Removing old file `flagi-na-zakaz/index.html'
+Transferring file `flagi-na-zakaz/index.html'
+Transferring file `fonts/YSDisplay-Bold.woff2'
+Transferring file `fonts/YSDisplay-Regular.woff2'
+Removing old file `images/Logo.svg'
+Transferring file `images/Logo.svg'
+Removing old file `images/apple-touch-icon.png'
+Transferring file `images/apple-touch-icon.png'
+Removing old file `images/favicon-32.png'
+Transferring file `images/favicon-32.png'
+Removing old file `images/favicon.svg'
+Transferring file `images/favicon.svg'
+Transferring file `images/og-image.jpg'
+Removing old file `img/akfa.webp'
+Transferring file `img/akfa.webp'
+Removing old file `img/bannerimage.webp'
+Transferring file `img/bannerimage.webp'
+Removing old file `img/byd_1.webp'
+Transferring file `img/byd_1.webp'
+Removing old file `img/chevrolet_1.webp'
+Transferring file `img/chevrolet_1.webp'
+Removing old file `img/evos.webp'
+Transferring file `img/evos.webp'
+Removing old file `img/flag_1.webp'
+Transferring file `img/flag_1.webp'
+Removing old file `img/flag_2.webp'
+Transferring file `img/flag_2.webp'
+Removing old file `img/flag_3.webp'
+Transferring file `img/flag_3.webp'
+Removing old file `img/flag_4.webp'
+Transferring file `img/flag_4.webp'
+Removing old file `img/icon_1.webp'
+Transferring file `img/icon_1.webp'
+Removing old file `img/icon_2.webp'
+Transferring file `img/icon_2.webp'
+Removing old file `img/icon_3.webp'
+Transferring file `img/icon_3.webp'
+Removing old file `img/icon_4.webp'
+Transferring file `img/icon_4.webp'
+Removing old file `img/icon_5.webp'
+Transferring file `img/icon_5.webp'
+Removing old file `img/icon_6.webp'
+Transferring file `img/icon_6.webp'
+Removing old file `img/icon_7.webp'
+Transferring file `img/icon_7.webp'
+Removing old file `img/icon_8.webp'
+Transferring file `img/icon_8.webp'
+Removing old file `img/image_2.webp'
+Transferring file `img/image_2.webp'
+Transferring file `img/image_3.webp'
+Removing old file `img/image_6.webp'
+Transferring file `img/image_6.webp'
+Removing old file `img/install_thumb_new.webp'
+Transferring file `img/install_thumb_new.webp'
+Removing old file `img/install_video-poster.webp'
+Transferring file `img/install_video-poster.webp'
+Transferring file `img/klassika.webp'
+Transferring file `img/konstruksiya.webp'
+Removing old file `img/lesailes.webp'
+Transferring file `img/lesailes.webp'
+Removing old file `img/logo-512.png'
+Transferring file `img/logo-512.png'
+Removing old file `img/mannol.webp'
+Transferring file `img/mannol.webp'
+Removing old file `img/maxway.webp'
+Transferring file `img/maxway.webp'
+Removing old file `img/oqtepa.webp'
+Transferring file `img/oqtepa.webp'
+Removing old file `img/parus_vinder.webp'
+Transferring file `img/parus_vinder.webp'
+Removing old file `img/paynet.webp'
+Transferring file `img/paynet.webp'
+Removing old file `img/paynet_1.webp'
+Transferring file `img/paynet_1.webp'
+Removing old file `img/pero.webp'
+Transferring file `img/pero.webp'
+Removing old file `img/rastyajka.webp'
+Transferring file `img/rastyajka.webp'
+Removing old file `img/review_10.webp'
+Transferring file `img/review_10.webp'
+Transferring file `img/review_3.webp'
+Transferring file `img/review_4.webp'
+Transferring file `img/review_5.webp'
+Transferring file `img/review_6.webp'
+Transferring file `img/review_7.webp'
+Removing old file `img/review_8.webp'
+Transferring file `img/review_8.webp'
+Transferring file `img/review_9.webp'
+Removing old file `img/safia.webp'
+Transferring file `img/safia.webp'
+Removing old file `img/seoul.webp'
+Transferring file `img/seoul.webp'
+Removing old file `img/uzum_1.webp'
+Transferring file `img/uzum_1.webp'
+Removing old file `img/uzum_market.webp'
+Transferring file `img/uzum_market.webp'
+Removing old file `img/work_1.webp'
+Transferring file `img/work_1.webp'
+Removing old file `img/work_1_video-poster.webp'
+Transferring file `img/work_1_video-poster.webp'
+Removing old file `img/work_2.webp'
+Transferring file `img/work_2.webp'
+Removing old file `img/work_2_video-poster.webp'
+Transferring file `img/work_2_video-poster.webp'
+Removing old file `img/work_3.webp'
+Transferring file `img/work_3.webp'
+Transferring file `img/work_3_video-poster.webp'
+Transferring file `img/work_4.webp'
+Transferring file `img/work_4_video-poster.webp'
+Transferring file `img/work_5.webp'
+Transferring file `img/work_5_video-poster.webp'
+Removing old file `img/work_6.webp'
+Transferring file `img/work_6.webp'
+Transferring file `img/work_6_video-poster.webp'
+Removing old file `img/work_7.webp'
+Transferring file `img/work_7.webp'
+Removing old file `img/work_7_video-poster.webp'
+Transferring file `img/work_7_video-poster.webp'
+Transferring file `img/work_8.webp'
+Removing old file `img/yandex_1.webp'
+Transferring file `img/yandex_1.webp'
+Removing old file `js/main.js'
+Transferring file `js/main.js'
+Removing old file `js/telegram.js'
+Transferring file `js/telegram.js'
+Removing old file `privacy/index.html'
+Transferring file `privacy/index.html'
+Removing old file `uz/index.html'
+Transferring file `uz/index.html'
+Removing old file `uz/bayroq-buyurtma/index.html'
+Transferring file `uz/bayroq-buyurtma/index.html'
+Removing old file `uz/privacy/index.html'
+Transferring file `uz/privacy/index.html'
+Removing old file `video/install_video.mp4'
+Transferring file `video/install_video.mp4'
+Removing old file `video/work_1_video.mp4'
+Transferring file `video/work_1_video.mp4'
+Removing old file `video/work_2_video.mp4'
+Transferring file `video/work_2_video.mp4'
+Removing old file `video/work_3_video.mp4'
+Transferring file `video/work_3_video.mp4'
+Removing old file `video/work_4_video.mp4'
+Transferring file `video/work_4_video.mp4'
+Removing old file `video/work_5_video.mp4'
+Transferring file `video/work_5_video.mp4'
+Removing old file `video/work_6_video.mp4'
+Transferring file `video/work_6_video.mp4'
+Removing old file `video/work_7_video.mp4'
+Transferring file `video/work_7_video.mp4'
+== check live site
+curl: (23) Failure writing output to destination, passed 8192 returned 0
+uz: 200
+flagi-na-zakaz: 200
+api/telegram.php (405 expected for GET): 405
