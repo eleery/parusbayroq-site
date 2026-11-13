@@ -237,6 +237,8 @@ if (successClose) successClose.addEventListener('click', closeModal);
         o.textContent = s.code + ' — ' + s.size + ' ' + t('js_cm');
         selSize.appendChild(o);
       });
+      // Default size: M (third option) for every flag type.
+      if (selSize.options.length > 2) selSize.value = '2';
       // Classic and stretch flags have no construction: hide the choice completely.
       if (kitField) kitField.style.display = type().kit > 0 ? '' : 'none';
     }

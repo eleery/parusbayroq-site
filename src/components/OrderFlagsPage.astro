@@ -1,4 +1,5 @@
 ---
+import { getPosts } from '../lib/blog.mjs';
 import Base from '../layouts/Base.astro';
 import { renderChrome, dict } from '../lib/home.mjs';
 import { orderFlags, orderFlagsFaqKeys } from '../content/order-flags.mjs';
@@ -10,7 +11,8 @@ const { lang } = Astro.props;
 const c = orderFlags[lang];
 const t = dict(lang);
 const alternates = { ru: orderFlags.ru.path, uz: orderFlags.uz.path };
-const { header, footer, modal, tg, jsDict } = renderChrome(lang, alternates);
+const hasBlog = (await getPosts(lang)).length > 0;
+const { header, footer, modal, tg, jsDict } = renderChrome(lang, alternates, { blog: hasBlog });
 const faq = orderFlagsFaqKeys.map((k) => ({ q: t[k], a: t[k.replace('_q', '_a')] }));
 const home = paths(lang).home;
 const img = manifest['images/klassika.png'];
@@ -94,5 +96,5 @@ const schema = [
   <Fragment set:html={modal} />
   <Fragment set:html={tg} />
   <script is:inline src="/js/telegram.js?v=20261113"></script>
-  <script is:inline src="/js/main.js?v=20261113"></script>
+  <script is:inline src="/js/main.js?v=20261113b"></script>
 </Base>

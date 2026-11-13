@@ -34,3 +34,12 @@ export function calcData() {
     },
   };
 }
+
+// Price table for articles (<div data-price-table></div> in Markdown is replaced with it).
+export function priceTableHtml(lang) {
+  const head = `<tr><th>${lang === 'ru' ? 'Флаг' : 'Bayroq'}</th>${SIZES.map((s) => `<th>${s}</th>`).join('')}</tr>`;
+  const body = PRICES.map((p) => `<tr><td class="size-table__name">${p.label[lang]}</td>` +
+    p.rows.map(([size, price]) => `<td><span class="sz">${size}</span><b class="price-now">${num(price)}</b></td>`).join('') + '</tr>').join('');
+  return `<div class="size-table-wrap"><table class="size-table article-prices"><thead>${head}</thead><tbody>${body}</tbody></table></div>` +
+    `<p class="price-any">${lang === 'ru' ? 'Цены в сумах, размеры в сантиметрах.' : "Narxlar so'mda, o'lchamlar santimetrda."}</p>`;
+}

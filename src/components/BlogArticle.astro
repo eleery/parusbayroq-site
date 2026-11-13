@@ -1,0 +1,79 @@
+---
+import Base from '../layouts/Base.astro';
+import { renderChrome } from '../lib/home.mjs';
+import { getPosts, slugOf, postPath, blogIndex, alternatesOf, BLOG_TEXT, fmtDate } from '../lib/blog.mjs';
+import { SITE, CONTACTS, paths } from '../lib/site.mjs';
+import { priceTableHtml } from '../lib/prices.mjs';
+import manifest from '../media-manifest.json';
+
+const { entry } = Astro.props;
+const lang = entry.data.lang;
+const T = BLOG_TEXT[lang];
+const d = entry.data;
+const slug = slugOf(entry);
+const url = SITE + postPath(lang, slug);
+const alternates = await alternatesOf(entry);
+const posts = await getPosts(lang);
+const related = posts.filter((p) => p.id !== entry.id).slice(0, 3);
+const { header, footer, modal, tg, jsDict } = renderChrome(lang, alternates, { blog: true });
+const home = paths(lang).home;
+const cover = d.cover && manifest[`images/${d.cover}`];
+// Non-breaking spaces inside sums ("350 000 сум") so they never split across lines.
+const html = (entry.rendered?.html || '').replace(/(\d) (?=\d{3}\b)/g, '$1\u00a0').replace(/(\d) (сум|so'm)/g, '$1\u00a0$2').replace(/<div data-price-table(="")?\s*><\/div>/g, priceTableHtml(lang));
+const schema = [
+  { '@context': 'https://schema.org', '@type': 'Article', headline: d.title, description: d.description, inLanguage: lang,
+    datePublished: d.date.toISOString().slice(0, 10), dateModified: (d.updated || d.date).toISOString().slice(0, 10),
+    author: { '@type': 'Organization', name: 'Parus Bayroq', url: SITE + home },
+    publisher: { '@type': 'Organization', name: 'Parus Bayroq', logo: { '@type': 'ImageObject', url: `${SITE}/img/logo-512.png` } },
+    image: cover ? SITE + cover.src : `${SITE}/images/og-image.jpg`, mainEntityOfPage: url },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: T.home, item: SITE + home },
+    { '@type': 'ListItem', position: 2, name: T.blog, item: SITE + blogIndex(lang) },
+    { '@type': 'ListItem', position: 3, name: d.title, item: url } ] },
+  ...(d.faq?.length ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: d.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }] : []),
+];
+---
+<Base lang={lang} title={`${d.title} | Parus Bayroq`} description={d.description} alternates={alternates} schema={schema} jsDict={jsDict}>
+  <Fragment set:html={header} />
+  <main class="page">
+    <article class="article">
+      <div class="container article__inner">
+        <nav class="crumbs crumbs--light" aria-label="breadcrumb"><a href={home}>{T.home}</a> / <a href={blogIndex(lang)}>{T.blog}</a></nav>
+        {d.draft && <p class="draft-badge">{T.draft}</p>}
+        <h1 class="article__title">{d.title}</h1>
+        <p class="article__meta">{T.published} {fmtDate(d.date, lang)}{d.updated && ` · ${T.updated} ${fmtDate(d.updated, lang)}`} · Parus Bayroq</p>
+        {cover && <img class="article__cover" src={cover.src} width={cover.width} height={cover.height} alt={d.title} decoding="async" fetchpriority="high" />}
+        <div class="article__body" set:html={html} />
+        {d.faq?.length && (
+          <section class="article__faq">
+            <h2>{T.faq}</h2>
+            <div class="faq__list">
+              {d.faq.map((f, i) => <div class={'faq-item' + (i === 0 ? ' faq-item--open' : '')}><div class="faq-q">{f.q}</div><div class="faq-a"><div class="faq-a__inner">{f.a}</div></div></div>)}
+            </div>
+          </section>
+        )}
+        <aside class="article-cta">
+          <h2>{T.ctaTitle}</h2>
+          <p>{T.ctaText}</p>
+          <div class="article-cta__btns">
+            <a class="btn btn--orange btn--lg" href={home + '#price'}>{T.ctaCalc}</a>
+            <a class="btn btn--tg btn--lg" href={CONTACTS.manager} target="_blank" rel="noopener">{T.ctaTg}</a>
+          </div>
+        </aside>
+        {related.length > 0 && (
+          <section class="article__related">
+            <h2>{T.related}</h2>
+            <div class="blog-list blog-list--compact">
+              {related.map((p) => <a class="blog-card" href={postPath(lang, slugOf(p))}><div class="blog-card__body"><h3>{p.data.title}</h3><span class="blog-card__meta">{T.read}</span></div></a>)}
+            </div>
+          </section>
+        )}
+      </div>
+    </article>
+  </main>
+  <Fragment set:html={footer} />
+  <Fragment set:html={modal} />
+  <Fragment set:html={tg} />
+  <script is:inline src="/js/telegram.js?v=20261113"></script>
+  <script is:inline src="/js/main.js?v=20261113b"></script>
+</Base>

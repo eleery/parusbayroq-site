@@ -1,0 +1,9 @@
+---
+// /uz/blog/ exists only when there is at least one article to show.
+import BlogIndex from '../../../components/BlogIndex.astro';
+import { getPosts } from '../../../lib/blog.mjs';
+export async function getStaticPaths() {
+  return (await getPosts('uz')).length ? [{ params: { index: undefined } }] : [];
+}
+---
+<BlogIndex lang="uz" />

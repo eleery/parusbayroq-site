@@ -1,0 +1,52 @@
+---
+import Base from '../layouts/Base.astro';
+import { renderChrome } from '../lib/home.mjs';
+import { getPosts, slugOf, postPath, blogIndex, BLOG_TEXT, fmtDate } from '../lib/blog.mjs';
+import { SITE, paths } from '../lib/site.mjs';
+import manifest from '../media-manifest.json';
+
+const { lang } = Astro.props;
+const T = BLOG_TEXT[lang];
+const posts = await getPosts(lang);
+const alternates = { ru: '/blog/', uz: '/uz/blog/' };
+const { header, footer, modal, tg, jsDict } = renderChrome(lang, alternates, { blog: posts.length > 0 });
+const home = paths(lang).home;
+const schema = [{ '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+  { '@type': 'ListItem', position: 1, name: T.home, item: SITE + home },
+  { '@type': 'ListItem', position: 2, name: T.blog, item: SITE + blogIndex(lang) } ] }];
+---
+<Base lang={lang} title={T.title} description={T.description} alternates={alternates} schema={schema} jsDict={jsDict} noindex={posts.length === 0}>
+  <Fragment set:html={header} />
+  <main class="page">
+    <section class="page-hero page-hero--slim">
+      <div class="container">
+        <nav class="crumbs" aria-label="breadcrumb"><a href={home}>{T.home}</a> / <span>{T.blog}</span></nav>
+        <h1 class="page-hero__title">{T.h1}</h1>
+        <p class="page-hero__lead">{T.lead}</p>
+      </div>
+    </section>
+    <section class="page-section">
+      <div class="container blog-list">
+        {posts.map((p) => {
+          const img = p.data.cover && manifest[`images/${p.data.cover}`];
+          return (
+            <a class="blog-card" href={postPath(lang, slugOf(p))}>
+              {img && <img src={img.src} width={img.width} height={img.height} alt="" loading="lazy" decoding="async" />}
+              <div class="blog-card__body">
+                {p.data.draft && <span class="draft-badge">{T.draft}</span>}
+                <h2>{p.data.title}</h2>
+                <p>{p.data.description}</p>
+                <span class="blog-card__meta">{fmtDate(p.data.date, lang)} · {T.read}</span>
+              </div>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+  </main>
+  <Fragment set:html={footer} />
+  <Fragment set:html={modal} />
+  <Fragment set:html={tg} />
+  <script is:inline src="/js/telegram.js?v=20261113"></script>
+  <script is:inline src="/js/main.js?v=20261113b"></script>
+</Base>

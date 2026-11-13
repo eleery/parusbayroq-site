@@ -1,0 +1,9 @@
+---
+import BlogArticle from '../../components/BlogArticle.astro';
+import { getPosts, slugOf } from '../../lib/blog.mjs';
+export async function getStaticPaths() {
+  return (await getPosts('ru')).map((entry) => ({ params: { slug: slugOf(entry) }, props: { entry } }));
+}
+const { entry } = Astro.props;
+---
+<BlogArticle entry={entry} />

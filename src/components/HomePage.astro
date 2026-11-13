@@ -1,4 +1,5 @@
 ---
+import { getPosts } from '../lib/blog.mjs';
 import Base from '../layouts/Base.astro';
 import { renderHome } from '../lib/home.mjs';
 import { META, businessSchema } from '../lib/site.mjs';
@@ -6,7 +7,8 @@ import { calcData } from '../lib/prices.mjs';
 
 const { lang } = Astro.props;
 const m = META[lang];
-const { html, faq, jsDict } = renderHome(lang);
+const hasBlog = (await getPosts(lang)).length > 0;
+const { html, faq, jsDict } = renderHome(lang, { blog: hasBlog });
 const schema = [
   businessSchema(lang, m.description),
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
@@ -16,7 +18,7 @@ const schema = [
   <Fragment set:html={html} />
   <script is:inline set:html={'window.PB_CALC=' + JSON.stringify(calcData()) + ';'} />
   <script is:inline src="/js/telegram.js?v=20261113"></script>
-  <script is:inline src="/js/main.js?v=20261113"></script>
+  <script is:inline src="/js/main.js?v=20261113b"></script>
   <script is:inline>
     // Old site switched language by button; keep #lang links working if bookmarked.
     try { localStorage.removeItem('lang'); } catch (e) {}
