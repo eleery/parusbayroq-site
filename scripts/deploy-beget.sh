@@ -5,12 +5,13 @@
 #   deploy — downloads a full backup, moves the current site into OLD-<date> next to public_html
 #            (outside the web root, so it is not public), then uploads dist/;
 #   update — uploads dist/ over the current site (for later releases).
-# Kept in place in every mode: api/ (Telegram form), .htaccess, .well-known/, cgi-bin/.
+# Kept in place in every mode: api/ (Telegram form), .htaccess, .well-known/, cgi-bin/,
+# search engine verification files (yandex_*.html, google*.html).
 # Needs env: HOST, USER, PASS; optional SITE_DIR (auto-detected).
 set -euo pipefail
 MODE="${1:-check}"
 STAMP=$(date -u +%Y-%m-%d_%H%M)
-KEEP='^(api|\.htaccess|\.well-known|cgi-bin|\.|\.\.)$'
+KEEP='^(api|\.htaccess|\.well-known|cgi-bin|yandex_[0-9a-f]+\.html|google[0-9a-z]+\.html|\.|\.\.)$'
 
 # Certificate check is off because Beget's FTP certificate may not match the host name; traffic stays encrypted.
 lf() { lftp -u "$USER,$PASS" -e "set ftp:ssl-allow yes; set ssl:verify-certificate no; set net:max-retries 2; set net:timeout 30; $1; bye" "$HOST" </dev/null; }
@@ -25,7 +26,12 @@ echo "mode=$MODE site_dir=$SITE_DIR"
 echo "== FTP root"; lf "cls -la /" || true
 echo "== $PARENT"; lf "cls -la $PARENT" || true
 echo "== $SITE_DIR"; lf "cls -la $SITE_DIR"
-[ "$MODE" = check ] && exit 0
+if [ "$MODE" = check ]; then
+  echo "== $SITE_DIR/.htaccess"; lf "cat $SITE_DIR/.htaccess" || true
+  echo "== $SITE_DIR/api"; lf "cls -la $SITE_DIR/api" || true
+  echo "== $SITE_DIR/fold"; lf "cls -la $SITE_DIR/fold" || true
+  exit 0
+fi
 
 [ -f dist/index.html ] || { echo "dist/ is missing — build first"; exit 1; }
 
