@@ -5,7 +5,7 @@ date: 2026-11-13
 lang: uz
 pair: price
 cover: parus_vinder.png
-draft: true
+draft: false
 faq:
   - q: "Parus bayroq qancha turadi?"
     a: "Standart parus M (280×70 sm) — ustun va bochka-asos bilan birga 450 000 so'm. Ustuningiz bo'lsa, mato 250 000 so'm arzonga tushadi."
