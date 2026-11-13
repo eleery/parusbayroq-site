@@ -1,5 +1,5 @@
 import { SITE } from '../lib/site.mjs';
-const groups = [{ ru: '/', uz: '/uz/', priority: '1.0' }, { ru: '/privacy/', uz: '/uz/privacy/', priority: '0.2' }];
+const groups = [{ ru: '/', uz: '/uz/', priority: '1.0' }, { ru: '/flagi-na-zakaz/', uz: '/uz/bayroq-buyurtma/', priority: '0.8' }, { ru: '/privacy/', uz: '/uz/privacy/', priority: '0.2' }];
 export function GET() {
   const today = new Date().toISOString().slice(0, 10);
   const urls = groups.flatMap((g) => ['ru', 'uz'].map((l) => `  <url>\n    <loc>${SITE}${g[l]}</loc>\n    <lastmod>${today}</lastmod>\n    <priority>${g.priority}</priority>\n` +

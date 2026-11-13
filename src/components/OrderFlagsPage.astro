@@ -1,0 +1,91 @@
+---
+import Base from '../layouts/Base.astro';
+import { renderChrome, dict } from '../lib/home.mjs';
+import { orderFlags, orderFlagsFaqKeys } from '../content/order-flags.mjs';
+import { SITE, CONTACTS, paths, businessSchema } from '../lib/site.mjs';
+import manifest from '../media-manifest.json';
+
+const { lang } = Astro.props;
+const c = orderFlags[lang];
+const t = dict(lang);
+const alternates = { ru: orderFlags.ru.path, uz: orderFlags.uz.path };
+const { header, footer, modal, tg, jsDict } = renderChrome(lang, alternates);
+const faq = orderFlagsFaqKeys.map((k) => ({ q: t[k], a: t[k.replace('_q', '_a')] }));
+const home = paths(lang).home;
+const img = manifest['images/klassika.png'];
+const schema = [
+  { '@context': 'https://schema.org', '@type': 'Service', name: c.h1, description: c.description, serviceType: c.h1,
+    provider: businessSchema(lang, c.description), areaServed: { '@type': 'Country', name: 'Uzbekistan' }, url: SITE + c.path },
+  { '@context': 'https://schema.org', '@type': 'BreadcrumbList', itemListElement: [
+    { '@type': 'ListItem', position: 1, name: c.crumbHome, item: SITE + home },
+    { '@type': 'ListItem', position: 2, name: c.h1, item: SITE + c.path } ] },
+  { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },
+];
+---
+<Base lang={lang} title={c.title} description={c.description} alternates={alternates} schema={schema} jsDict={jsDict}>
+  <Fragment set:html={header} />
+  <main class="page">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div class="page-hero__text">
+          <nav class="crumbs" aria-label="breadcrumb"><a href={home}>{c.crumbHome}</a> / <span>{c.h1}</span></nav>
+          <h1 class="page-hero__title">{c.h1}</h1>
+          <p class="page-hero__lead">{c.lead}</p>
+          <div class="page-hero__cta">
+            <button class="btn btn--orange btn--lg" data-modal data-modal-title="modal_default_title">{c.cta}</button>
+            <a class="btn btn--tg btn--lg" href={CONTACTS.manager} target="_blank" rel="noopener">{c.tg}</a>
+          </div>
+        </div>
+        <div class="page-hero__img"><img src={img.src} width={img.width} height={img.height} alt={c.h1} decoding="async" fetchpriority="high" /></div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <h2 class="section-title">{c.usesTitle}</h2>
+        <div class="page-grid page-grid--4">
+          {c.uses.map(([h, p]) => <div class="page-card"><h3>{h}</h3><p>{p}</p></div>)}
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section--alt">
+      <div class="container">
+        <div>
+          <h2 class="section-title">{c.sizesTitle}</h2>
+          <p class="page-text">{c.sizes}</p>
+          <div class="chips">{c.sizeChips.map((s) => <span class="chip">{s}</span>)}</div>
+          <h2 class="section-title page-mt">{c.printTitle}</h2>
+          <div class="page-grid page-grid--2">
+            {c.print.map(([h, p]) => <div class="page-card"><h3>{h}</h3><p>{p}</p></div>)}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section">
+      <div class="container">
+        <h2 class="section-title">{c.stepsTitle}</h2>
+        <ol class="steps">
+          {c.steps.map(([h, p], i) => <li class="step"><span class="step__n">{i + 1}</span><h3>{h}</h3><p>{p}</p></li>)}
+        </ol>
+        <p class="page-text page-mt-sm">{c.payment}</p>
+      </div>
+    </section>
+
+    <section class="page-section page-section--alt">
+      <div class="container page-faq">
+        <h2 class="section-title">{c.faqTitle}</h2>
+        <div class="faq__list">
+          {faq.map((f, i) => <div class={'faq-item' + (i === 0 ? ' faq-item--open' : '')}><div class="faq-q">{f.q}</div><div class="faq-a"><div class="faq-a__inner" set:html={f.a} /></div></div>)}
+        </div>
+        <div class="page-more"><span>{c.more}</span> <a href={home + '#types'}>{c.moreLink}</a></div>
+      </div>
+    </section>
+  </main>
+  <Fragment set:html={footer} />
+  <Fragment set:html={modal} />
+  <Fragment set:html={tg} />
+  <script is:inline src="/js/telegram.js?v=20261113"></script>
+  <script is:inline src="/js/main.js?v=20261113"></script>
+</Base>

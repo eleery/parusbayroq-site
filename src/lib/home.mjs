@@ -92,6 +92,11 @@ export function renderHome(lang) {
     $(el).replaceWith(`<button class="${cls}" data-modal data-modal-title="modal_default_title">${t.design_download_btn}</button>`);
   });
 
+  // Links to the custom flags page.
+  const orderPath = lang === 'ru' ? '/flagi-na-zakaz/' : `/${lang}/bayroq-buyurtma/`;
+  $('img[src*="klassika"]').closest('.type-card').append(`<a class="type-more" href="${orderPath}">${t.type_more}</a>`);
+  $('.footer__nav').append(`<a href="${orderPath}">${t.footer_order}</a>`);
+
   // Payment question in FAQ.
   const lastFaq = $('.faq__list .faq-item').last();
   lastFaq.after(`<div class="faq-item"><div class="faq-q">${t.faq_q30}</div><div class="faq-a"><div class="faq-a__inner">${t.faq_a30}</div></div></div>`);
@@ -121,4 +126,19 @@ export function renderHome(lang) {
   const jsDict = Object.fromEntries([...jsKeys].filter(Boolean).filter(k => t[k] != null).map(k => [k, t[k]]));
 
   return { html: $.html(), faq, jsDict, images: n };
+}
+
+// Header, footer, request form and Telegram button for other pages, taken from the rendered homepage.
+// Menu anchors point back to the homepage; the language switch points to the given alternates.
+export function renderChrome(lang, alternates) {
+  const { html, jsDict } = renderHome(lang);
+  const $ = load(html, { decodeEntities: false }, false);
+  const home = paths(lang).home;
+  $('header.header a[href^="#"], footer.footer a[href^="#"]').each((_, el) => { $(el).attr('href', home + $(el).attr('href')); });
+  $('.lang-btn').each((_, el) => { const l = $(el).attr('hreflang'); if (alternates[l]) $(el).attr('href', alternates[l]); });
+  const header = $.html($('header.header'));
+  const footer = $.html($('footer.footer'));
+  const modal = $.html($('#modal-overlay'));
+  const tg = $.html($('.tg-float'));
+  return { header, footer, modal, tg, jsDict };
 }
