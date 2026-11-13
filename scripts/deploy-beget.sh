@@ -14,7 +14,9 @@ STAMP=$(date -u +%Y-%m-%d_%H%M)
 KEEP='^(api|fold|\.htaccess|\.well-known|cgi-bin|yandex_[0-9a-f]+\.html|google[0-9a-z]+\.html|\.|\.\.)$'
 
 # Certificate check is off because Beget's FTP certificate may not match the host name; traffic stays encrypted.
-lf() { lftp -u "$USER,$PASS" -e "set ftp:ssl-allow yes; set ssl:verify-certificate no; set net:max-retries 8; set net:timeout 30; set net:reconnect-interval-base 3; set net:reconnect-interval-max 20; $1; bye" "$HOST" </dev/null; }
+# Login and commands stay encrypted (ftp:ssl-allow); file data goes unencrypted (ssl-protect-data no):
+# Beget's TLS data channel kept failing on the same files, and the site files are public anyway.
+lf() { lftp -u "$USER,$PASS" -e "set ftp:ssl-allow yes; set ftp:ssl-protect-data no; set ftp:ssl-protect-list no; set ssl:verify-certificate no; set net:max-retries 4; set net:timeout 30; set net:reconnect-interval-base 3; set net:reconnect-interval-max 15; $1; bye" "$HOST" </dev/null; }
 
 if [ -z "${SITE_DIR:-}" ]; then
   if lf "cls -1 public_html" >/dev/null 2>&1; then SITE_DIR=public_html; else SITE_DIR=parusbayroq.uz/public_html; fi
@@ -57,6 +59,12 @@ for attempt in 1 2 3; do
   grep -q "Fatal error" upload.log || break
   echo "retrying failed files (attempt $attempt)"; : > upload.log
 done
+if grep -q "Fatal error" upload.log; then
+  echo "== FTP dialogue for one failed file (password lines removed)"
+  f=$(grep -m1 -o "mirror: [^:]*" upload.log | sed 's/mirror: //')
+  path=$(cd dist && find . -name "$f" | head -1 | sed 's#^\./##')
+  lftp -u "$USER,$PASS" -e "debug 5; set ftp:ssl-allow yes; set ftp:ssl-protect-data no; set ssl:verify-certificate no; set net:max-retries 1; set net:timeout 20; put dist/$path -o $SITE_DIR/$path; bye" "$HOST" </dev/null 2>&1 | grep -v -i -E "PASS|USER " | tail -40 || true
+fi
 
 
 echo "== check live site"
