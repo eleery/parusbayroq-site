@@ -3,6 +3,9 @@
 // with a perspective transform (matrix3d) and multiplied over the fabric so folds and shading show through.
 //
 // node scripts/brand-image.mjs <in.png> <out.png> --quad x1,y1,x2,y2,x3,y3,x4,y4 [--layout vertical|horizontal] [--dark] [--no-badge]
+//                                [--text "КОФЕ" [--sub "навынос"] [--icon]] [--lines "Line 1|Line 2|Line 3"]
+//   --text: a client's phrase instead of our logo (vertical, fitted to the flag); --icon adds our wind icon on top.
+//   --lines: several small lines (to show an overloaded flag that nobody can read).
 //   quad: flag area corners on the photo, clockwise from top-left (TL, TR, BR, BL), in image pixels.
 //   vertical: icon on top, wordmark reading bottom-to-top (sail / feather flags).
 //   horizontal: icon left of the wordmark (classic flags, banners).
@@ -40,7 +43,13 @@ const qw = (Math.hypot(quad[2] - quad[0], quad[3] - quad[1]) + Math.hypot(quad[4
 const qh = (Math.hypot(quad[6] - quad[0], quad[7] - quad[1]) + Math.hypot(quad[4] - quad[2], quad[5] - quad[3])) / 2;
 const [SW, SH] = layout === 'vertical' ? [Math.round(Math.min(420, Math.max(200, 1000 * qw / qh))), 1000] : [1000, Math.round(Math.min(600, Math.max(260, 1000 * qh / qw)))];
 const icoV = Math.min(190, SW - 40);
-const logo = layout === 'vertical'
+const text = opt('--text'), sub = opt('--sub'), lines = opt('--lines'), withIcon = rest.includes('--icon');
+const esc = (v) => v.replace(/&/g, '&amp;').replace(/</g, '&lt;');
+const logo = lines
+  ? `<div class="v"><div class="vt"><div class="rot fit lines" data-len=".94" data-thick=".86">${lines.split('|').map((l) => `<div>${esc(l)}</div>`).join('')}</div></div></div>`
+  : text
+  ? `<div class="v">${withIcon ? `<div class="ic">${icon}</div>` : ''}<div class="vt"><div class="rot fit" data-len=".9" data-thick=".66"><div class="big">${esc(text)}</div>${sub ? `<div class="sub">${esc(sub)}</div>` : ''}</div></div></div>`
+  : layout === 'vertical'
   ? `<div class="v"><div class="ic">${icon}</div><div class="vt"><span class="wm"><b>Parus</b> <i>Bayroq</i></span></div></div>`
   : `<div class="h"><div class="ic">${icon}</div><span class="wm"><b>Parus</b> <i>Bayroq</i></span></div>`;
 
@@ -55,6 +64,9 @@ body { background: url('file://${resolve(inp)}') 0 0 / ${W}px ${H}px no-repeat; 
 .v .ic { width: ${icoV}px; height: ${icoV}px; flex: none; }
 .v .vt { flex: 1; width: 100%; position: relative; }
 .v .vt .wm { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-90deg); font-size: ${Math.round(Math.min(132, SW * 0.5))}px; }
+.rot { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%) rotate(-90deg); white-space: nowrap; text-align: center; color: ${ink}; font-weight: 700; }
+.rot .big { line-height: .95; letter-spacing: -.01em; } .rot .sub { font-size: .4em; line-height: 1.1; color: ${accent}; margin-top: .08em; }
+.rot.lines { line-height: 1.12; text-align: left; } .rot.lines div:first-child { color: ${accent}; }
 .h { width: 100%; height: 100%; display: flex; align-items: center; justify-content: center; gap: 34px; }
 .h .ic { width: 200px; height: 200px; flex: none; } .h .wm { font-size: 150px; }
 #badge { position: absolute; right: ${Math.round(W * 0.018)}px; bottom: ${Math.round(W * 0.018)}px; display: flex; align-items: center; gap: ${Math.round(W * 0.006)}px;
@@ -66,6 +78,7 @@ body { background: url('file://${resolve(inp)}') 0 0 / ${W}px ${H}px no-repeat; 
 <div id="layer">${logo}</div>
 ${badge ? `<div id="badge"><span class="ic">${icon.replace(/#ffffff/g, '#FF6A00')}</span><span><b>Parus</b> <i>Bayroq</i></span></div>` : ''}
 <script>
+document.fonts.ready.then(function(){
 // Perspective transform mapping the box (0,0)-(SW,SH) onto the quad (adjugate method).
 function adj(m){return[m[4]*m[8]-m[5]*m[7],m[2]*m[7]-m[1]*m[8],m[1]*m[5]-m[2]*m[4],m[5]*m[6]-m[3]*m[8],m[0]*m[8]-m[2]*m[6],m[2]*m[3]-m[0]*m[5],m[3]*m[7]-m[4]*m[6],m[1]*m[6]-m[0]*m[7],m[0]*m[4]-m[1]*m[3]];}
 function mul(a,b){const c=Array(9);for(let i=0;i<3;i++)for(let j=0;j<3;j++){let s=0;for(let k=0;k<3;k++)s+=a[3*i+k]*b[3*k+j];c[3*i+j]=s;}return c;}
@@ -75,7 +88,10 @@ function proj(s,d){return mul(basis(...d),adj(basis(...s)));}
 const q=${JSON.stringify(quad)}, w=${SW}, h=${SH};
 let t=proj([0,0,w,0,0,h,w,h],[q[0],q[1],q[2],q[3],q[6],q[7],q[4],q[5]]);
 for(let i=0;i<9;i++)t[i]=t[i]/t[8];
+// Fit client text: as large as the flag allows along its length and across it.
+document.querySelectorAll('.fit').forEach(function(el){el.style.fontSize='100px';var box=el.parentNode;var k=Math.min(box.clientHeight*+el.dataset.len/el.offsetWidth,box.clientWidth*+el.dataset.thick/el.offsetHeight);el.style.fontSize=(100*k)+'px';});
 document.getElementById('layer').style.transform='matrix3d('+[t[0],t[3],0,t[6],t[1],t[4],0,t[7],0,0,1,0,t[2],t[5],0,t[8]].join(',')+')';
+document.body.dataset.ready='1';});
 </script></body></html>`;
 
 const dir = mkdtempSync(join(tmpdir(), 'brand-'));
@@ -84,7 +100,7 @@ writeFileSync(page, html);
 const b = await chromium.launch({ args: ['--allow-file-access-from-files'] });
 const p = await b.newPage({ viewport: { width: W, height: H }, deviceScaleFactor: 1 });
 await p.goto('file://' + page);
-await p.evaluate(() => document.fonts.ready);
+await p.waitForSelector('body[data-ready="1"]');
 await p.waitForTimeout(150);
 await p.screenshot(out.endsWith('.png') ? { path: out } : { path: out, type: 'jpeg', quality: 92 });
 await b.close();

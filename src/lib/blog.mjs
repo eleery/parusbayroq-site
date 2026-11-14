@@ -12,6 +12,8 @@ export function coverOf(data) {
 // Markdown images become figures with real sizes, lazy loading and a caption from the image title:
 // ![alt](/img/blog/<pair>/<name>.webp "Caption")
 export function figures(html) {
+  // Tables scroll sideways on narrow screens instead of widening the page.
+  html = html.replace(/<table>/g, '<div class="table-wrap"><table>').replace(/<\/table>/g, '</table></div>');
   return html.replace(/<p>\s*(<img [^>]*>)\s*<\/p>/g, '$1').replace(/<img ([^>]*)>/g, (m, attrs) => {
     const src = (attrs.match(/src="([^"]+)"/) || [])[1];
     const meta = src && blogImages[src];

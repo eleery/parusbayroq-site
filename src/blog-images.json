@@ -10,5 +10,29 @@
   "height": 675,
   "bytes": 111594,
   "og": "/img/blog/cheap-outdoor/shop-flag-og.jpg"
+ },
+ "/img/blog/flag-phrases/cover-ru.webp": {
+  "width": 1200,
+  "height": 675,
+  "bytes": 100006,
+  "og": "/img/blog/flag-phrases/cover-ru-og.jpg"
+ },
+ "/img/blog/flag-phrases/cover-uz.webp": {
+  "width": 1200,
+  "height": 675,
+  "bytes": 101238,
+  "og": "/img/blog/flag-phrases/cover-uz-og.jpg"
+ },
+ "/img/blog/flag-phrases/text-compare-ru.webp": {
+  "width": 1200,
+  "height": 675,
+  "bytes": 154700,
+  "og": "/img/blog/flag-phrases/text-compare-ru-og.jpg"
+ },
+ "/img/blog/flag-phrases/text-compare-uz.webp": {
+  "width": 1200,
+  "height": 675,
+  "bytes": 154330,
+  "og": "/img/blog/flag-phrases/text-compare-uz-og.jpg"
  }
 }
