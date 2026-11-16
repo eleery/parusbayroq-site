@@ -61,6 +61,15 @@ jobs:
       - name: Upload to Beget
         run: bash scripts/deploy-beget.sh "${{ steps.mode.outputs.mode }}" 2>&1 | tee deploy.log
 
+      - name: Tell Yandex and Bing about new pages (IndexNow)
+        if: steps.mode.outputs.mode != 'check'
+        continue-on-error: true
+        env:
+          MSG: ${{ github.event.head_commit.message }}
+        run: |
+          sleep 5
+          case "$MSG" in *"[indexnow-all]"*) node scripts/indexnow.mjs --all ;; *) node scripts/indexnow.mjs ;; esac | tee -a deploy.log
+
       - name: Keep backup and log for 30 days
         if: always()
         uses: actions/upload-artifact@v4

@@ -2,6 +2,7 @@
 title: "Toshkentda reklama bayrog'i qancha turadi: 2026-yil"
 description: "Toshkentda parus va klassik bayroq qancha turadi, nega arzon bayroq ko'pincha qimmatga tushadi, bayroqlarni qanday matodan tikamiz va dizaynni qanday bepul qilamiz."
 date: 2026-11-13
+updated: 2026-11-16
 lang: uz
 pair: price
 cover: /img/blog/price/flagi-skidki-gullar-u-magazinov-tashkent.webp

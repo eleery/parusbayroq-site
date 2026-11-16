@@ -1,7 +1,8 @@
 ---
-title: "Kichik biznes uchun arzon tashqi reklama: nimadan boshlash kerak"
-description: "Budjet kichkina bo'lsa, do'kon, kafe yoki servisga qanday reklama qilsa bo'ladi: nimani bepul qilasiz, nima tezroq o'zini oqlaydi va nega kirish oldidagi bayroq eng arzon usullardan biri."
+title: "Toshkentda arzon tashqi reklama: kichik biznes nimadan boshlasin"
+description: "Toshkentda arzon reklama: budjet kichkina bo'lsa, do'kon, kafe yoki servisga qanday reklama qilsa bo'ladi: nimani bepul qilasiz, nima tezroq o'zini oqlaydi va nega kirish oldidagi bayroq eng arzon usullardan biri."
 date: 2026-11-16
+updated: 2026-11-16
 lang: uz
 pair: cheap-outdoor
 cover: /img/blog/cheap-outdoor/flag-optom-narxlar-magazin.webp
@@ -16,7 +17,7 @@ faq:
     a: "Matosi 2–4 yil yuradi: bosma sublimatsiya usulida, bo'yog'i quyoshda o'chmaydi, yomg'irda yuvilmaydi. Konstruksiyasi undan ham uzoq ishlaydi — yangi aksiya chiqsa, faqat matosini almashtirasiz."
 ---
 
-Pulingiz kam bo'lsa, uchta narsadan boshlang: xaritadagi bepul kartochka, tushunarli peshlavha va eshik oldida bayroq. Kartochka sizni telefondan qidirganlarni olib keladi. Peshlavha bu yerda nima borligini aytadi. Bayroq esa yonidan o'tib ketayotgan, sizni hali bilmaydigan odamning ko'zini tortadi. Eng ko'p olinadigan M o'lchamli parus bayroq ustuni va asosi bilan 450 000 so'm turadi va yillab ishlaydi — ikki yil xizmat qilsa ham, oyiga 19 000 so'mdan kamga tushadi.
+Toshkentda reklamaga pulingiz kam bo'lsa, uchta narsadan boshlang: xaritadagi bepul kartochka, tushunarli peshlavha va eshik oldida bayroq. Kartochka sizni telefondan qidirganlarni olib keladi. Peshlavha bu yerda nima borligini aytadi. Bayroq esa yonidan o'tib ketayotgan, sizni hali bilmaydigan odamning ko'zini tortadi. Eng ko'p olinadigan M o'lchamli parus bayroq ustuni va asosi bilan 450 000 so'm turadi va yillab ishlaydi — ikki yil xizmat qilsa ham, oyiga 19 000 so'mdan kamga tushadi.
 
 Pastda hammasi tartib bilan: nimani bepul qilsa bo'ladi, pulni avval nimaga sarflash kerak va kichik biznes ko'pincha qayerda ortiqcha pul to'laydi.
 

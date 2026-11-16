@@ -39,3 +39,7 @@ export function businessSchema(lang, description) {
     sameAs: [CONTACTS.channel, CONTACTS.instagram],
   };
 }
+
+// Last content change of the static pages (home, order page, privacy) — bump when they change.
+// Used as <lastmod> in sitemap.xml so search engines trust the dates.
+export const STATIC_UPDATED = '2026-11-16';
