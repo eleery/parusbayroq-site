@@ -40,11 +40,25 @@ export async function alternatesOf(entry) {
   return Object.fromEntries(all.map((e) => [e.data.lang, postPath(e.data.lang, slugOf(e))]));
 }
 
+// Homepage block: up to 2 popular articles (popular: true) + the newest others, 4 cards, no repeats.
+// Shown newest first, then popular. Rebuilt on every deploy, so a new article appears there the day it is published.
+export async function homePosts(lang, total = 4, popularMax = 2) {
+  const posts = await getPosts(lang);
+  const popular = posts.filter((p) => p.data.popular).slice(0, popularMax);
+  const fresh = posts.filter((p) => !popular.includes(p)).slice(0, total - popular.length);
+  return [...fresh.map((p) => [p, 'new']), ...popular.map((p) => [p, 'popular'])].map(([p, badge]) => {
+    const c = coverOf(p.data);
+    return { href: postPath(lang, slugOf(p)), title: p.data.title, description: p.data.description, badge,
+      img: c && { src: c.src, width: c.width, height: c.height }, alt: p.data.coverAlt || p.data.title };
+  });
+}
+
 export const BLOG_TEXT = {
   ru: {
     title: 'Блог Parus Bayroq — всё о рекламных флагах',
     description: 'Статьи о рекламных флагах: цены, размеры, выбор формы, печать, установка и уход.',
     h1: 'Блог о рекламных флагах', lead: 'Цены, размеры, печать, установка — простыми словами и с цифрами.',
+    homeTitle: 'Полезные статьи о рекламных флагах', homeAll: 'Все статьи →', badgeNew: 'Новое', badgePopular: 'Популярное',
     home: 'Главная', blog: 'Блог', read: 'Читать →', published: 'Опубликовано', updated: 'обновлено',
     ctaTitle: 'Рассчитать флаг для вашего бизнеса', ctaText: 'Калькулятор сразу покажет цену, а менеджер ответит в течение 10 минут.',
     ctaCalc: 'Открыть калькулятор', ctaTg: 'Написать в Telegram',
@@ -57,6 +71,7 @@ export const BLOG_TEXT = {
     title: 'Parus Bayroq blogi — reklama bayroqlari haqida',
     description: "Reklama bayroqlari haqida maqolalar: narxlar, o'lchamlar, shakl tanlash, bosma, o'rnatish va parvarish.",
     h1: 'Reklama bayroqlari haqida blog', lead: "Narxlar, o'lchamlar, bosma, o'rnatish — oddiy so'zlar va raqamlar bilan.",
+    homeTitle: "Reklama bayroqlari haqida foydali maqolalar", homeAll: 'Barcha maqolalar →', badgeNew: 'Yangi', badgePopular: 'Ommabop',
     home: 'Bosh sahifa', blog: 'Blog', read: "O'qish →", published: 'Chop etilgan', updated: 'yangilangan',
     ctaTitle: 'Biznesingiz uchun bayroqni hisoblang', ctaText: "Kalkulyator narxni darhol ko'rsatadi, menejer esa 10 daqiqa ichida javob beradi.",
     ctaCalc: 'Kalkulyatorni ochish', ctaTg: 'Telegramda yozish',

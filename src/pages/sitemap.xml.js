@@ -8,8 +8,11 @@ const entry = (loc, alts, priority, lastmod) => `  <url>\n    <loc>${SITE}${loc}
   (alts.ru ? `    <xhtml:link rel="alternate" hreflang="x-default" href="${SITE}${alts.ru}"/>\n` : '') + '  </url>';
 
 export async function GET() {
-  const urls = pages.flatMap((g) => ['ru', 'uz'].map((l) => entry(g[l], { ru: g.ru, uz: g.uz }, g.priority, STATIC_UPDATED)));
   const day = (p) => (p.data.updated || p.data.date).toISOString().slice(0, 10);
+  // The homepage shows the newest articles, so it changes when a new one is published.
+  const newestAll = [...(await getPosts('ru')), ...(await getPosts('uz'))].map(day).sort().pop() || STATIC_UPDATED;
+  const homeDate = newestAll > STATIC_UPDATED ? newestAll : STATIC_UPDATED;
+  const urls = pages.flatMap((g) => ['ru', 'uz'].map((l) => entry(g[l], { ru: g.ru, uz: g.uz }, g.priority, g.ru === '/' ? homeDate : STATIC_UPDATED)));
   for (const lang of ['ru', 'uz']) {
     const posts = await getPosts(lang);
     if (!posts.length) continue;

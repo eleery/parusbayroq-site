@@ -1,5 +1,5 @@
 ---
-import { getPosts } from '../lib/blog.mjs';
+import { getPosts, homePosts, BLOG_TEXT } from '../lib/blog.mjs';
 import Base from '../layouts/Base.astro';
 import { renderHome } from '../lib/home.mjs';
 import { META, businessSchema } from '../lib/site.mjs';
@@ -8,7 +8,8 @@ import { calcData } from '../lib/prices.mjs';
 const { lang } = Astro.props;
 const m = META[lang];
 const hasBlog = (await getPosts(lang)).length > 0;
-const { html, faq, jsDict } = renderHome(lang, { blog: hasBlog });
+const articles = hasBlog ? await homePosts(lang) : [];
+const { html, faq, jsDict } = renderHome(lang, { blog: hasBlog, articles, articleText: BLOG_TEXT[lang] });
 const schema = [
   businessSchema(lang, m.description),
   { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) },

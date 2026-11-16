@@ -7,6 +7,7 @@ pair: flag-phrases
 cover: /img/blog/flag-phrases/flagi-kofe-s-soboy-issiq-non-kofeynya.webp
 coverAlt: "Toshkentdagi qahvaxona oldida «Кофе с собой» va «Issiq non» reklama parus bayroqlari — bayroqqa yozuv namunalari"
 draft: false
+popular: true
 faq:
   - q: "Reklama bayrog'iga nechta so'z yozish kerak?"
     a: "Katta harflar bilan bir-uchta so'z: bu yerda nima bor, nima bo'lyapti yoki qayoqqa yurish kerak. Yozuv qancha qisqa bo'lsa, harflar shuncha katta bo'ladi va uzoqdan ko'rinadi."

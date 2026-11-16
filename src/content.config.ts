@@ -15,6 +15,8 @@ const blog = defineCollection({
     cover: z.string().optional(),
     // SEO description of the cover image (alt text): what is in the photo + flag type + city.
     coverAlt: z.string().optional(),
+    // Shown on the homepage block as «Популярное» (chosen by search demand / Webmaster data).
+    popular: z.boolean().default(false),
     draft: z.boolean().default(false),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
   }),

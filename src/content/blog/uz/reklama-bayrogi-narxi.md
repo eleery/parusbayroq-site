@@ -8,6 +8,7 @@ pair: price
 cover: /img/blog/price/flagi-skidki-gullar-u-magazinov-tashkent.webp
 coverAlt: "Toshkentda do'konlar oldida bochka-asosli «Скидки» va «Gullar» reklama parus bayroqlari — reklama bayroqlari narxi"
 draft: false
+popular: true
 faq:
   - q: "Parus bayroq qancha turadi?"
     a: "Standart parus M (280×70 sm) — ustun va bochka-asos bilan birga 450 000 so'm. Ustuningiz bo'lsa, mato 250 000 so'm arzonga tushadi."
