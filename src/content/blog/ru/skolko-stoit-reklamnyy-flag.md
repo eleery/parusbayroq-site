@@ -4,8 +4,8 @@ description: "Сколько стоит флаг-парус и классиче�
 date: 2026-11-13
 lang: ru
 pair: price
-cover: parus_vinder.png
-coverAlt: "Рекламный флаг-парус с мачтой и бочкой-основанием — цены на флаги в Ташкенте"
+cover: /img/blog/price/flagi-skidki-gullar-u-magazinov-tashkent.webp
+coverAlt: "Рекламные флаги-паруса «Скидки» и «Gullar» на бочках-основаниях у магазинов в Ташкенте — цены на рекламные флаги"
 draft: false
 faq:
   - q: "Сколько стоит флаг-парус?"

@@ -4,8 +4,8 @@ description: "Toshkentda parus va klassik bayroq qancha turadi, nega arzon bayro
 date: 2026-11-13
 lang: uz
 pair: price
-cover: parus_vinder.png
-coverAlt: "Ustun va bochka-asosli reklama parus bayrog'i — Toshkentda bayroq narxlari"
+cover: /img/blog/price/flagi-skidki-gullar-u-magazinov-tashkent.webp
+coverAlt: "Toshkentda do'konlar oldida bochka-asosli «Скидки» va «Gullar» reklama parus bayroqlari — reklama bayroqlari narxi"
 draft: false
 faq:
   - q: "Parus bayroq qancha turadi?"
