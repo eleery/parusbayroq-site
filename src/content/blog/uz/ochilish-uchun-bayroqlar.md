@@ -1,21 +1,21 @@
 ---
 title: "Do'kon yoki kafe ochilishiga bayroqlar: nima va qachon buyurtma qilish kerak"
 description: "Do'kon, kafe yoki servis ochayotganda qanday bayroqlar kerak, nechta, ularga nima yozish va necha kun oldin buyurtma berish kerak — kunma-kun reja va Toshkentdagi narxlar bilan."
-date: 2026-11-15
+date: 2026-11-16
 lang: uz
 pair: opening-flags
 cover: /img/blog/opening-flags/opening-day-uz.webp
-draft: true
+draft: false
 faq:
   - q: "Ochilishga bayroqni necha kun oldin buyurtma qilish kerak?"
     a: "1–2 hafta oldin qilgan yaxshi: maketni bemalol kelishib olasiz, «Tez orada ochilamiz» bayrog'ini ham oldinroq qo'yasiz. Bayroqning o'zini 3 kunda qilamiz, juda shoshilinch bo'lsa — 2 soatdan."
   - q: "Ochilgandan keyin bayroqni nima qilaman?"
-    a: "Joyida qoldiring. Konstruksiya yillab xizmat qiladi, matosini esa almashtirasiz: «Biz ochildik!» o'rniga nom yoki xizmat yozilgan doimiy mato qo'yasiz. Ustun va asossiz yangi mato butun bayroqdan 250 000 so'm arzon."
+    a: "Joyida qoldiring. Konstruksiya yillab xizmat qiladi, matosini esa almashtirasiz: «Biz ochildik!» o'rniga nom yoki xizmat yozilgan doimiy mato qo'yasiz. Ustun va asossiz M parus uchun yangi mato 200 000 so'm."
   - q: "Ochilishga bayroqni viloyatga buyurtma qilsa bo'ladimi?"
     a: "Ha. Toshkent ichida bir kunda olib boramiz, viloyatlarga transport kompaniyasi orqali 1–3 kunda jo'natamiz — shu vaqtni ham hisobga oling."
 ---
 
-Ochilishga bayroqni bir-ikki hafta oldin buyurtma qiling. Avval eshik oldiga sanasi yozilgan «Tez orada ochilamiz» bayrog'ini qo'ying — qo'shnilar ham, o'tib ketayotganlar ham bu yerda nimadir ochilishini eslab qolsin. Ochilish kuni esa o'sha ustunda «Biz ochildik!» bayrog'i turadi — faqat matosini almashtirasiz, xolos. Kichik do'kon yoki kafe uchun bir-ikkita parus bayroq yetadi: eng ko'p olinadigan o'lchami ustun va asosi bilan 500 000 so'm.
+Ochilishga bayroqni bir-ikki hafta oldin buyurtma qiling. Avval eshik oldiga sanasi yozilgan «Tez orada ochilamiz» bayrog'ini qo'ying — qo'shnilar ham, o'tib ketayotganlar ham bu yerda nimadir ochilishini eslab qolsin. Ochilish kuni esa o'sha ustunda «Biz ochildik!» bayrog'i turadi — faqat matosini almashtirasiz, xolos. Kichik do'kon yoki kafe uchun bir-ikkita parus bayroq yetadi: eng ko'p olinadigan M o'lchami ustun va asosi bilan 450 000 so'm.
 
 Pastda — kunma-kun reja, qanaqa nuqtaga nechta bayroq kerak va ochilgandan keyin ular bilan nima qilinadi.
 
@@ -39,7 +39,7 @@ Rejaga ulgurmayapsizmi? Odatda bayroqni 3 kunda qilamiz, ochilish ertaga bo'lsa 
 
 ## Nechta bayroq kerak
 
-- **Kichik do'kon, qahvaxona, salon.** Eshik oldida bir-ikkita parus. Eshik burchakda bo'lsa — har tomoniga bittadan.
+- **Kichik do'kon, qahvaxona, salon.** Eshik oldida bir-ikkita M parus. Eshik burchakda bo'lsa — har tomoniga bittadan.
 - **Yo'l bo'yidagi joy: avtomoyka, shinomontaj, trassa bo'yidagi do'kon.** Haydovchi ko'rib ulgurishi uchun yo'l bo'ylab ikki-uchta parus. Bu yerda ikki tomonlama bayroq yaxshi: ikkala tomondan kelayotganlar ham o'qiydi.
 - **Katta do'kon, avtosalon, mashina qo'yadigan joyi bor savdo nuqtasi.** Fasad yoki mashina qo'yadigan joy bo'ylab bir qator parus, fasadda yoki ustunda esa klassik bayroq.
 
@@ -63,10 +63,10 @@ Ochilish bayrog'ini hech kim tashlab yubormaydi. Konstruksiya yillab xizmat qila
 
 <div data-price-table="parus,flag"></div>
 
-Bir nechta misol (parus — eng ko'p olinadigan L o'lchami):
+Bir nechta misol (parus — eng ko'p olinadigan M o'lchami):
 
-- Qahvaxona: bitta parus «Tez orada ochilamiz» va o'sha ustunga ikkinchi «Biz ochildik!» matosi — **750 000 so'm**.
-- Ikki eshikli do'kon: ikkita parus — **1 000 000 so'm**.
+- Qahvaxona: bitta parus «Tez orada ochilamiz» va o'sha ustunga ikkinchi «Biz ochildik!» matosi — **650 000 so'm**.
+- Ikki eshikli do'kon: ikkita parus — **900 000 so'm**.
 - Fasadga 150×100 klassik bayroq — **120 000 so'm**.
 
 Katta buyurtmalarga — masalan, bir yo'la bir nechta joy ochsangiz — chegirma qilamiz. Doimiy mijozlarimizni esa sovg'alar bilan xursand qilamiz.

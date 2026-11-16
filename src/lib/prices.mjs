@@ -45,7 +45,7 @@ export function priceTableHtml(lang) {
 }
 
 // Price cards for articles: <div data-price-table="parus,flag"></div> in Markdown.
-// "parus" covers sail and feather (same prices). Size L is marked as the most popular (owner, 16.11.2026).
+// "parus" covers sail and feather (same prices). Size M is marked as the most popular (owner, 16.11.2026).
 const CARD_TEXT = {
   ru: { parus: ['Флаг-парус и перо', 'С мачтой и бочкой-основанием'], flag: ['Классический флаг', 'Любой размер, без конструкции'], rastyajka: ['Растяжка', 'Без конструкции'],
         standard: 'ходовой', unit: 'см', cur: 'сум', note: 'Двусторонний флаг — полотно ×2, конструкция один раз. Если мачта уже есть, полотно паруса на 250 000 сум дешевле.' },
@@ -59,7 +59,7 @@ export function priceCardsHtml(lang, keys = ['parus', 'flag']) {
     const p = PRICES.find((x) => x.key === key);
     if (!p) return '';
     const rows = p.rows.map(([size, price], i) => {
-      const std = key === 'parus' && SIZES[i] === 'L';
+      const std = key === 'parus' && SIZES[i] === 'M';
       return `<li${std ? ' class="is-standard"' : ''}><span class="price-card__size"><b>${SIZES[i]}</b> ${size} ${T.unit}${std ? ` <em>${T.standard}</em>` : ''}</span><span class="price-card__price">${nb(price)} ${T.cur}</span></li>`;
     }).join('');
     return `<div class="price-card"><div class="price-card__head"><h3>${T[key][0]}</h3><p>${T[key][1]}</p></div><ul class="price-card__rows">${rows}</ul></div>`;

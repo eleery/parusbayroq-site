@@ -3,9 +3,9 @@
 Статус: [x] опубликовано · [~] черновик ждёт одобрения · [ ] в очереди. Агент берёт первую тему со статусом [ ].
 
 - [x] Сколько стоит рекламный флаг в Ташкенте: цены 2026 (опубликовано 13.11.2026) — `ru/skolko-stoit-reklamnyy-flag`, `uz/reklama-bayrogi-narxi`
-- [~] Недорогая наружная реклама для малого бизнеса: с чего начать — `ru/nedorogaya-naruzhnaya-reklama`, `uz/arzon-tashqi-reklama` (документ: https://claude.ai/artifact/9ncQM3SsS7x5GYN7kApg8m)
-- [~] Что написать на рекламном флаге: 30 коротких фраз на русском и узбекском — `ru/chto-napisat-na-reklamnom-flage`, `uz/reklama-bayrogiga-nima-yozish` (документ: https://claude.ai/artifact/J1XM1QDUSvbWpq1okrBEEF)
-- [~] Флаги к открытию магазина или кафе: что заказать и когда — `ru/flagi-k-otkrytiyu-magazina`, `uz/ochilish-uchun-bayroqlar` (документ: https://claude.ai/artifact/P6RPeas3KF2LGfuhj9hSah)
+- [x] Недорогая наружная реклама для малого бизнеса: с чего начать (опубликовано 16.11.2026) — `ru/nedorogaya-naruzhnaya-reklama`, `uz/arzon-tashqi-reklama`
+- [x] Что написать на рекламном флаге: 30 коротких фраз на русском и узбекском (опубликовано 16.11.2026) — `ru/chto-napisat-na-reklamnom-flage`, `uz/reklama-bayrogiga-nima-yozish`
+- [x] Флаги к открытию магазина или кафе: что заказать и когда (опубликовано 16.11.2026) — `ru/flagi-k-otkrytiyu-magazina`, `uz/ochilish-uchun-bayroqlar`
 - [ ] Конструкция флага: мачта, бочка-основание и почему не крестовина (250 000, вода/песок, 15 м/с; запросы «основание для флага», «флагшток виндер», «bayroq ustuni»)
 - [ ] Какой размер флага-паруса выбрать, чтобы его видели с дороги (XS–L, почему чаще M)
 - [ ] Односторонний или двусторонний флаг: когда стоит доплатить (90% сзади, зеркальный текст)

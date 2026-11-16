@@ -1,18 +1,18 @@
 ---
 title: "Reklama bayrog'iga nima yozish kerak: o'zbek va rus tilida 30 ta qisqa ibora"
 description: "Reklama bayrog'iga yozsa bo'ladigan tayyor iboralar — o'zbekcha va ruscha, uch soniya qoidasi va ko'p uchraydigan xatolar: nega telefon raqami bilan xizmatlar ro'yxatini hech kim o'qimaydi va yo'ldan ko'rinadigan yozuvni qanday qilish kerak."
-date: 2026-11-14
+date: 2026-11-16
 lang: uz
 pair: flag-phrases
 cover: /img/blog/flag-phrases/cover-uz.webp
-draft: true
+draft: false
 faq:
   - q: "Reklama bayrog'iga nechta so'z yozish kerak?"
     a: "Katta harflar bilan bir-uchta so'z: bu yerda nima bor, nima bo'lyapti yoki qayoqqa yurish kerak. Yozuv qancha qisqa bo'lsa, harflar shuncha katta bo'ladi va uzoqdan ko'rinadi."
   - q: "Bayroqqa qaysi tilda yozgan yaxshi?"
     a: "Mijozlaringizga qarab. «Qahva», «Shinomontaj», «Ochiq» kabi qisqa so'zlarni deyarli hamma tushunadi. Ikkala til ham kerak bo'lsa, ikki tomonlama bayroq qiling: uning ikki tomoni alohida bosiladi."
   - q: "Keyin bayroqdagi yozuvni almashtirsa bo'ladimi?"
-    a: "Ha. Konstruksiya joyida qoladi, faqat matosi almashadi. Ustun va asossiz yangi mato butun bayroqdan 250 000 so'm arzon, dizayn — bepul."
+    a: "Ha. Konstruksiya joyida qoladi, faqat matosi almashadi. Ustun va asossiz M parus uchun yangi mato 200 000 so'm, dizayn — bepul."
 ---
 
 Bayroqqa o'tkinchi bir-ikki soniyada tushunadigan bir-uchta so'z yozing: bu yerda nima bor, nima bo'lyapti yoki qayoqqa yurish kerak. «Qahva», «Shinomontaj», «Biz ochildik», «Kirish shu yerda». Telefon, manzil, xizmatlar ro'yxatini bayroqdan hech kim o'qib o'tirmaydi — ularning joyi peshlavhada, Instagramda va xaritadagi kartochkada. Pastda — o'zbekcha va ruscha 30 ta tayyor ibora va yozuv ishlashi uchun bir nechta oddiy qoida.
@@ -21,7 +21,7 @@ Bayroqqa o'tkinchi bir-ikki soniyada tushunadigan bir-uchta so'z yozing: bu yerd
 
 Bayroqni yo'l-yo'lakay ko'rishadi: odam yonidan o'tib ketyapti yoki mashinada ketyapti, yozuvga esa ikki-uch soniyasi bor, xolos. Shu vaqtda bir-ikki so'zni o'qishga ulguradi — agar harflar katta va aniq bo'lsa. Qolgani mayda naqshga aylanib ketadi.
 
-Parus bayroqda yozuv mato bo'ylab, pastdan tepaga ketadi. Mato baland, lekin ensiz, shuning uchun so'z qancha kam bo'lsa, harf shuncha katta chiqadi. Parusdagi bitta so'z mayda shriftdagi uch qatordan ancha uzoqdan o'qiladi.
+Parus bayroqda yozuv mato bo'ylab, pastdan tepaga ketadi. Mato baland, lekin ensiz, shuning uchun so'z qancha kam bo'lsa, harf shuncha katta chiqadi. M o'lchamli parusdagi bitta so'z mayda shriftdagi uch qatordan ancha uzoqdan o'qiladi.
 
 ![Shinomontaj oldidagi ikkita bayroq: chapda mayda matn ko'p, o'ngda bitta katta so'z](/img/blog/flag-phrases/text-compare-uz.webp "Chapda — yo'ldan o'qib bo'lmaydigan bayroq. O'ngda — o'sha shinomontaj, bitta so'z bilan")
 

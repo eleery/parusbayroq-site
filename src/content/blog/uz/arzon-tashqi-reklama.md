@@ -1,21 +1,21 @@
 ---
 title: "Kichik biznes uchun arzon tashqi reklama: nimadan boshlash kerak"
 description: "Budjet kichkina bo'lsa, do'kon, kafe yoki servisga qanday reklama qilsa bo'ladi: nimani bepul qilasiz, nima tezroq o'zini oqlaydi va nega kirish oldidagi bayroq eng arzon usullardan biri."
-date: 2026-11-13
+date: 2026-11-16
 lang: uz
 pair: cheap-outdoor
 cover: /img/blog/cheap-outdoor/shop-flag.webp
-draft: true
+draft: false
 faq:
   - q: "Do'kon uchun eng arzon tashqi reklama qaysi?"
-    a: "Bepuli — Yandex Xaritalar va Google Maps'dagi kartochka. Kirish oldiga qo'yiladiganlardan eng arzon va ko'zga tashlanadigani — parus bayroq: eng ko'p olinadigan L o'lchami ustun va asosi bilan 500 000 so'm, 2–4 yil xizmat qiladi."
+    a: "Bepuli — Yandex Xaritalar va Google Maps'dagi kartochka. Kirish oldiga qo'yiladiganlardan eng arzon va ko'zga tashlanadigani — parus bayroq: eng ko'p olinadigan M o'lchami ustun va asosi bilan 450 000 so'm, 2–4 yil xizmat qiladi."
   - q: "Bitta bayroq buyurtma qilsa bo'ladimi?"
     a: "Ha, bittadan ham qilamiz. Dizayn bepul: logotip yoki peshlavhaning rasmini tashlang, dizayner maket qilib, kelishib olish uchun yuboradi."
   - q: "Reklama bayrog'i qancha xizmat qiladi?"
     a: "Matosi 2–4 yil yuradi: bosma sublimatsiya usulida, bo'yog'i quyoshda o'chmaydi, yomg'irda yuvilmaydi. Konstruksiyasi undan ham uzoq ishlaydi — yangi aksiya chiqsa, faqat matosini almashtirasiz."
 ---
 
-Pulingiz kam bo'lsa, uchta narsadan boshlang: xaritadagi bepul kartochka, tushunarli peshlavha va eshik oldida bayroq. Kartochka sizni telefondan qidirganlarni olib keladi. Peshlavha bu yerda nima borligini aytadi. Bayroq esa yonidan o'tib ketayotgan, sizni hali bilmaydigan odamning ko'zini tortadi. Eng ko'p olinadigan parus bayroq ustuni va asosi bilan 500 000 so'm turadi va yillab ishlaydi — ikki yil xizmat qilsa ham, oyiga taxminan 21 000 so'mga tushadi.
+Pulingiz kam bo'lsa, uchta narsadan boshlang: xaritadagi bepul kartochka, tushunarli peshlavha va eshik oldida bayroq. Kartochka sizni telefondan qidirganlarni olib keladi. Peshlavha bu yerda nima borligini aytadi. Bayroq esa yonidan o'tib ketayotgan, sizni hali bilmaydigan odamning ko'zini tortadi. Eng ko'p olinadigan M o'lchamli parus bayroq ustuni va asosi bilan 450 000 so'm turadi va yillab ishlaydi — ikki yil xizmat qilsa ham, oyiga 19 000 so'mdan kamga tushadi.
 
 Pastda hammasi tartib bilan: nimani bepul qilsa bo'ladi, pulni avval nimaga sarflash kerak va kichik biznes ko'pincha qayerda ortiqcha pul to'laydi.
 
@@ -51,7 +51,7 @@ Mijozlarimizning tajribasida eshik oldidagi bayroq xaridorlarni 40% gacha ko'pay
 
 <div data-price-table="parus"></div>
 
-Ko'p do'kon va kafelarga bitta parus yetadi — ko'pincha L o'lchamini olishadi, eng ko'p shu ketadi. Nuqta yo'l bo'yida bo'lsa va yozuv ikki tomondan o'qilishi kerak bo'lsa, ikki tomonlama bayroq olishadi.
+Ko'p do'kon va kafelarga bitta parus yetadi — ko'pincha M o'lchamini olishadi, eng ko'p shu ketadi. Nuqta yo'l bo'yida bo'lsa va yozuv ikki tomondan o'qilishi kerak bo'lsa, ikki tomonlama bayroq olishadi.
 
 Narx nimalardan yig'ilishi haqida [«Toshkentda reklama bayrog'i qancha turadi»](/uz/blog/reklama-bayrogi-narxi/) maqolasida batafsil yozganmiz.
 

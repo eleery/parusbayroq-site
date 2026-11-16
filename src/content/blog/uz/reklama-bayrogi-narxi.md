@@ -2,14 +2,13 @@
 title: "Toshkentda reklama bayrog'i qancha turadi: 2026-yil"
 description: "Toshkentda parus va klassik bayroq qancha turadi, nega arzon bayroq ko'pincha qimmatga tushadi, bayroqlarni qanday matodan tikamiz va dizaynni qanday bepul qilamiz."
 date: 2026-11-13
-updated: 2026-11-16
 lang: uz
 pair: price
 cover: parus_vinder.png
 draft: false
 faq:
   - q: "Parus bayroq qancha turadi?"
-    a: "Eng ko'p olinadigan parus — L (300×70 sm): ustun va bochka-asos bilan birga 500 000 so'm. Ustuningiz bo'lsa, mato 250 000 so'm arzonga tushadi."
+    a: "Standart parus M (280×70 sm) — ustun va bochka-asos bilan birga 450 000 so'm. Ustuningiz bo'lsa, mato 250 000 so'm arzonga tushadi."
   - q: "Bayroq quyoshda rangini yo'qotmaydimi?"
     a: "Yo'q. Bosma sublimatsion: bo'yoq mato tolalari ichiga kiradi, shuning uchun quyoshda o'chmaydi, yomg'irda yuvilmaydi va ko'chmaydi. Mato 2–4 yil xizmat qiladi."
   - q: "Tayyor maket kerakmi?"
@@ -18,7 +17,7 @@ faq:
     a: "Ha, katta buyurtmalarga. Doimiy mijozlarimizni esa sovg'alar bilan xursand qilamiz."
 ---
 
-Qisqasi: bizda eng ko'p olinadigan parus bayroq — L o'lcham, 300×70 sm. U ustun va bochka-asos bilan birga 500 000 so'm turadi. Logotipli klassik bayroq arzonroq. Quyida narx nimalardan iboratligi, bayroqlarda odatda nimada tejashlari va birinchi shamolda yiqiladigan yoki yozda rangini yo'qotadigan bayroqni qanday sotib olmaslik haqida ochiq gaplashamiz.
+Qisqasi: do'kon va kafelar oldida ko'pincha ko'radigan parus bayroq — bu M o'lcham, 280×70 sm. Bizda u ustun va bochka-asos bilan birga 450 000 so'm turadi. Logotipli klassik bayroq arzonroq. Quyida narx nimalardan iboratligi, bayroqlarda odatda nimada tejashlari va birinchi shamolda yiqiladigan yoki yozda rangini yo'qotadigan bayroqni qanday sotib olmaslik haqida ochiq gaplashamiz.
 
 ## Nega aynan bayroq
 
@@ -68,10 +67,10 @@ Maketni kelishish uchun yuboramiz. Siz tasdiqlaysiz — va faqat shundan keyin b
 
 ## Amalda qancha bo'ladi
 
-- Kafe kirish oldiga bitta L parus qo'yadi — **500 000 so'm**, va bayroq har kuni elektrsiz ishlaydi.
+- Kafe kirish oldiga bitta standart parus M qo'yadi — **450 000 so'm**, va bayroq har kuni elektrsiz ishlaydi.
 - Logotip ikki tomondan o'qilishi kerak — ikki tomonlama parus L, **750 000 so'm**.
 - Beshta nuqtadan iborat tarmoq 150×100 klassik bayroqlar buyurtma qiladi — beshtasi uchun **600 000 so'm**.
-- Aksiya o'zgardi — konstruksiyasiz L parus uchun yangi mato, **250 000 so'm**.
+- Aksiya o'zgardi — konstruksiyasiz parus M uchun yangi mato, **200 000 so'm**.
 
 ## Faqat bayroqlar emas
 
