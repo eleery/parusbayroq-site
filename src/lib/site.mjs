@@ -15,13 +15,13 @@ export const META = {
     title: 'Флаг парус и рекламные флаги на заказ в Ташкенте | Parus Bayroq',
     description: 'Рекламные флаги на заказ: парус (виндер), перо, растяжка, флаги с логотипом — от 75 000 сум. Производитель в Ташкенте, бесплатный дизайн, срочно — от 2 часов.',
     keywords: 'флаг парус, рекламный флаг, флаг виндер, флаг перо, флаги на заказ, реклама флаг Ташкент, байроқ, parus bayroq, рекламные флаги Узбекистан, флаг растяжка, флажная сетка, yelkan bayroq, reklama bayroq, флаг классика, реклама флаг Узбекистан, уличная реклама флаги, изготовление флагов Ташкент, флаги для бизнеса, флаги для кафе, флаги для магазинов',
-    locale: 'ru_RU', street: 'ул. Шота Руставели, 2/2', city: 'Ташкент',
+    locale: 'ru_RU', street: 'ул. Шота Руставели, 150', city: 'Ташкент',
   },
   uz: {
     title: 'Parus bayroq va reklama bayroqlari Toshkentda | Parus Bayroq',
     description: "Buyurtma asosida reklama bayroqlari: parus (vinder), pero, rastyajka, logotipli bayroqlar — 75 000 so'mdan. Toshkentda ishlab chiqaruvchi, bepul dizayn, shoshilinch — 2 soatdan.",
     keywords: "parus bayroq, yelkan bayroq, reklama bayroqlari, reklama bayroq, bayroq buyurtma, logotipli bayroq, bayroq narxi, bayroq tayyorlash, Toshkent",
-    locale: 'uz_UZ', street: "Shota Rustaveli ko'chasi, 2/2", city: 'Toshkent',
+    locale: 'uz_UZ', street: "Shota Rustaveli ko'chasi, 150", city: 'Toshkent',
   },
 };
 
