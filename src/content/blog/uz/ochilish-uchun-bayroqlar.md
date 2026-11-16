@@ -1,82 +1,82 @@
 ---
-title: "Do'kon yoki kafe ochilishi uchun bayroqlar: nima va qachon buyurtma qilish kerak"
-description: "Do'kon, kafe yoki servis ochilishiga qanday bayroqlar buyurtma qilish kerak, ular nechta bo'lishi, nima yozish va necha kun oldin buyurtma berish kerak — kunma-kun reja va Toshkentdagi narxlar bilan."
+title: "Do'kon yoki kafe ochilishiga bayroqlar: nima va qachon buyurtma qilish kerak"
+description: "Do'kon, kafe yoki servis ochayotganda qanday bayroqlar kerak, nechta, ularga nima yozish va necha kun oldin buyurtma berish kerak — kunma-kun reja va Toshkentdagi narxlar bilan."
 date: 2026-11-15
 lang: uz
 pair: opening-flags
 cover: /img/blog/opening-flags/opening-day-uz.webp
 draft: true
 faq:
-  - q: "Ochilish uchun bayroqlarni necha kun oldin buyurtma qilish kerak?"
-    a: "1–2 hafta oldin yaxshiroq: shunda maketni bemalol kelishib, «Tez orada ochilamiz» bayrog'ini oldindan qo'yishga ulgurasiz. Bayroqning o'zini 3 kunda tayyorlaymiz, muddat yonib turgan bo'lsa — 2 soatdan."
-  - q: "Ochilishdan keyin bayroqni nima qilish kerak?"
-    a: "Qoldiring. Konstruksiya yillar davomida xizmat qiladi, matoni esa almashtirish mumkin: «Biz ochildik!» o'rniga nom yoki xizmat yozilgan doimiy matoni qo'yasiz. Ustun va asossiz M parus uchun yangi mato 200 000 so'm turadi."
-  - q: "Ochilish uchun bayroqni viloyatga buyurtma qilsa bo'ladimi?"
-    a: "Ha. Toshkent bo'ylab bir kun ichida olib boramiz, viloyatlarga transport kompaniyasi orqali 1–3 kunda jo'natamiz — bu vaqtni rejaga qo'shing."
+  - q: "Ochilishga bayroqni necha kun oldin buyurtma qilish kerak?"
+    a: "1–2 hafta oldin qilgan yaxshi: maketni bemalol kelishib olasiz, «Tez orada ochilamiz» bayrog'ini ham oldinroq qo'yasiz. Bayroqning o'zini 3 kunda qilamiz, juda shoshilinch bo'lsa — 2 soatdan."
+  - q: "Ochilgandan keyin bayroqni nima qilaman?"
+    a: "Joyida qoldiring. Konstruksiya yillab xizmat qiladi, matosini esa almashtirasiz: «Biz ochildik!» o'rniga nom yoki xizmat yozilgan doimiy mato qo'yasiz. Ustun va asossiz yangi mato butun bayroqdan 250 000 so'm arzon."
+  - q: "Ochilishga bayroqni viloyatga buyurtma qilsa bo'ladimi?"
+    a: "Ha. Toshkent ichida bir kunda olib boramiz, viloyatlarga transport kompaniyasi orqali 1–3 kunda jo'natamiz — shu vaqtni ham hisobga oling."
 ---
 
-Ochilish uchun bayroqlarni bir–ikki hafta oldin buyurtma qiling. Avval kirish oldiga sanasi yozilgan «Tez orada ochilamiz» bayrog'ini qo'ying — qo'shnilar va o'tkinchilar bu yerda nimadir bo'lishini eslab qolsin. Ochilish kunining o'zida esa «Biz ochildik!» bayrog'i bilan ochilasiz — o'sha ustunda, faqat matoni almashtirib. Kichik do'kon yoki kafe uchun minimal to'plam — bir-ikkita M o'lchamli parus: ustun va asos bilan bayroq uchun 450 000 so'm.
+Ochilishga bayroqni bir-ikki hafta oldin buyurtma qiling. Avval eshik oldiga sanasi yozilgan «Tez orada ochilamiz» bayrog'ini qo'ying — qo'shnilar ham, o'tib ketayotganlar ham bu yerda nimadir ochilishini eslab qolsin. Ochilish kuni esa o'sha ustunda «Biz ochildik!» bayrog'i turadi — faqat matosini almashtirasiz, xolos. Kichik do'kon yoki kafe uchun bir-ikkita parus bayroq yetadi: eng ko'p olinadigan o'lchami ustun va asosi bilan 500 000 so'm.
 
-Quyida — kunma-kun reja, turli nuqtalarga nechta bayroq kerakligi va ochilishdan keyin ular bilan nima qilish kerakligi.
+Pastda — kunma-kun reja, qanaqa nuqtaga nechta bayroq kerak va ochilgandan keyin ular bilan nima qilinadi.
 
-## Nega aynan ochilishga bayroq
+## Nega aynan ochilishga bayroq kerak
 
-Yangi nuqtani hali hech kim bilmaydi: u odatiy yo'nalishlarda yo'q, sharhlari nol, peshlavhani esa o'tkinchilar hali payqamaydi. Bayroq birinchi haftalarning asosiy vazifasini hal qiladi — «bu yerda yangi joy bor» deb aytadi. U harakatlanadi, trotuarning shundoq chetida turadi va uzoqdan ko'rinadi, shuning uchun peshlavha hali osilmagan yoki qo'shnilar orasida yo'qolib qolgan paytda ham ishlaydi.
+Yangi joyni hali hech kim bilmaydi: odamlarning odatiy yo'lida yo'q, sharhlari yo'q, peshlavhani ham hali hech kim payqamaydi. Bayroq birinchi haftalarning asosiy ishini qiladi — «bu yerda yangi joy ochildi» deydi. Shamolda tebranib turadi, trotuarning shundoq chetida turadi, uzoqdan ko'rinadi. Shuning uchun peshlavha hali osilmagan yoki qo'shnilarniki orasida yo'qolib qolgan bo'lsa ham ishlayveradi.
 
 ## Kunma-kun reja
 
 | Qachon | Nima qilish kerak |
 | --- | --- |
-| 2 hafta oldin | Nechta bayroq kerakligi va ularga nima yozishni hal qiling. Logotip yoki bo'lajak peshlavha rasmini yuboring |
-| 10 kun oldin | Maketni tasdiqlang — dizayner uni bepul tayyorlaydi |
-| 7 kun oldin | Kirish oldiga sanasi yozilgan «Tez orada ochilamiz» bayrog'ini qo'ying |
-| 1–3 kun oldin | «Biz ochildik!» matolari tayyor va yetkazilgan. Viloyatlar uchun yetkazishga 1–3 kun qo'shing |
-| Ochilish kuni | Matoni almashtiring yoki yangi bayroqlarni qo'ying — bu bir-ikki daqiqa, asboblarsiz |
+| 2 hafta oldin | Nechta bayroq kerakligi va nima yozishni hal qiling. Logotip yoki bo'lajak peshlavhaning rasmini tashlang |
+| 10 kun oldin | Maketni tasdiqlang — dizayner uni bepul qiladi |
+| 7 kun oldin | Eshik oldiga sanasi yozilgan «Tez orada ochilamiz» bayrog'ini qo'ying |
+| 1–3 kun oldin | «Biz ochildik!» matolari tayyor va yetib kelgan. Viloyatga yetkazishga 1–3 kun qo'shing |
+| Ochilish kuni | Matoni almashtiring yoki yangi bayroqlarni qo'ying — bir-ikki daqiqalik ish, asbobsiz |
 
-Rejaga ulgurmayapsizmi? Odatda bayroqni 3 kunda tayyorlaymiz, ochilish ertaga bo'lsa — shoshilinch, 2 soatdan.
+Rejaga ulgurmayapsizmi? Odatda bayroqni 3 kunda qilamiz, ochilish ertaga bo'lsa — shoshilinch, 2 soatdan.
 
-![Ochilish oldidagi do'kon, kirish oldida «Tez orada ochilamiz» bayrog'i](/img/blog/opening-flags/before-opening-uz.webp "Ochilishdan bir hafta oldin: vitrinalar hali yopiq, bayroq esa qachon kelishni allaqachon aytib turibdi")
+![Ochilish oldidagi do'kon, eshik oldida «Tez orada ochilamiz» bayrog'i](/img/blog/opening-flags/before-opening-uz.webp "Ochilishdan bir hafta oldin: vitrinalar hali yopiq, bayroq esa qachon kelishni aytib turibdi")
 
 ## Nechta bayroq kerak
 
-- **Kichik do'kon, qahvaxona, salon.** Kirish oldida bir-ikkita M parus. Kirish burchakda bo'lsa — har tomonga bittadan bayroq.
-- **Yo'l bo'yidagi nuqta: avtoyuvish, shinomontaj, trassa bo'yidagi do'kon.** Haydovchi payqashga ulgurishi uchun yo'l bo'ylab ikki-uchta parus. Bu yerda ikki tomonlama bayroqlar yaxshiroq: ularni ikkala yo'ldan ham o'qishadi.
-- **Katta do'kon, avtosalon, avtoturargohli savdo nuqtasi.** Fasad yoki avtoturargoh bo'ylab bir qator parus va fasaddagi yoki bayroq ustunidagi klassik bayroq.
+- **Kichik do'kon, qahvaxona, salon.** Eshik oldida bir-ikkita parus. Eshik burchakda bo'lsa — har tomoniga bittadan.
+- **Yo'l bo'yidagi joy: avtomoyka, shinomontaj, trassa bo'yidagi do'kon.** Haydovchi ko'rib ulgurishi uchun yo'l bo'ylab ikki-uchta parus. Bu yerda ikki tomonlama bayroq yaxshi: ikkala tomondan kelayotganlar ham o'qiydi.
+- **Katta do'kon, avtosalon, mashina qo'yadigan joyi bor savdo nuqtasi.** Fasad yoki mashina qo'yadigan joy bo'ylab bir qator parus, fasadda yoki ustunda esa klassik bayroq.
 
 ## Nima yozish kerak
 
-Ochilish uchun ikki-uch so'z yetadi: «Biz ochildik!», «Ochilish!», sanasi bilan «Tez orada ochilamiz». Birinchi kunlarda aksiya bo'lsa, uni bitta so'z bilan yozing — «Chegirmalar», «Sovg'a», «Tatib ko'ring». Nom va logotipni esa tepaga, kichikroq qilib qo'yish mumkin: asosiysi, yo'ldan bu yerda yangi joy borligi o'qilsin.
+Ochilishga ikki-uch so'z yetadi: «Biz ochildik!», «Ochilish!», sanasi bilan «Tez orada ochilamiz». Birinchi kunlari aksiya bo'lsa, uni bitta so'z bilan yozing — «Chegirmalar», «Sovg'a», «Tatib ko'ring». Nom bilan logotipni tepaga, kichikroq qilib qo'ysa bo'ladi: asosiysi, yo'ldan qaraganda bu yerda yangi joy ochilgani bilinsin.
 
-## Ochilishdan keyin bayroq ishlashda davom etadi
+## Ochilgandan keyin ham bayroq ishlayveradi
 
-Ochilish bayrog'i tashlab yuborilmaydi. Konstruksiya yillar davomida xizmat qiladi, mato esa almashtiriladi: bir-ikki haftadan keyin «Biz ochildik!» o'rniga nom yoki asosiy xizmat yozilgan doimiy matoni qo'yasiz. Mato 2–4 yil xizmat qiladi: bosma sublimatsion, bo'yoq quyoshda o'chmaydi va yomg'irda yuvilmaydi.
+Ochilish bayrog'ini hech kim tashlab yubormaydi. Konstruksiya yillab xizmat qiladi, matosi esa almashadi: bir-ikki haftadan keyin «Biz ochildik!» o'rniga nom yoki asosiy xizmat yozilgan doimiy mato qo'yasiz. Mato 2–4 yil yuradi: sublimatsiya usulida bosilgan, bo'yog'i quyoshda o'chmaydi, yomg'irda yuvilmaydi.
 
-## Ochilishdagi ko'p uchraydigan xatolar
+## Ochilishda ko'p qilinadigan xatolar
 
-- **Oxirgi kunda buyurtma qilishadi.** Bayroqni shoshilinch ham tayyorlaymiz, lekin shoshilib qilingan maket yomonroq chiqadi, «Tez orada ochilamiz» bayrog'i esa ishlashga ulgurmaydi.
-- **Sanasiz «Tez orada ochilamiz».** Odam bayroqni ko'radi, lekin qachon kelishni tushunmaydi. Sana — unga yozish mumkin bo'lgan eng foydali narsa.
-- **Bayroq yashirinib qoladi.** To'xtab turgan mashinalar, daraxt ortida yoki ayvon ichkarisida u ko'rinmaydi. Uni trotuar chetiga yaqinroq, odamlar va mashinalar harakati yo'nalishida qo'ying.
-- **Mayda matn.** Bayroqdagi xizmatlar ro'yxati va telefonni hech kim o'qimaydi. Ikki-uchta katta so'z yaxshiroq ishlaydi.
-- **Yengil konstruksiya.** Krestovinadagi bayroq birinchi shamolda yiqiladi — ochilish kunida yoqimsiz. Bizda suv yoki qum to'ldiriladigan og'ir bochka-asos, ustun esa 15 m/s gacha shamolga chidaydi.
+- **Oxirgi kunga qoldirishadi.** Bayroqni shoshilinch ham qilib beramiz, lekin shoshib qilingan maket yaxshi chiqmaydi, «Tez orada ochilamiz» bayrog'i esa ishlashga ulgurmaydi.
+- **Sanasiz «Tez orada ochilamiz».** Odam bayroqni ko'radi-yu, qachon kelishni bilmaydi. Sana — bunday bayroqqa yozsa bo'ladigan eng foydali narsa.
+- **Bayroq ko'rinmay qoladi.** Mashinalar, daraxt orqasida yoki ayvonning ichkarisida uni hech kim ko'rmaydi. Trotuar chetiga yaqinroq, odamlar va mashinalar yuradigan tomonga qo'ying.
+- **Mayda yozuv.** Bayroqdagi xizmatlar ro'yxati bilan telefonni hech kim o'qib o'tirmaydi. Ikki-uchta katta so'z yaxshiroq ishlaydi.
+- **Yengil konstruksiya.** Krestovinadagi bayroq birinchi shamoldayoq yiqiladi — ochilish kuni bunaqasi kerak emas. Bizda suv yoki qum solinadigan og'ir bochka-asos, ustun esa 15 m/s gacha shamolga chidaydi.
 
 ## Bu qancha turadi
 
 <div data-price-table="parus,flag"></div>
 
-Bir nechta misol:
+Bir nechta misol (parus — eng ko'p olinadigan L o'lchami):
 
-- Qahvaxona: bitta M parus «Tez orada ochilamiz» va o'sha ustunga ikkinchi «Biz ochildik!» matosi — **650 000 so'm**.
-- Ikkita kirishli do'kon: ikkita M parus — **900 000 so'm**.
-- Fasad uchun 150×100 klassik bayroq — **120 000 so'm**.
+- Qahvaxona: bitta parus «Tez orada ochilamiz» va o'sha ustunga ikkinchi «Biz ochildik!» matosi — **750 000 so'm**.
+- Ikki eshikli do'kon: ikkita parus — **1 000 000 so'm**.
+- Fasadga 150×100 klassik bayroq — **120 000 so'm**.
 
-Katta buyurtmalarga — masalan, bir yo'la bir nechta nuqta ochsangiz — chegirma qilamiz. Doimiy mijozlarimizni esa sovg'alar bilan xursand qilamiz.
+Katta buyurtmalarga — masalan, bir yo'la bir nechta joy ochsangiz — chegirma qilamiz. Doimiy mijozlarimizni esa sovg'alar bilan xursand qilamiz.
 
 ## Dizayn — bepul
 
-Peshlavha hali tayyor emas, logotip faqat telefonda — qo'rqinchli emas. Bor narsani yuboring, hatto eskiz rasmini ham: dizayner maket tayyorlaydi, yozuv va ranglarni tanlaydi va kelishish uchun yuboradi. Faqat sizning roziligingizdan keyin bosamiz.
+Peshlavha hali tayyor emas, logotip faqat telefonda — hech gap emas. Bor narsani tashlang, hatto eskizning rasmini ham: dizayner maket qiladi, yozuv va ranglarni tanlaydi, kelishib olish uchun yuboradi. Siz «ha» demaguncha bosmaymiz.
 
 ## Qanday buyurtma qilish mumkin
 
-Nimani, qayerda va qachon ochayotganingizni yozing — nechta bayroq kerakligini maslahat beramiz, narxni hisoblaymiz va maket tayyorlaymiz. Barcha bayroq turlari — [«Buyurtma asosida logotipli bayroqlar»](/uz/bayroq-buyurtma/) sahifasida, narxni esa [bosh sahifadagi kalkulyatorda](/uz/#price) taxminlash mumkin.
+Nima ochayotganingizni, qayerda va qachonligini yozing — nechta bayroq kerakligini aytamiz, narxini hisoblaymiz va maket tayyorlaymiz. Hamma bayroq turlari — [«Buyurtma asosida logotipli bayroqlar»](/uz/bayroq-buyurtma/) sahifasida, narxni esa [bosh sahifadagi kalkulyatorda](/uz/#price) chamalab ko'rsa bo'ladi.
 
 <div data-order-form></div>

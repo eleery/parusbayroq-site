@@ -1002,6 +1002,7 @@ a.lang-btn { text-decoration: none; display: inline-block; line-height: 1.4; }
 .price-card__price { font-weight: 700; color: #F97316; white-space: nowrap; font-size: 16px; }
 .price-card__rows li.is-standard { background: #fff4ec; border-top-color: transparent; }
 .price-card__rows li.is-standard + li { border-top-color: transparent; }
+.price-cards--single { grid-template-columns: minmax(0, 420px); }
 .price-cards__note { color: #777; font-size: 14px !important; margin-top: 6px !important; }
 @media (max-width: 640px) { .price-cards { grid-template-columns: 1fr; } .price-card { padding: 18px 18px 10px; } .price-card__rows li { margin: 0 -10px !important; padding: 10px; } }
 .price-card__rows li { border-radius: 0; }

@@ -61,6 +61,7 @@ export const overrides = {
     js_currency: 'сум',
   },
   uz: {
+    faq_a29: "Qisqa va tushunarli iboralarni ishlatish yaxshiroq: brend nomi, xizmat, aksiya, kirish yo'nalishi yoki asosiy ustunlik. Masalan: 'Ochiq', 'Chegirma', 'Avtomoyka', 'Qahva', 'Kirish shu yerda', 'Bepul maslahat'.",
     hero_title1: 'Parus bayroq',
     hero_title2: 'va reklama bayroqlari',
     hero_desc: "Toshkent va butun O'zbekiston bo'ylab buyurtma asosida reklama bayroqlari: parus, pero, rastyajka va logotipli bayroqlar. Elektrsiz 24/7 ishlaydi va 2 daqiqada o'rnatiladi.",
