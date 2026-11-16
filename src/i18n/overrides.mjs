@@ -61,6 +61,11 @@ export const overrides = {
     js_currency: 'сум',
   },
   uz: {
+    // Menu labels (owner, 16.11.2026) — header and footer.
+    nav_types: 'Bayroqlar', footer_types: 'Bayroqlar',
+    nav_about: 'Biz haqimizda', footer_about: 'Biz haqimizda',
+    nav_delivery: "To'lov va yetkazish", footer_delivery: "To'lov va yetkazish",
+    nav_contacts: 'Aloqa', footer_contacts: 'Aloqa',
     faq_a29: "Qisqa va tushunarli iboralarni ishlatish yaxshiroq: brend nomi, xizmat, aksiya, kirish yo'nalishi yoki asosiy ustunlik. Masalan: 'Ochiq', 'Chegirma', 'Avtomoyka', 'Qahva', 'Kirish shu yerda', 'Bepul maslahat'.",
     hero_title1: 'Parus bayroq',
     hero_title2: 'va reklama bayroqlari',
