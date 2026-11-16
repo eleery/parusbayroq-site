@@ -4,7 +4,8 @@ description: "Budjet kichkina bo'lsa, do'kon, kafe yoki servisga qanday reklama 
 date: 2026-11-16
 lang: uz
 pair: cheap-outdoor
-cover: /img/blog/cheap-outdoor/shop-flag.webp
+cover: /img/blog/cheap-outdoor/flag-optom-narxlar-magazin.webp
+coverAlt: "Toshkentdagi oziq-ovqat do'koni oldida «Optom narxlar» reklama parus bayrog'i — arzon tashqi reklama"
 draft: false
 faq:
   - q: "Do'kon uchun eng arzon tashqi reklama qaysi?"
@@ -39,7 +40,7 @@ Kichik do'kon, kafe yoki servis odatda shulardan tanlaydi:
 
 Bayroq peshlavhaning o'rnini bosmaydi — uni kuchaytiradi. Peshlavha «bu yerda nima bor?» degan savolga javob beradi, bayroq esa odamni umuman siz tomonga qaratadi.
 
-![Yo'l bo'yidagi avtomoyka oldida ikkita parus bayroq](/img/blog/cheap-outdoor/carwash-flags.webp "Yo'l bo'yidagi ikkita bayroqni haydovchi binodagi peshlavhadan oldin ko'radi")
+![Toshkentda yo'l bo'yidagi avtomoyka oldida «Avtomoyka» va «Автомойка» reklama parus bayroqlari](/img/blog/cheap-outdoor/flagi-avtomoyka-u-dorogi.webp "Yo'l bo'yidagi ikkita bayroqni haydovchi binodagi peshlavhadan oldin ko'radi")
 
 ## Nega bayroq — ko'zga tashlanadigan reklamaning eng arzoni
 

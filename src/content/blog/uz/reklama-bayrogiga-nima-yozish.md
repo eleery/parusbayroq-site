@@ -5,6 +5,7 @@ date: 2026-11-16
 lang: uz
 pair: flag-phrases
 cover: /img/blog/flag-phrases/cover-uz.webp
+coverAlt: "Toshkentdagi qahvaxona oldida «Qahva» yozuvli reklama parus bayrog'i"
 draft: false
 faq:
   - q: "Reklama bayrog'iga nechta so'z yozish kerak?"
@@ -23,7 +24,7 @@ Bayroqni yo'l-yo'lakay ko'rishadi: odam yonidan o'tib ketyapti yoki mashinada ke
 
 Parus bayroqda yozuv mato bo'ylab, pastdan tepaga ketadi. Mato baland, lekin ensiz, shuning uchun so'z qancha kam bo'lsa, harf shuncha katta chiqadi. M o'lchamli parusdagi bitta so'z mayda shriftdagi uch qatordan ancha uzoqdan o'qiladi.
 
-![Shinomontaj oldidagi ikkita bayroq: chapda mayda matn ko'p, o'ngda bitta katta so'z](/img/blog/flag-phrases/text-compare-uz.webp "Chapda — yo'ldan o'qib bo'lmaydigan bayroq. O'ngda — o'sha shinomontaj, bitta so'z bilan")
+![Shinomontaj oldidagi ikkita reklama bayrog'i: mayda matnli va bitta katta «Shinomontaj» yozuvli](/img/blog/flag-phrases/text-compare-uz.webp "Chapda — yo'ldan o'qib bo'lmaydigan bayroq. O'ngda — o'sha shinomontaj, bitta so'z bilan")
 
 ## Bayroq uchun 30 ta ibora
 

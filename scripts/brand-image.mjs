@@ -6,6 +6,7 @@
 //                                [--text "КОФЕ" [--sub "навынос"] [--icon]] [--lines "Line 1|Line 2|Line 3"]
 //   --text: a client's phrase instead of our logo (vertical, fitted to the flag); --icon adds our wind icon on top.
 //   --lines: several small lines (to show an overloaded flag that nobody can read).
+//   --badge-only: only the corner badge (for photos where the flag design is already generated); --quad not needed.
 //   quad: flag area corners on the photo, clockwise from top-left (TL, TR, BR, BL), in image pixels.
 //   vertical: icon on top, wordmark reading bottom-to-top (sail / feather flags).
 //   horizontal: icon left of the wordmark (classic flags, banners).
@@ -20,7 +21,8 @@ import sharp from 'sharp';
 
 const [inp, out, ...rest] = process.argv.slice(2);
 const opt = (k) => { const i = rest.indexOf(k); return i >= 0 ? rest[i + 1] : undefined; };
-const quad = (opt('--quad') || '').split(',').map(Number);
+const badgeOnly = rest.includes('--badge-only');
+const quad = badgeOnly ? [0, 0, 1, 0, 1, 1, 0, 1] : (opt('--quad') || '').split(',').map(Number);
 if (!inp || !out || quad.length !== 8 || quad.some(Number.isNaN)) {
   console.error('usage: brand-image.mjs in.png out.png --quad x1,y1,x2,y2,x3,y3,x4,y4 [--layout vertical|horizontal] [--dark] [--no-badge]');
   process.exit(1);
@@ -75,7 +77,7 @@ body { background: url('file://${resolve(inp)}') 0 0 / ${W}px ${H}px no-repeat; 
 #badge .ic { width: ${Math.round(W * 0.016)}px; height: ${Math.round(W * 0.016)}px; }
 #badge i { font-style: normal; color: #FF6A00; }
 </style></head><body>
-<div id="layer">${logo}</div>
+${badgeOnly ? '' : `<div id="layer">${logo}</div>`}
 ${badge ? `<div id="badge"><span class="ic">${icon.replace(/#ffffff/g, '#FF6A00')}</span><span><b>Parus</b> <i>Bayroq</i></span></div>` : ''}
 <script>
 document.fonts.ready.then(function(){
@@ -90,7 +92,7 @@ let t=proj([0,0,w,0,0,h,w,h],[q[0],q[1],q[2],q[3],q[6],q[7],q[4],q[5]]);
 for(let i=0;i<9;i++)t[i]=t[i]/t[8];
 // Fit client text: as large as the flag allows along its length and across it.
 document.querySelectorAll('.fit').forEach(function(el){el.style.fontSize='100px';var box=el.parentNode;var k=Math.min(box.clientHeight*+el.dataset.len/el.offsetWidth,box.clientWidth*+el.dataset.thick/el.offsetHeight);el.style.fontSize=(100*k)+'px';});
-document.getElementById('layer').style.transform='matrix3d('+[t[0],t[3],0,t[6],t[1],t[4],0,t[7],0,0,1,0,t[2],t[5],0,t[8]].join(',')+')';
+if(document.getElementById('layer'))document.getElementById('layer').style.transform='matrix3d('+[t[0],t[3],0,t[6],t[1],t[4],0,t[7],0,0,1,0,t[2],t[5],0,t[8]].join(',')+')';
 document.body.dataset.ready='1';});
 </script></body></html>`;
 

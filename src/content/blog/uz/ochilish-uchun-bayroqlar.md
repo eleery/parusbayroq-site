@@ -5,6 +5,7 @@ date: 2026-11-16
 lang: uz
 pair: opening-flags
 cover: /img/blog/opening-flags/opening-day-uz.webp
+coverAlt: "Toshkentda kafe ochilishida «Biz ochildik!» va «Qahva» reklama parus bayroqlari"
 draft: false
 faq:
   - q: "Ochilishga bayroqni necha kun oldin buyurtma qilish kerak?"
@@ -35,7 +36,7 @@ Yangi joyni hali hech kim bilmaydi: odamlarning odatiy yo'lida yo'q, sharhlari y
 
 Rejaga ulgurmayapsizmi? Odatda bayroqni 3 kunda qilamiz, ochilish ertaga bo'lsa — shoshilinch, 2 soatdan.
 
-![Ochilish oldidagi do'kon, eshik oldida «Tez orada ochilamiz» bayrog'i](/img/blog/opening-flags/before-opening-uz.webp "Ochilishdan bir hafta oldin: vitrinalar hali yopiq, bayroq esa qachon kelishni aytib turibdi")
+![Ochilishdan bir hafta oldin do'kon oldida «Tez orada ochilamiz» reklama parus bayrog'i](/img/blog/opening-flags/before-opening-uz.webp "Ochilishdan bir hafta oldin: vitrinalar hali yopiq, bayroq esa qachon kelishni aytib turibdi")
 
 ## Nechta bayroq kerak
 

@@ -5,6 +5,7 @@ date: 2026-11-13
 lang: ru
 pair: price
 cover: parus_vinder.png
+coverAlt: "Рекламный флаг-парус с мачтой и бочкой-основанием — цены на флаги в Ташкенте"
 draft: false
 faq:
   - q: "Сколько стоит флаг-парус?"

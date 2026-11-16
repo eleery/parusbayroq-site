@@ -13,6 +13,8 @@ const blog = defineCollection({
     lang: z.enum(['ru', 'uz']),
     pair: z.string(),
     cover: z.string().optional(),
+    // SEO description of the cover image (alt text): what is in the photo + flag type + city.
+    coverAlt: z.string().optional(),
     draft: z.boolean().default(false),
     faq: z.array(z.object({ q: z.string(), a: z.string() })).optional(),
   }),

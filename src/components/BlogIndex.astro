@@ -30,7 +30,7 @@ const schema = [{ '@context': 'https://schema.org', '@type': 'BreadcrumbList', i
           const img = coverOf(p.data);
           return (
             <a class="blog-card" href={postPath(lang, slugOf(p))}>
-              {img && <img src={img.src} width={img.width} height={img.height} alt="" loading="lazy" decoding="async" />}
+              {img && <img src={img.src} width={img.width} height={img.height} alt={p.data.coverAlt || p.data.title} loading="lazy" decoding="async" />}
               <div class="blog-card__body">
                 {p.data.draft && <span class="draft-badge">{T.draft}</span>}
                 <h2>{p.data.title}</h2>

@@ -5,6 +5,7 @@ date: 2026-11-13
 lang: uz
 pair: price
 cover: parus_vinder.png
+coverAlt: "Ustun va bochka-asosli reklama parus bayrog'i — Toshkentda bayroq narxlari"
 draft: false
 faq:
   - q: "Parus bayroq qancha turadi?"

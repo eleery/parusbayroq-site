@@ -57,7 +57,7 @@ const schema = [
   ...(d.faq?.length ? [{ '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: d.faq.map((f) => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })) }] : []),
 ];
 ---
-<Base lang={lang} title={`${d.title} | Parus Bayroq`} description={d.description} alternates={alternates} schema={schema} jsDict={jsDict} ogImage={cover?.og && SITE + cover.og}>
+<Base lang={lang} title={`${d.title} | Parus Bayroq`} description={d.description} alternates={alternates} schema={schema} jsDict={jsDict} ogImage={cover?.og && SITE + cover.og} ogImageAlt={d.coverAlt}>
   <Fragment set:html={header} />
   <main class="page">
     <article class="article">
@@ -66,7 +66,7 @@ const schema = [
         {d.draft && <p class="draft-badge">{T.draft}</p>}
         <h1 class="article__title">{d.title}</h1>
         <p class="article__meta">{T.published} {fmtDate(d.date, lang)}{d.updated && ` · ${T.updated} ${fmtDate(d.updated, lang)}`} · Parus Bayroq</p>
-        {cover && <img class={'article__cover' + (cover.og ? ' article__cover--photo' : '')} src={cover.src} width={cover.width} height={cover.height} alt={d.title} decoding="async" fetchpriority="high" />}
+        {cover && <img class={'article__cover' + (cover.og ? ' article__cover--photo' : '')} src={cover.src} width={cover.width} height={cover.height} alt={d.coverAlt || d.title} decoding="async" fetchpriority="high" />}
         <div class="article__body" set:html={html} />
         {d.faq?.length && (
           <section class="article__faq">
