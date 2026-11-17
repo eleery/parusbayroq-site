@@ -6,7 +6,7 @@ lang: uz
 pair: construction
 cover: /img/blog/construction/flagi-na-bochkah-osnovaniyah-veter-tashkent.webp
 coverAlt: "Toshkentda shamolli kunda og'ir bochka-asoslarda turgan «Лаваш и шаурма» va «Dorixona» reklama parus bayroqlari"
-draft: true
+draft: false
 faq:
   - q: "Bayroq ustuni va asosi qancha turadi?"
     a: "Ustun bilan bochka-asos 250 000 so'm, ular parus bayroq narxiga kiradi: eng ko'p olinadigan M o'lchami konstruksiyasi bilan 450 000 so'm. Konstruksiya sizda bo'lsa, yangi M mato 200 000 so'm."
