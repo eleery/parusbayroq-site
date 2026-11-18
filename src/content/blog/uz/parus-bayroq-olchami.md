@@ -6,10 +6,10 @@ lang: uz
 pair: flag-size
 cover: /img/blog/flag-size/flagi-mebel-avtoservis-u-dorogi-tashkent.webp
 coverAlt: "Toshkentda yo'l bo'yida «МЕБЕЛЬ» va «Avtoservis» reklama parus bayroqlari — to'xtab turgan mashinalardan baland ko'rinadigan bayroq o'lchami"
-draft: true
+draft: false
 faq:
   - q: "Parus bayroqning qaysi o'lchami eng ommabop?"
-    a: "M — 280×70 sm. Uni eng ko'p olishadi: to'xtab turgan mashinalardan baland turadi, yozuvi yo'ldan ko'rinadi. Ustuni va asosi bilan M 450 000 so'm."
+    a: "M — 280×70 sm. Uni eng ko'p olishadi: to'xtab turgan mashinalardan baland turadi, yozuvi yo'ldan ko'rinadi. Konstruksiyasi bilan M 450 000 so'm."
   - q: "Bayroq yo'ldan ko'rinishi uchun qaysi o'lcham kerak?"
     a: "Oddiy shahar ko'chasidagi do'kon yoki servis uchun — M. Keng prospekt, zapravka yoki avtosalon uchun — L yoki bir qator M."
   - q: "Kichik XS yoki S qachon yetadi?"
@@ -24,9 +24,9 @@ Pastda — o'lchamlar farqi, bayroq yo'ldan qanday ko'rinadi va joyingizga qaysi
 
 ## Parus bayroq o'lchamlari: XS, S, M va L
 
-Parus bayroqning to'rtta standart o'lchami bor. Birinchi raqam — balandligi, ikkinchisi — eni, santimetrda.
+Parus bayroqning to'rtta standart o'lchami bor. O'lcham — bu matoning balandligi va eni, santimetrda. Konstruksiyasi bilan bayroq bundan ham baland turadi: M 3,75 metrga chiqadi.
 
-| O'lcham | Balandlik × en, sm | Qayerga qo'yiladi |
+| O'lcham | Mato, sm | Qayerga qo'yiladi |
 | --- | --- | --- |
 | XS | 200 × 60 | kirish oldi, savdo markazi, tor trotuar |
 | S | 220 × 65 | piyodalar ko'chasi, hovli, bozor |
@@ -39,9 +39,9 @@ Qog'ozda farq kichikday tuyuladi, ko'chada esa darrov bilinadi: M XS'dan 80 sant
 
 ## Nega ko'pincha M olishadi
 
-- **Mashinalardan baland.** Yengil mashina bir yarim metrcha keladi. M'ning ko'p qismi yozuvi bilan birga to'xtab turgan mashinalar tomidan yuqorida qoladi.
+- **Mashinalardan baland.** Yengil mashina bir yarim metrcha keladi, M esa konstruksiyasi bilan 3,75 metr. Matoning ko'p qismi yozuvi bilan birga to'xtab turgan mashinalar tomidan yuqorida qoladi.
 - **Harflar kattaroq.** M'ning matosi XS'nikidan kengroq — 60 emas, 70 sm, shuning uchun yozuvni ham kattaroq qilsa bo'ladi.
-- **Narxi joyida.** M ustuni va asosi bilan 450 000 so'm. L esa M'dan bor-yo'g'i 20 sm baland — u bayroqqa juda uzoqdan qaraydigan joyda kerak.
+- **Narxi joyida.** M konstruksiyasi bilan 450 000 so'm. L esa M'dan bor-yo'g'i 20 sm baland — u bayroqqa juda uzoqdan qaraydigan joyda kerak.
 
 ## Reklama bayrog'i yo'ldan qanday ko'rinadi
 
@@ -72,7 +72,7 @@ Bayroqni mashina va daraxtlar to'sib qo'ymasligi uchun uni qayerga qo'yish kerak
 
 <div data-price-table="parus"></div>
 
-Narxlar ustun va bochka-asos bilan birga. Ommabop M — 450 000 so'm. Konstruksiya sizda bo'lsa, yangi M mato 200 000 so'm turadi. Narxlar haqida batafsil — [«Toshkentda reklama bayrog'i qancha turadi»](/uz/blog/reklama-bayrogi-narxi/) maqolasida. Nostandart o'lcham kerak bo'lsa ham qilamiz: o'lchami va shaklini vazifaga qarab tanlaymiz.
+Narxlar konstruksiya — flagshtok va bochka-asos bilan birga. Ommabop M — 450 000 so'm. Konstruksiya sizda bo'lsa, yangi M mato 200 000 so'm turadi. Narxlar haqida batafsil — [«Toshkentda reklama bayrog'i qancha turadi»](/uz/blog/reklama-bayrogi-narxi/) maqolasida. Nostandart o'lcham kerak bo'lsa ham qilamiz: o'lchami va shaklini vazifaga qarab tanlaymiz.
 
 ## Dizayn — bepul
 

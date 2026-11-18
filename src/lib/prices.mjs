@@ -47,10 +47,10 @@ export function priceTableHtml(lang) {
 // Price cards for articles: <div data-price-table="parus,flag"></div> in Markdown.
 // "parus" covers sail and feather (same prices). Size M is marked as the most popular (owner, 16.11.2026).
 const CARD_TEXT = {
-  ru: { parus: ['Флаг-парус и перо', 'С мачтой и бочкой-основанием'], flag: ['Классический флаг', 'Любой размер, без конструкции'], rastyajka: ['Растяжка', 'Без конструкции'],
-        standard: 'ходовой', unit: 'см', cur: 'сум', note: 'Двусторонний флаг — полотно ×2, конструкция один раз. Если мачта уже есть, полотно паруса на 250 000 сум дешевле.' },
-  uz: { parus: ['Parus va pero bayroq', 'Ustun va bochka-asos bilan'], flag: ['Klassik bayroq', "Istalgan o'lcham, konstruksiyasiz"], rastyajka: ['Rastyajka', 'Konstruksiyasiz'],
-        standard: 'ommabop', unit: 'sm', cur: "so'm", note: "Ikki tomonlama bayroq — mato ×2, konstruksiya bir marta. Ustuningiz bo'lsa, parus matosi 250 000 so'm arzon." },
+  ru: { parus: ['Флаг-парус и перо', 'С конструкцией: флагшток и бочка-основание'], flag: ['Классический флаг', 'Любой размер, без конструкции'], rastyajka: ['Растяжка', 'Без конструкции'],
+        standard: 'ходовой', unit: 'см', cur: 'сум', note: 'Двусторонний флаг — полотно ×2, конструкция один раз. Если конструкция уже есть, полотно паруса на 250 000 сум дешевле.' },
+  uz: { parus: ['Parus va pero bayroq', 'Konstruksiya bilan: flagshtok va bochka-asos'], flag: ['Klassik bayroq', "Istalgan o'lcham, konstruksiyasiz"], rastyajka: ['Rastyajka', 'Konstruksiyasiz'],
+        standard: 'ommabop', unit: 'sm', cur: "so'm", note: "Ikki tomonlama bayroq — mato ×2, konstruksiya bir marta. Konstruksiyangiz bo'lsa, parus matosi 250 000 so'm arzon." },
 };
 export function priceCardsHtml(lang, keys = ['parus', 'flag']) {
   const T = CARD_TEXT[lang];

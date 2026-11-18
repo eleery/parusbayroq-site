@@ -20,8 +20,8 @@ const T = {
         cars: "Bu qismini to'xtab turgan mashinalar to'sadi (≈1,5 m)", person: '175 sm' },
 }[lang];
 
-const W = 1600, H = 900, G = 822, k = 2; // ground line, px per cm
-const LIFT = 35; // base + bare pole under the canvas, cm
+const W = 1600, H = 900, G = 860, k = 2; // ground line, px per cm
+const LIFT = 55; // canvas bottom above the ground, cm (owner, 18.11.2026: 50–60 cm)
 const icon = readFileSync(join(root, 'media-src/images/Logo.svg'), 'utf8').replace(/width="24" height="24"/, 'width="100%" height="100%"');
 const font = (f) => 'file://' + join(root, 'public/fonts', f);
 
