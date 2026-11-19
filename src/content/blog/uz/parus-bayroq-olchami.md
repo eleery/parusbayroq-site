@@ -7,31 +7,32 @@ pair: flag-size
 cover: /img/blog/flag-size/flagi-mebel-avtoservis-u-dorogi-tashkent.webp
 coverAlt: "Toshkentda yo'l bo'yida «МЕБЕЛЬ» va «Avtoservis» reklama parus bayroqlari — to'xtab turgan mashinalardan baland ko'rinadigan bayroq o'lchami"
 draft: false
+updated: 2026-11-19
 faq:
   - q: "Parus bayroqning qaysi o'lchami eng ommabop?"
     a: "M — 280×70 sm. Uni eng ko'p olishadi: to'xtab turgan mashinalardan baland turadi, yozuvi yo'ldan ko'rinadi. Konstruksiyasi bilan M 450 000 so'm."
   - q: "Bayroq yo'ldan ko'rinishi uchun qaysi o'lcham kerak?"
-    a: "Oddiy shahar ko'chasidagi do'kon yoki servis uchun — M. Keng prospekt, zapravka yoki avtosalon uchun — L yoki bir qator M."
-  - q: "Kichik XS yoki S qachon yetadi?"
-    a: "Odamlar piyoda yuradigan va bir-ikki metrdan qaraydigan joyda: savdo markazi kirishi, bozor, piyodalar ko'chasi. To'xtab turgan mashinalar ortida kichik bayroq yo'ldan deyarli ko'rinmaydi."
+    a: "M — oddiy shahar ko'chasi uchun ham, keng prospekt, zapravka yoki avtosalon uchun ham. Joy katta bo'lsa, bir qator M qo'ying."
+  - q: "Kichik XS yoki S qachon kerak?"
+    a: "XS bilan S'ni kam olishadi — ofis yoki balkon uchun, shifti past joyga. Ko'chada M yaxshi: to'xtab turgan mashinalar ortida kichik bayroq yo'ldan deyarli ko'rinmaydi."
   - q: "Nostandart o'lchamdagi bayroq buyurtma qilsa bo'ladimi?"
     a: "Ha, har qanday o'lchamdagi bayroq qilamiz, shaklini ham vazifaga qarab tanlaymiz. Bayroq qayerda turishini yozing — hisoblab beramiz."
 ---
 
-Yo'l bo'yidagi do'kon yoki servis uchun parus bayroqning eng yaxshi o'lchami — M, 280×70 sm. Bu eng ko'p olinadigan o'lcham: bayroq to'xtab turgan mashinalardan baland turadi, yozuvini esa mashinada o'tib ketayotganlar ham o'qishga ulguradi. XS bilan S odamlar piyoda yuradigan joyga to'g'ri keladi — savdo markazi kirishi yoki tor ko'cha. L esa keng prospekt, zapravka, avtosalon va ochiq maydon uchun: u yerda bayroqqa uzoqdan qarashadi.
+Yo'l bo'yidagi do'kon, kafe yoki servis uchun parus bayroqning eng yaxshi o'lchami — M, 280×70 sm. Bu eng ko'p olinadigan o'lcham: bayroq to'xtab turgan mashinalardan baland turadi, yozuvini esa mashinada o'tib ketayotganlar ham o'qishga ulguradi. M keng prospekt, zapravka yoki avtosalonga ham to'g'ri keladi. XS bilan S'ni kam olishadi — ofis yoki balkonga, shifti past joyga.
 
 Pastda — o'lchamlar farqi, bayroq yo'ldan qanday ko'rinadi va joyingizga qaysi o'lcham mos.
 
 ## Parus bayroq o'lchamlari: XS, S, M va L
 
-Parus bayroqning to'rtta standart o'lchami bor. O'lcham — bu matoning balandligi va eni, santimetrda. Konstruksiyasi bilan bayroq bundan ham baland turadi: M 3,75 metrga chiqadi.
+Parus bayroqning to'rtta standart o'lchami bor. O'lcham — bu matoning balandligi va eni, santimetrda. Konstruksiyasi bilan bayroq bundan ham baland turadi: M 3,7–3,8 metrga chiqadi.
 
 | O'lcham | Mato, sm | Qayerga qo'yiladi |
 | --- | --- | --- |
-| XS | 200 × 60 | kirish oldi, savdo markazi, tor trotuar |
-| S | 220 × 65 | piyodalar ko'chasi, hovli, bozor |
-| **M — ommabop** | **280 × 70** | yo'l bo'yidagi do'kon yoki servis, eshik oldida mashinalar |
-| L | 300 × 70 | keng prospekt, zapravka, avtosalon, ochiq maydon |
+| XS | 200 × 60 | ofis, balkon — shifti past joy |
+| S | 220 × 65 | ofis, balkon, xona — M sig'maydigan joy |
+| **M — ommabop** | **280 × 70** | do'kon, kafe, servis, prospekt, zapravka, avtosalon |
+| L | 300 × 70 | M'dan 20 sm baland kerak bo'lsa |
 
 ![Parus bayroq o'lchamlari XS, S, M va L odam va mashina yonida masshtabda: ommabop M 280×70 sm, Parus Bayroq logotipli oq bayroqlar](/img/blog/flag-size/parus-bayroq-olchamlari-xs-s-m-l.webp "Masshtabdagi sxema: mashinalar tomidan pastda qolgani yo'ldan ko'rinmaydi")
 
@@ -39,9 +40,9 @@ Qog'ozda farq kichikday tuyuladi, ko'chada esa darrov bilinadi: M XS'dan 80 sant
 
 ## Nega ko'pincha M olishadi
 
-- **Mashinalardan baland.** Yengil mashina bir yarim metrcha keladi, M esa konstruksiyasi bilan 3,75 metr. Matoning ko'p qismi yozuvi bilan birga to'xtab turgan mashinalar tomidan yuqorida qoladi.
+- **Mashinalardan baland.** Yengil mashina bir yarim metrcha keladi, M esa konstruksiyasi bilan 3,7–3,8 metr. Matoning ko'p qismi yozuvi bilan birga to'xtab turgan mashinalar tomidan yuqorida qoladi.
 - **Harflar kattaroq.** M'ning matosi XS'nikidan kengroq — 60 emas, 70 sm, shuning uchun yozuvni ham kattaroq qilsa bo'ladi.
-- **Narxi joyida.** M konstruksiyasi bilan 450 000 so'm. L esa M'dan bor-yo'g'i 20 sm baland — u bayroqqa juda uzoqdan qaraydigan joyda kerak.
+- **Narxi joyida.** M konstruksiyasi bilan 450 000 so'm. L esa M'dan bor-yo'g'i 20 sm baland, shuning uchun ko'chaga deyarli doim M yetadi.
 
 ## Reklama bayrog'i yo'ldan qanday ko'rinadi
 
@@ -55,9 +56,9 @@ Haydovchi yo'l chetiga bir-ikki soniya qaraydi, xolos. Shu vaqtda bayroqni ko'ri
 
 ## Joyingizga bayroq o'lchamini qanday tanlash kerak
 
-- **Odamlar piyoda yuradigan trotuar** — savdo markazi kirishi, bozor, piyodalar ko'chasi: XS yoki S yetadi. Odam ko'p, lekin bayroqqa bir-ikki metrdan qarashadi.
+- **Ofis, balkon, shifti past xona** — XS yoki S: ular pastroq va M shiftga tegib qoladigan joyga sig'adi.
 - **Yo'l bo'yidagi do'kon, kafe yoki servis**, eshik oldida mashinalar turadi — M. Toshkentda eng ko'p uchraydigan holat va eng ommabop o'lcham.
-- **Keng prospekt, trassa, zapravka, avtosalon, katta parkovka** — L yoki bir qator M.
+- **Keng prospekt, trassa, zapravka, avtosalon, katta parkovka** — bu yerga ham M, joy katta bo'lsa — bir qator M.
 - **Nuqtangiz yo'ldan ko'rinmasa** — hovlida, ikkinchi qatordagi uyda yoki burilishdan keyin bo'lsa: bayroqni sizga buriladigan joyga qo'ying va unga «Biz shu yerdamiz →» yoki «Kirish shu yerda» deb yozing.
 
 Ikkilanayotgan bo'lsangiz, bayroq turadigan joyning rasmini tashlang — o'lchamini maslahat beramiz.
