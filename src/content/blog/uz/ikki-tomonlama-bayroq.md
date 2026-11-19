@@ -6,7 +6,7 @@ lang: uz
 pair: double-sided
 cover: /img/blog/double-sided/flagi-shirinliklar-torty-na-zakaz-konditerskaya.webp
 coverAlt: "Toshkentda qandolatchilik oldida «Shirinliklar» va «ТОРТЫ НА ЗАКАЗ» reklama parus bayroqlari: ikki tomonlama bayroq trotuarning ikki tomonidan ko'rinadi"
-draft: true
+draft: false
 faq:
   - q: "Ikki tomonlama bayroq bir tomonlamadan nimasi bilan farq qiladi?"
     a: "Bir tomonlama bayroqda bitta tomoni bosiladi, orqasidan esa rasm ko'zgudagidek ko'rinadi — taxminan 90%. Ikki tomonlama bayroq uch qatlamdan tikiladi: alohida bosilgan ikki tomon va o'rta qatlam, shuning uchun ikkala tomoni ham to'g'ri o'qiladi."
