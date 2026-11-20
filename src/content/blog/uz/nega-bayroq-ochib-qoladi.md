@@ -6,7 +6,7 @@ lang: uz
 pair: fading
 cover: /img/blog/fading/vygorevshiy-i-yarkiy-flag-frukty-tashkent.webp
 coverAlt: "Toshkentda yozda meva do'konlari oldida quyoshda o'chib qolgan «Mevalar» reklama bayrog'i va yorqin «ФРУКТЫ И ОВОЩИ» parus bayrog'i"
-draft: true
+draft: false
 faq:
   - q: "Nega reklama bayrog'i quyoshda o'chib qoladi?"
     a: "Ko'pincha bo'yoq mato ustida yupqa qatlam bo'lib yotgani uchun. Quyosh, shamol va yomg'ir to'g'ridan-to'g'ri unga tegadi: yoz davomida u oqarib ketadi, bukiladigan joylarda esa yoriladi. Arzon matodan qilingan bayroqlar ham tezroq o'chadi."
