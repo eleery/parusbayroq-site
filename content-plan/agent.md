@@ -39,7 +39,7 @@
    `node scripts/brand-image.mjs media-src/blog-raw/<pair>/<name>.jpg media-src/blog/<pair>/<name>.jpg --quad x1,y1,x2,y2,x3,y3,x4,y4`
    (несколько флагов — по очереди, `--no-badge` у всех, кроме последнего; классический флаг — `--layout horizontal`). Посмотреть результат.
 5. `npm run blog-images` → WebP в `public/img/blog/<pair>/` и обложка для соцсетей.
-6. В тексте: `![SEO-ALT](/img/blog/<pair>/<name>.webp "Подпись")`, обложка — `cover` + `coverAlt` во frontmatter. ALT — что на фото + тип флага + надпись + Ташкент, на языке статьи. Имя файла — латиницей по смыслу (`flagi-avtomoyka-u-dorogi.jpg`). Подписи не выдают картинку за реальный заказ конкретного клиента.
+6. В тексте: `![SEO-ALT](/img/blog/<pair>/<name>.webp "Подпись")`, обложка — `cover` + `coverAlt` во frontmatter. Обложку в тексте статьи не повторять: она и так стоит над статьёй. ALT — что на фото + тип флага + надпись + Ташкент, на языке статьи. Имя файла — латиницей по смыслу (`flagi-avtomoyka-u-dorogi.jpg`). Подписи не выдают картинку за реальный заказ конкретного клиента.
 
 ## 4. Проверка и сохранение
 - `npm run build` и `npm run build:local` без ошибок; открыть статью из `dist-preview` в браузере: картинки, карточки цен, форма на месте.
