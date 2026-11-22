@@ -10,7 +10,7 @@
 - [x] Какой размер флага-паруса выбрать, чтобы его видели с дороги (опубликовано 18.11.2026) — `ru/razmer-flaga-parusa`, `uz/parus-bayroq-olchami`, документ: https://claude.ai/artifact/6bVBw5rWyUjKPE1z13LNVc
 - [x] Односторонний или двусторонний флаг: когда стоит доплатить (опубликовано 19.11.2026) — `ru/dvustoronniy-flag`, `uz/ikki-tomonlama-bayroq`, документ: https://claude.ai/artifact/G3CGzywqyuREU2g5QFmnUY
 - [x] Почему одни флаги выгорают за лето, а другие нет (опубликовано 20.11.2026) — `ru/pochemu-vygoraet-flag`, `uz/nega-bayroq-ochib-qoladi`, документ: https://claude.ai/artifact/VRYas1ewJCdG7zd2QEtHgD
-- [~] Как получить макет флага, если есть только логотип или фото вывески (черновик 21.11.2026) — `ru/maket-flaga`, `uz/bayroq-maketi`, документ: https://claude.ai/artifact/BRaxARvMRsoQYrdKkyos2X
+- [x] Как получить макет флага, если есть только логотип или фото вывески (опубликовано 22.11.2026 без ответа владельца) — `ru/maket-flaga`, `uz/bayroq-maketi`, документ: https://claude.ai/artifact/BRaxARvMRsoQYrdKkyos2X
 - [ ] Как установить флаг-парус за 2 минуты (по шагам, видео установки уже есть на сайте)
 - [ ] Сколько служит рекламный флаг и как продлить ему жизнь (2–4 года, замена полотна) — уход и сильный ветер уточнить у владельца
 - [ ] Флаг, баннер, штендер или вывеска: что поставить у входа (без чужих цен)

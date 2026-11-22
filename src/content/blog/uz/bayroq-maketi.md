@@ -1,12 +1,12 @@
 ---
 title: "Logotipli bayroq maketi: faqat peshlavha rasmi bo'lsa ham uni qanday bepul olish mumkin"
 description: "Dizayner ham, fayl ham bo'lmasa, logotipli reklama bayrog'i maketini qanday olish mumkin: nimani yuborish kerak, dizayner peshlavha rasmi yoki skrinshotdan maketni qanday qiladi va bosmadan oldin nimani tekshirish kerak. Dizayn bepul, Toshkent."
-date: 2026-11-21
+date: 2026-11-22
 lang: uz
 pair: mockup
 cover: /img/blog/mockup/maket-flaga-qahva-iz-foto-vyveski.webp
 coverAlt: "Dizayner Toshkentdagi qahvaxona peshlavhasi rasmidan «Qahva» reklama parus bayrog'i maketini qilyapti — bepul bayroq maketi"
-draft: true
+draft: false
 faq:
   - q: "Bayroq maketi qancha turadi?"
     a: "Hech narsa: dizayn bepul, siz faqat bayroqning o'zi uchun to'laysiz. Ommabop M parus konstruksiyasi bilan 450 000 so'm."
