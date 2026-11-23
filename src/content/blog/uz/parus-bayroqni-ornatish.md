@@ -1,12 +1,12 @@
 ---
 title: "Parus bayroqni 2 daqiqada qanday o'rnatish mumkin: videoli qadamma-qadam yo'riqnoma"
 description: "Reklama parus bayrog'ini o'zingiz 2 daqiqada va asbobsiz qanday o'rnatasiz: flagshtokni yig'ish, matoni kiygizish, bochka-asosga qo'yish va suv yoki qum solish. O'rnatish videosi, ko'p uchraydigan xatolar va bayroqni qayerga qo'yish kerak."
-date: 2026-11-22
+date: 2026-11-23
 lang: uz
 pair: install
 cover: /img/blog/install/ustanovka-flaga-parusa-ochiq-u-magazina.webp
 coverAlt: "Toshkentda do'kon oldida «Ochiq» reklama parus bayrog'ini o'rnatish: flagshtok bochka-asosga suqilyapti"
-draft: true
+draft: false
 faq:
   - q: "Parus bayroqni o'rnatish qancha vaqt oladi?"
     a: "Taxminan 2 daqiqa. Flagshtokni yig'asiz, unga matoni kiygizasiz, bochka-asosga suqasiz va bochkaga suv yoki qum solasiz."

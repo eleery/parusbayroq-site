@@ -11,7 +11,7 @@
 - [x] Односторонний или двусторонний флаг: когда стоит доплатить (опубликовано 19.11.2026) — `ru/dvustoronniy-flag`, `uz/ikki-tomonlama-bayroq`, документ: https://claude.ai/artifact/G3CGzywqyuREU2g5QFmnUY
 - [x] Почему одни флаги выгорают за лето, а другие нет (опубликовано 20.11.2026) — `ru/pochemu-vygoraet-flag`, `uz/nega-bayroq-ochib-qoladi`, документ: https://claude.ai/artifact/VRYas1ewJCdG7zd2QEtHgD
 - [x] Как получить макет флага, если есть только логотип или фото вывески (опубликовано 22.11.2026 без ответа владельца) — `ru/maket-flaga`, `uz/bayroq-maketi`, документ: https://claude.ai/artifact/BRaxARvMRsoQYrdKkyos2X
-- [~] Как установить флаг-парус за 2 минуты (черновик 22.11.2026) — `ru/kak-ustanovit-flag-parus`, `uz/parus-bayroqni-ornatish`, документ: https://claude.ai/artifact/6Q8urp1sXXiHd4kSH4T1xc
+- [x] Как установить флаг-парус за 2 минуты (опубликовано 23.11.2026 без ответа владельца) — `ru/kak-ustanovit-flag-parus`, `uz/parus-bayroqni-ornatish`, документ: https://claude.ai/artifact/6Q8urp1sXXiHd4kSH4T1xc
 - [ ] Сколько служит рекламный флаг и как продлить ему жизнь (2–4 года, замена полотна) — уход и сильный ветер уточнить у владельца
 - [ ] Флаг, баннер, штендер или вывеска: что поставить у входа (без чужих цен)
 - [ ] Флаги для автомойки, шиномонтажа и автосервиса
