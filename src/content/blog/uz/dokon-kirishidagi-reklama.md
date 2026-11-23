@@ -6,14 +6,14 @@ lang: uz
 pair: entrance
 cover: /img/blog/entrance/vyveska-banner-shtender-flag-telefonlar.webp
 coverAlt: "Toshkentda do'kon kirishidagi reklama: peshlavha, banner, shtender va «Telefonlar» reklama parus bayrog'i"
-draft: true
+draft: false
 faq:
   - q: "Do'kon kirishiga nima yaxshi: bayroqmi yoki shtender?"
     a: "Ularning vazifasi har xil. Shtenderni eshik oldiga kelganlar o'qiydi: unga menyu va narxlar sig'adi. Parus bayroq esa yo'ldan va uzoqdan ko'rinadi, odamlarni kirishgacha olib keladi. Ko'pincha ikkalasini ham qo'yishadi."
   - q: "Peshlavha bo'lsa, bayroq kerakmi?"
     a: "Ha. Peshlavha kirishning qarshisidan yaxshi ko'rinadi, bayroq esa trotuar chetida turadi va ko'cha bo'ylab, yo'ldan — to'xtab turgan mashinalar tomidan yuqorida ko'rinadi."
   - q: "Peshlavha bor, yana bitta narsa kerak bo'lsa, nimani tanlash kerak?"
-    a: "M parus bayroqni: u yo'ldan ko'rinadi, uni boshqa joyga qo'ysa bo'ladi, yozuvini esa almashtirsa bo'ladi. Konstruksiyasi bilan 450 000 so'm, dizayn bepul."
+    a: "M parus bayroqni: u yo'ldan ko'rinadi, uni boshqa joyga qo'ysa bo'ladi, yozuvini esa almashtirsa bo'ladi. Konstruksiyasi bilan 450 000 so'm — 3 mln so'mdan boshlanadigan oddiy peshlavhadan ham bir necha baravar arzon. Dizayn bepul."
   - q: "Aksiyalarga qarab bayroqdagi yozuvni almashtirsa bo'ladimi?"
     a: "Ha. Konstruksiya joyida qoladi, faqat matosi almashadi. M parus uchun yangi mato 200 000 so'm."
 ---
@@ -24,7 +24,7 @@ Pastda — peshlavha, banner, shtender va bayroqning farqi, har biri nimaga yara
 
 ## Peshlavha: nomingizni bilishlari uchun
 
-Peshlavha kirish tepasida osilib turadi va biznesingiz nomini aytadi. Qarshisida turganda yaxshi ko'rinadi, lekin yon tomondan, ko'cha bo'ylab yoki daraxtlar ortidan yomonroq. Uni uzoq muddatga qilishadi: aksiya uchun yozuvni almashtirib bo'lmaydi.
+Peshlavha kirish tepasida osilib turadi va biznesingiz nomini aytadi. Qarshisida turganda yaxshi ko'rinadi, lekin yon tomondan, ko'cha bo'ylab yoki daraxtlar ortidan yomonroq. Uni uzoq muddatga qilishadi: aksiya uchun yozuvni almashtirib bo'lmaydi. Arzon ham emas: oddiy peshlavha ham 3 mln so'mdan boshlanadi, ommabop M parus bayroq esa — 450 000 so'm.
 
 ## Banner: fasadda katta rasm
 
@@ -38,7 +38,8 @@ Shtender kirish oldida, trotuarda turadi va unga ko'p matn sig'adi: menyu, narxl
 
 - **Baland.** Ommabop M'ning matosi 280×70 sm, konstruksiyasi bilan esa bayroq 3,7–3,8 metrga chiqadi — mashina va butalardan baland.
 - **Shamolda harakatlanadi.** Harakat uzoqdan ko'zni tortadi — atrofga qarashni o'ylamagan odamni ham.
-- **Joyini o'zgartirsa bo'ladi.** Bayroq suv yoki qum solingan bochkada turadi, uni sizni yaxshiroq ko'radigan joyga qo'ysa, ko'chganda olib ketsa bo'ladi.
+- **Joyini o'zgartirsa bo'ladi.** Bayroqni olib qo'yish yoki boshqa joyga o'tkazish — bir daqiqalik ish. U suv yoki qum solingan bochkada turadi: sizni yaxshiroq ko'radigan joyga qo'ying, ko'chganda olib keting.
+- **Ob-havodan qo'rqmaydi.** Mato quyoshda o'chmaydi, yomg'ir va qor unga qo'rqinchli emas, changlansa — bemalol yuvsa bo'ladi.
 - **Yozuvi almashadi.** Yangi aksiyaga yangi bayroq kerak emas: faqat matosi almashadi, M uchun bu 200 000 so'm.
 
 O'rtacha ko'chada e'tiborni tortish mijozlar oqimini +40% ga oshiradi. Bayroq yo'ldan ko'rinishi uchun qaysi o'lchamni olish kerakligini [«Parus bayroq o'lchami»](/uz/blog/parus-bayroq-olchami/) maqolasida yozganmiz.
