@@ -12,7 +12,7 @@
 - [x] Почему одни флаги выгорают за лето, а другие нет (опубликовано 20.11.2026) — `ru/pochemu-vygoraet-flag`, `uz/nega-bayroq-ochib-qoladi`, документ: https://claude.ai/artifact/VRYas1ewJCdG7zd2QEtHgD
 - [x] Как получить макет флага, если есть только логотип или фото вывески (опубликовано 22.11.2026 без ответа владельца) — `ru/maket-flaga`, `uz/bayroq-maketi`, документ: https://claude.ai/artifact/BRaxARvMRsoQYrdKkyos2X
 - [x] Как установить флаг-парус за 2 минуты (опубликовано 23.11.2026 без ответа владельца) — `ru/kak-ustanovit-flag-parus`, `uz/parus-bayroqni-ornatish`, документ: https://claude.ai/artifact/6Q8urp1sXXiHd4kSH4T1xc
-- [ ] Сколько служит рекламный флаг и как продлить ему жизнь (2–4 года, замена полотна) — уход и сильный ветер уточнить у владельца — уход: полотно можно стирать (владелец 23.11); про хранение и поломки не писать, если нет ответа
+- [~] Сколько служит рекламный флаг и как продлить ему жизнь (черновик 24.11.2026) — `ru/skolko-sluzhit-reklamnyy-flag`, `uz/reklama-bayrogi-qancha-xizmat-qiladi`
 - [x] Флаг, баннер, штендер или вывеска: что поставить у входа (опубликовано 23.11.2026 с правками владельца) — `ru/reklama-u-vhoda-v-magazin`, `uz/dokon-kirishidagi-reklama`, документ: https://claude.ai/artifact/BLTfkrUTRggQaapmy1ueeJ
 - [ ] Флаги для автомойки, шиномонтажа и автосервиса
 - [ ] Флаги для автосалонов (ряд флагов вдоль фасада; клиенты Chevrolet, BYD)
