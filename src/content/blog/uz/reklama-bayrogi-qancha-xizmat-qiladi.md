@@ -6,7 +6,7 @@ lang: uz
 pair: lifespan
 cover: /img/blog/lifespan/flag-sartaroshxona-zimoy-v-snegu-tashkent.webp
 coverAlt: "Toshkentda qishda qor ostida sartaroshxona oldidagi «Sartaroshxona» reklama parus bayrog'i — reklama bayrog'i qancha xizmat qiladi"
-draft: true
+draft: false
 faq:
   - q: "Reklama bayrog'i qancha xizmat qiladi?"
     a: "Parus bayroq 2–4 yil xizmat qiladi. Sublimatsion bosmali turk bayroq to'ri quyoshda o'chmaydi, yomg'ir va qordan qo'rqmaydi, eskirganda esa faqat matosi almashadi — konstruksiya joyida qoladi."
