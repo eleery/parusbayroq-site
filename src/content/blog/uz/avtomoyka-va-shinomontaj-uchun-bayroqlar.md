@@ -6,7 +6,7 @@ lang: uz
 pair: auto
 cover: /img/blog/auto/flagi-avtomoyka-shinomontazh-u-dorogi-tashkent.webp
 coverAlt: "Toshkentda yo'l bo'yida avtomoyka va shinomontaj oldidagi «Avtomoyka» va «Шиномонтаж» reklama parus bayroqlari — avtomoyka uchun bayroq"
-draft: true
+draft: false
 faq:
   - q: "Avtomoyka oldiga reklama bayrog'ini qayerga qo'yish kerak?"
     a: "Birinchi bayroq — yo'l bo'yida, burilishdan oldinroq: haydovchi uni ko'rib, qatorni almashtirishga ulguradi. Ikkinchisi — kirishning o'zida, qayerga burilishni ko'rsatadi. Boks ko'p bo'lsa, fasad bo'ylab yana 2–3 ta bayroq."
