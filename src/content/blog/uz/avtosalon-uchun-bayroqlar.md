@@ -6,7 +6,7 @@ lang: uz
 pair: dealership
 cover: /img/blog/dealership/flagi-avtosalon-vdol-ploshchadki-tashkent.webp
 coverAlt: "Toshkentda avtosalon oldidagi mashinalar maydoni bo'ylab «Автосалон» va «Avtosalon» reklama parus bayroqlari qatori — avtosalon uchun bayroq"
-draft: true
+draft: false
 faq:
   - q: "Avtosalonga nechta bayroq kerak?"
     a: "Maydon bo'ylab kamida 2–3 ta M bayroq: bunday qator bitta katta L'dan ko'proq ko'rinadi. Maydon uzun bo'lsa, bayroqlarni teng oraliqda ko'proq qo'ysa bo'ladi, kirishda esa yana ikkitasini."
