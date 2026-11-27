@@ -6,7 +6,7 @@ lang: uz
 pair: network
 cover: /img/blog/network/odinakovye-flagi-apteka-dorixona-filialy.webp
 coverAlt: "Toshkentda va viloyatda dorixona tarmog'ining ikki filiali oldida bir xil «Аптека» va «Dorixona» reklama parus bayroqlari — filiallar uchun bayroqlar"
-draft: true
+draft: false
 faq:
   - q: "Hamma filiallar uchun bir xil bayroq buyurtma qilsa bo'ladimi?"
     a: "Ha. Dizayner butun tarmoq uchun bitta maketni bepul qiladi, siz uni bir marta tasdiqlaysiz va hamma bayroqlar shu maket bo'yicha bosiladi. Katta buyurtmaga chegirma qilamiz — sonini yozing, hisoblab beramiz."
