@@ -1,5 +1,6 @@
-// Four-step schemes for blog articles: "mockup" (from a photo to a flag) and "install" (setting up a feather flag).
-// node scripts/steps-chart.mjs <out.jpg> [ru|uz] [mockup|install]
+// Four-step schemes for blog articles: "mockup" (from a photo to a flag), "install" (setting up a feather flag)
+// and "network" (the same flags for a chain of branches).
+// node scripts/steps-chart.mjs <out.jpg> [ru|uz] [mockup|install|network]
 import { readFileSync, writeFileSync, mkdtempSync } from 'node:fs';
 import { join, dirname } from 'node:path';
 import { tmpdir } from 'node:os';
@@ -9,7 +10,7 @@ import { createRequire } from 'node:module';
 const { chromium } = createRequire(import.meta.url)('playwright');
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const [out, lang = 'ru', preset = 'mockup'] = process.argv.slice(2);
-if (!out) { console.error('usage: steps-chart.mjs out.jpg [ru|uz] [mockup|install]'); process.exit(1); }
+if (!out) { console.error('usage: steps-chart.mjs out.jpg [ru|uz] [mockup|install|network]'); process.exit(1); }
 
 const TEXTS = { mockup: {
   ru: { title: 'Макет флага: от фото до флага', sub: 'Дизайн бесплатно, печать — только после вашего «да»',
@@ -25,6 +26,13 @@ const TEXTS = { mockup: {
   uz: { title: "Parus bayroqni 2 daqiqada o'rnatish", sub: "Asbobsiz — o'zingiz o'rnatsangiz bo'ladi",
         steps: [["Flagshtokni yig'ing", "qismlarini bir-biriga ulang"], ['Matoni kiygizing', "flagshtokni cho'ntagiga o'tkazib, pastini bog'lang"],
                 ["Asosga qo'ying", "flagshtokni bochkaga tik qilib suqing"], ["Suv yoki qum soling", "shamolda mahkam turishi uchun"]] },
+}, network: {
+  ru: { title: 'Флаги для сети точек: как это работает', sub: 'Один макет — одинаковые флаги во всех филиалах',
+        steps: [['Один макет на всю сеть', 'дизайн бесплатно, утверждаете один раз'], ['Считаем и печатаем', 'на большой заказ — скидка'],
+                ['Доставляем', 'по Ташкенту — за день, в регионы — за 1–3 дня'], ['Ставят на точке', 'за 2 минуты, без инструментов']] },
+  uz: { title: "Filiallar tarmog'i uchun bayroqlar: qanday ishlaydi", sub: 'Bitta maket — hamma filiallarda bir xil bayroqlar',
+        steps: [['Butun tarmoq uchun bitta maket', 'dizayn bepul, bir marta tasdiqlaysiz'], ['Hisoblaymiz va bosamiz', 'katta buyurtmaga — chegirma'],
+                ['Yetkazib beramiz', 'Toshkent ichida bir kunda, viloyatlarga 1–3 kunda'], ["Joyida o'rnatishadi", '2 daqiqada, asbobsiz']] },
 } };
 const T = TEXTS[preset][lang];
 
@@ -70,6 +78,21 @@ const ICONS = { mockup: [
    <path d="M118,26 L178,26 L170,86 L126,86 Z" fill="#dfe6ec" stroke="#9aa4ae" stroke-width="4" transform="rotate(-30 148 56)"/>
    <path d="M124,96 q-8,16 -14,40" stroke="#3b8ee8" stroke-width="8" fill="none" stroke-linecap="round"/>
    <circle cx="96" cy="132" r="5" fill="#3b8ee8"/><circle cx="118" cy="140" r="4" fill="#3b8ee8"/>`,
+], network: [
+  // one mockup on a monitor
+  `<rect x="20" y="30" width="180" height="120" rx="10" fill="#1f262d"/><rect x="30" y="40" width="160" height="100" rx="4" fill="#fff"/>
+   <rect x="95" y="150" width="30" height="22" fill="#9aa4ae"/><rect x="70" y="172" width="80" height="8" rx="4" fill="#9aa4ae"/>${miniFlag(100, 46, 86, '#1b6fd8')}`,
+  // a batch of identical flags with a discount badge
+  `${miniFlag(44, 30, 150, '#1b6fd8')}${miniFlag(94, 30, 150, '#1b6fd8')}${miniFlag(144, 30, 150, '#1b6fd8')}
+   <circle cx="186" cy="40" r="26" fill="#FF6A00"/><text x="186" y="50" text-anchor="middle" font-size="30" font-weight="700" fill="#fff" font-family="YS">%</text>`,
+  // delivery van with a box
+  `<path d="M20,70 h110 v80 h-110 Z" fill="#dfe6ec" stroke="#9aa4ae" stroke-width="4"/>
+   <path d="M130,92 h40 l24,28 v30 h-64 Z" fill="#FF6A00"/><path d="M140,100 h26 l14,18 h-40 Z" fill="#fff" opacity=".85"/>
+   <circle cx="56" cy="156" r="16" fill="#3a434c"/><circle cx="164" cy="156" r="16" fill="#3a434c"/>
+   <path d="M50,92 h50 v40 h-50 Z M50,108 h50 M75,92 v40" stroke="#b08a5a" stroke-width="3" fill="#d9b98a"/>`,
+  // flag standing in its barrel at the branch
+  `${miniFlag(104, 18, 140, '#1b6fd8')}<path d="M66,200 L72,170 Q104,160 136,170 L142,200 Z" fill="#20262c"/><ellipse cx="104" cy="170" rx="32" ry="6" fill="#3a434c"/>
+   <circle cx="168" cy="60" r="24" fill="#1aa260"/><path d="M156,60 l9,9 16,-18" stroke="#fff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>`,
 ] };
 const icons = ICONS[preset];
 
