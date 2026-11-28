@@ -46,7 +46,7 @@ Flagshtokda bayroq ikki tomondan ko'rinadi. Bir tomonlama bayroqda rasm matodan 
 
 ## O'chmaydi va yomg'irdan qo'rqmaydi
 
-Flagshtokdagi bayroq yil bo'yi ko'chada turadi. Sublimatsiya usulida bosamiz: bo'yoq mato tolalariga kirib, uning bir qismiga aylanadi, shuning uchun quyoshda o'chmaydi, yomg'irda yuvilmaydi va yorilmaydi. Bayroq changlansa — bemalol yuvsa bo'ladi. Nega ba'zi bayroqlar bir yozda o'chib qoladi, ba'zilari yo'q — [«Nega reklama bayrog'i quyoshda o'chib qoladi»](/uz/blog/nega-bayroq-ochib-qoladi/) maqolasida.
+Flagshtokdagi bayroq yil bo'yi ko'chada turadi. Sublimatsiya usulida bosamiz: bo'yoq mato tolalariga kirib, uning bir qismiga aylanadi, shuning uchun quyoshda o'chmaydi, yomg'irda yuvilmaydi va yorilmaydi. Bayroq changlansa — bemalol yuvsa bo'ladi, faqat kuchli oqartiruvchilarsiz. Nega ba'zi bayroqlar bir yozda o'chib qoladi, ba'zilari yo'q — [«Nega reklama bayrog'i quyoshda o'chib qoladi»](/uz/blog/nega-bayroq-ochib-qoladi/) maqolasida.
 
 ## Boshqa davlatlar bayroqlari va logotipli bayroqlar
 
