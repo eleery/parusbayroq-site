@@ -1,6 +1,7 @@
 // "Flag of Uzbekistan: proportions and colours" scheme for the state-flags article.
 // The flag geometry is the public-domain construction used on Wikimedia Commons (500×250, ratio 1:2):
 // blue 0–80, red 80–85, white 85–165, red 165–170, green 170–250; crescent and 12 stars in rows of 3, 4, 5.
+// Owner 28.11.2026: besides the official 1:2 we also make a compact 1:1.5 version (100×70, 150×100, 225×150).
 // node scripts/uzflag-chart.mjs <out.jpg> [ru|uz]
 import { readFileSync, writeFileSync, mkdtempSync } from 'node:fs';
 import { join, dirname } from 'node:path';
@@ -17,11 +18,11 @@ const T = {
   ru: { title: 'Флаг Узбекистана: пропорции и цвета', sub: 'Как выглядит государственный флаг',
         legend: [['#0099b5', 'Голубая полоса', 'сверху'], ['#fff', 'Белая полоса', 'с тонкой красной каймой сверху и снизу'], ['#1eb53a', 'Зелёная полоса', 'снизу'],
                  ['#0099b5', 'Полумесяц и 12 звёзд', 'белые, на голубой полосе у древка: звёзды рядами 3, 4 и 5']],
-        facts: [['1 : 2', 'ширина к длине'], ['18.11.1991', 'флаг утверждён законом'], ['300×150 см', 'размер L — в пропорции 1:2']] },
+        facts: [['1 : 2', 'официальная пропорция'], ['1 : 1,5', 'компактный вариант'], ['18.11.1991', 'флаг утверждён законом'], ['300×150 см', 'размер L — в пропорции 1:2']] },
   uz: { title: "O'zbekiston bayrog'i: nisbatlari va ranglari", sub: "Davlat bayrog'i qanday ko'rinadi",
         legend: [['#0099b5', "Moviy yo'l", 'yuqorida'], ['#fff', "Oq yo'l", "tepasi va pastida ingichka qizil hoshiya"], ['#1eb53a', "Yashil yo'l", 'pastda'],
                  ['#0099b5', 'Yarim oy va 12 ta yulduz', "oq, moviy yo'lda dasta tomonda: yulduzlar 3, 4 va 5 qatorda"]],
-        facts: [['1 : 2', "eni va bo'yi nisbati"], ['18.11.1991', 'bayroq qonun bilan tasdiqlangan'], ['300×150 sm', "L o'lcham — 1:2 nisbatda"]] },
+        facts: [['1 : 2', 'rasmiy nisbat'], ['1 : 1,5', 'ixcham variant'], ['18.11.1991', 'bayroq qonun bilan tasdiqlangan'], ['300×150 sm', "L o'lcham — 1:2 nisbatda"]] },
 }[lang];
 
 const W = 1600, H = 900;

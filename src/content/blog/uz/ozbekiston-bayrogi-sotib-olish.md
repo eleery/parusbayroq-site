@@ -1,6 +1,6 @@
 ---
 title: "O'zbekiston bayrog'ini Toshkentda qayerdan sotib olish mumkin: buyurtma asosida davlat bayroqlari"
-description: "O'zbekiston bayrog'ini Toshkentda sotib olish: davlat bayroqlarini 1:2 nisbatda istalgan o'lchamda bosamiz — flagshtok, fasad, kabinet va tadbirlar uchun. Bayroq qanday ko'rinadi, qaysi o'lchamni tanlash, boshqa davlatlar bayroqlari, narxlar va yetkazish."
+description: "O'zbekiston bayrog'ini Toshkentda sotib olish: davlat bayroqlarini istalgan o'lchamda — rasmiy 1:2 va ixcham 1:1,5 nisbatda — flagshtok, fasad, kabinet va tadbirlar uchun bosamiz. Bayroq qanday ko'rinadi, qaysi o'lchamni tanlash, boshqa davlatlar bayroqlari, narxlar va yetkazish."
 date: 2026-11-28
 lang: uz
 pair: uzflag
@@ -9,16 +9,16 @@ coverAlt: "Toshkentda bino oldidagi flagshtokda O'zbekiston davlat bayrog'i — 
 draft: true
 faq:
   - q: "O'zbekiston bayrog'i qancha turadi?"
-    a: "300×150 sm bayroq — rasmiy 1:2 nisbatda — 280 000 so'm turadi. 1:2 nisbatdagi boshqa o'lchamlarni buyurtma asosida qilamiz: qaysi biri kerakligini yozing, hisoblab beramiz."
+    a: "Rasmiy 1:2 nisbatdagi 300×150 sm bayroq 280 000 so'm, ixcham 1:1,5 nisbatdagi 150×100 sm bayroq — 120 000 so'm turadi. Istalgan boshqa o'lchamni ham qilamiz: qaysi biri kerakligini yozing, hisoblab beramiz."
   - q: "O'zbekiston bayrog'ining nisbati qanday?"
-    a: "1:2 — bayroqning eni bo'yidan ikki baravar kichik, masalan 300×150 sm. Bayroq moviy, oq va yashil yo'llardan iborat, oq yo'l ingichka qizil hoshiya bilan ajratilgan, moviy yo'lda dasta tomonda esa oq yarim oy va 12 ta yulduz bor."
+    a: "Rasmiy nisbat — 1:2: bayroqning eni bo'yidan ikki baravar kichik, masalan 300×150 sm. Bundan tashqari, ixcham 1:1,5 variantini ham qilamiz — masalan, 150×100 sm. Bayroq moviy, oq va yashil yo'llardan iborat, oq yo'l ingichka qizil hoshiya bilan ajratilgan, moviy yo'lda dasta tomonda esa oq yarim oy va 12 ta yulduz bor."
   - q: "Boshqa davlatlarning bayroqlarini buyurtma qilsa bo'ladimi?"
     a: "Ha. Istalgan davlat bayroqlarini, shuningdek kompaniya logotipli bayroqlarni va tadbirlar uchun bayroqlarni qilamiz."
   - q: "Bayroq flagshtok bilan sotiladimi?"
     a: "Yo'q. Klassik bayroq — bu flagshtoksiz mato. O'zi turadigan bayroq kerak bo'lsa, konstruksiyali — flagshtok va bochka-asosli parus bayroqlar bor."
 ---
 
-O'zbekiston bayrog'ini Toshkentda bizdan sotib olsa bo'ladi: davlat bayroqlarini istalgan o'lchamda bosamiz — bino oldidagi flagshtok, fasad, kabinet yoki tadbir uchun. O'zbekiston bayrog'i 1:2 nisbatda bo'lishi kerak, shuning uchun eng qulay standart o'lcham — 300×150 sm, u 280 000 so'm turadi. Shu nisbatdagi boshqa o'lchamlarni buyurtma asosida qilamiz, boshqa davlatlar bayroqlari va logotipli bayroqlarni ham bosamiz.
+O'zbekiston bayrog'ini Toshkentda bizdan sotib olsa bo'ladi: davlat bayroqlarini istalgan o'lchamda bosamiz — bino oldidagi flagshtok, fasad, kabinet yoki tadbir uchun. O'zbekiston bayrog'ining rasmiy nisbati — 1:2, buning uchun eng qulay o'lcham — 300×150 sm, 280 000 so'm. Ixcham variant ham bor — 1:1,5 nisbatda: 100×70, 150×100 yoki 225×150 sm. Umuman olganda, bayroqni sizga kerakli istalgan o'lchamda qilamiz, boshqa davlatlar bayroqlari va logotipli bayroqlarni ham bosamiz.
 
 Pastda — davlat bayrog'i qanday ko'rinadi, qaysi o'lchamni tanlash va uni qanday buyurtma qilish mumkin.
 
@@ -32,11 +32,13 @@ Davlat bayrog'i noto'g'ri qilingani darhol bilinadi: yulduzlar 12 ta emas, yo'll
 
 ## Qaysi o'lchamni tanlash kerak
 
-- **Bino oldidagi flagshtok uchun** — 300×150 sm. Bu standart L o'lcham va u aynan 1:2 nisbatda.
-- **Kabinet, maktab yoki kichik flagshtok uchun** — kichikroq bayroq, masalan 200×100 yoki 150×75 sm. 1:2 nisbatdagi istalgan o'lchamni buyurtma asosida qilamiz.
-- **Maydon yoki tadbir uchun** — katta bayroq. Matoni 1,5 metrgacha enda bosamiz, katta bayroqlarni esa bir necha qismdan tikamiz.
+Bayroqni sizga kerakli istalgan o'lchamda qilamiz. Ko'pincha ikki nisbatdan birini tanlashadi:
 
-Pastdagi narx kartochkasida — klassik bayroqlarning standart o'lchamlari. Ularning hammasi ham 1:2 nisbatda emas: davlat bayrog'i uchun 300×150 sm to'g'ri keladi, qolgan o'lchamlarni nisbatga moslab tanlaymiz.
+- **1:2 — rasmiy.** Bino oldidagi flagshtok uchun — 300×150 sm, bu standart L o'lcham. Shu nisbatdagi kichikroq bayroq — masalan, 200×100 yoki 150×75 sm.
+- **1:1,5 — ixcham.** Bayroq biroz kaltaroq, kabinet, zal yoki tadbir uchun qulay. Unga 100×70, 150×100 va 225×150 sm o'lchamlar to'g'ri keladi.
+- **Maydon yoki katta bayram uchun** — katta bayroq. Matoni 1,5 metrgacha enda bosamiz, katta bayroqlarni esa bir necha qismdan tikamiz.
+
+Pastdagi narx kartochkasida — klassik bayroqlarning standart o'lchamlari: 300×150 sm — 1:2 nisbat uchun, qolganlari — ixcham 1:1,5 uchun.
 
 ## Bir tomonlamami yoki ikki tomonlama
 
