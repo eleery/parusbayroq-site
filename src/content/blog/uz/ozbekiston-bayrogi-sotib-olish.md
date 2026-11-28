@@ -6,7 +6,7 @@ lang: uz
 pair: uzflag
 cover: /img/blog/uzflag/flag-uzbekistana-na-flagshtoke-tashkent.webp
 coverAlt: "Toshkentda bino oldidagi flagshtokda O'zbekiston davlat bayrog'i — O'zbekiston bayrog'ini qayerdan sotib olish mumkin"
-draft: true
+draft: false
 faq:
   - q: "O'zbekiston bayrog'i qancha turadi?"
     a: "Rasmiy 1:2 nisbatdagi 300×150 sm bayroq 280 000 so'm, ixcham 1:1,5 nisbatdagi 150×100 sm bayroq — 120 000 so'm turadi. Istalgan boshqa o'lchamni ham qilamiz: qaysi biri kerakligini yozing, hisoblab beramiz."
