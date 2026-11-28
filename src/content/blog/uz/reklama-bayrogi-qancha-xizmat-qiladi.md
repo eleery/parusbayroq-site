@@ -2,6 +2,7 @@
 title: "Reklama bayrog'i qancha xizmat qiladi va umrini qanday uzaytirish mumkin"
 description: "Reklama parus bayrog'i qancha xizmat qiladi: Toshkentda ko'chada 2–4 yil. Nega mato quyoshda o'chmaydi, yomg'ir va qordan qo'rqmaydi, bayroqni yuvsa bo'ladimi, umrini qanday uzaytirish mumkin va qachon faqat matosini almashtirish kerak."
 date: 2026-11-24
+updated: 2026-11-28
 lang: uz
 pair: lifespan
 cover: /img/blog/lifespan/flag-sartaroshxona-zimoy-v-snegu-tashkent.webp
@@ -11,7 +12,7 @@ faq:
   - q: "Reklama bayrog'i qancha xizmat qiladi?"
     a: "Parus bayroq 2–4 yil xizmat qiladi. Sublimatsion bosmali turk bayroq to'ri quyoshda o'chmaydi, yomg'ir va qordan qo'rqmaydi, eskirganda esa faqat matosi almashadi — konstruksiya joyida qoladi."
   - q: "Reklama bayrog'ini yuvsa bo'ladimi?"
-    a: "Ha, matoni bemalol yuvsa bo'ladi. Sublimatsion bosmada bo'yoq mato ichiga kiradi, shuning uchun yuvilmaydi va oqmaydi."
+    a: "Ha, matoni bemalol yuvsa bo'ladi — faqat kuchli oqartiruvchilarsiz. Sublimatsion bosmada bo'yoq mato ichiga kiradi, shuning uchun yuvilmaydi va oqmaydi."
   - q: "Bayroq quyoshda o'chadimi?"
     a: "Yo'q. Biz 200 °C dan yuqori haroratda sublimatsiya usulida bosamiz: bo'yoq matoning bir qismiga aylanadi va Toshkentning yozgi quyoshida ham o'chmaydi."
   - q: "Mato eskirsa, nima qilish kerak?"
@@ -26,7 +27,7 @@ Pastda — bayroqning xizmat muddati nimaga bog'liq, uni qanday uzaytirish mumki
 
 Bayroq ertalabdan kechgacha ko'chada turadi: yozda quyoshda, bahorda yomg'irda, qishda qorda. Oddiy mato bunga chidamaydi — bir mavsumda o'chib qoladi, bo'yog'i oqadi. Bizning bayroq yil bo'yi ko'cha uchun mo'ljallangan va 2–4 yil xizmat qiladi.
 
-Muddat joyga bog'liq. Kun bo'yi shamol esadigan ochiq chorrahada mato tinch hovlidagi kirish oldidagidan og'irroq ishlaydi. Lekin u yerda ham bayroqni tashlab yuborish kerak emas: faqat matosi almashadi.
+Joy deyarli ta'sir qilmaydi. Kun bo'yi shamol esadigan ochiq chorrahada ham, tinch hovlidagi kirish oldida ham bayroq bemalol 2 yil va undan ko'p xizmat qiladi — eng shamolli joyda biroz kamroq bo'lishi mumkin, xolos. Mato baribir eskirsa, bayroqni tashlab yuborish shart emas: faqat matosi almashadi.
 
 ## Nega mato o'chmaydi va yomg'irdan qo'rqmaydi
 
@@ -43,7 +44,7 @@ Nega ba'zi bayroqlar bir yozda o'chib qoladi, ba'zilari yo'q — bu haqda [«Neg
 3. **Devor va daraxtga taqab qo'ymang.** Parus shamolga qarab aylanadi, mato shoxlarga ishqalanmasligi uchun joy kerak.
 4. **Qishda suv o'rniga qum soling.** Qumga sovuq qo'rqinchli emas.
 5. **Bo'ronda bayroqni ichkariga olib kiring.** Flagshtok 15 m/s gacha shamolga chidaydi. Bundan kuchli bo'lishi aytilsa, bayroqni vaqtincha olib qo'ygan yaxshi — bir daqiqalik ish.
-6. **Changlansa — yuving.** Matoni bemalol yuvsa bo'ladi: bo'yoq yuvilmaydi.
+6. **Changlansa — yuving.** Matoni bemalol yuvsa bo'ladi, faqat kuchli oqartiruvchilarsiz: bo'yoq yuvilmaydi.
 
 ![Toshkentda kafe hovlisida ipda quriyotgan «ШАШЛЫК» reklama bayrog'ining yuvilgan matosi](/img/blog/lifespan/postirannoe-polotno-flaga-shashlyk-sushitsya.webp "Bayroq matosini yuvsa bo'ladi: sublimatsion bo'yoq yuvilmaydi va rangi ketmaydi")
 
